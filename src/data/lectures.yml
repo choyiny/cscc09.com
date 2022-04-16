@@ -1,0 +1,51 @@
+- lectures:
+  - title: HTML/CSS
+    description: Understand how to create layouts for websites.
+    googleSlides: ""
+  - title: Javascript
+    description: Programatically manipulate the Document Object Model (DOM)
+    googleSlides: ""
+    labTitle: HTML/CSS
+  - title: Web API
+    description: Learn how to create elegant Application Programming Interfaces (API)
+    googleSlides: ""
+    labTitle: Javascript
+    assignmentTitle: Frontend
+  - title: Storing Data
+    description: How to add state to HTTP, a stateless protocol
+    googleSlides: ""
+    labTitle: Web API
+  - title: User Management
+    description: Authentication and authorization of application users
+    googleSlides: ""
+    labTitle: Storing Data
+    assignmentTitle: Backend
+  - title: Security
+    description: Best practices for securing your application to prevent malicious activity
+    googleSlides: ""
+    labTitle: Managing Users
+    projectTitle: Proposal
+  - title: Intro to DevOps
+    description: Deploying your own application to the Cloud
+    googleSlides: ""
+    labTitle: Security
+    assignmentTitle: Managing Users
+  - title: Maintaining Web Applications
+    description: What it takes to maintain a large scale web app
+    googleSlides: ""
+    labTitle: Deployment
+  - title: Advanced Backend Concepts
+    description: Webhooks, websockets and workers
+    googleSlides: ""
+    labTitle: CI/CD
+    projectTitle: Beta Version
+  - title: Advanced Frontend Concepts
+    description: Webpack, module federation, and smart-dumb components
+    googleSlides: ""
+  - title: Documentation and Testing
+    description: Be confident that the application is functioning as expected
+    googleSlides: ""
+  - title: Web Architecture Considerations
+    description: Understand which -ilities are critical to your web architecture
+    googleSlides: ""
+    projectTitle: Final Version + Presentation
