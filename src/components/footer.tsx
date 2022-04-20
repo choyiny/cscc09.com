@@ -26,7 +26,7 @@ export default function Footer() {
         <Stack direction={"row"} spacing={6}></Stack>
         <Text>
           © 2022 Cho Yin Yong. Made with{" "}
-          <Link href="https://gatsbyjs.com">Gatsby</Link> and Others!
+          <Link href="https://gatsbyjs.com">Gatsby</Link>
         </Text>
       </Container>
     </Box>
