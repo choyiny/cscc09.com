@@ -14,9 +14,48 @@ You must demonstrate knowledge obtained in this class. To obtain a passing grade
       three.js. Embedding Unity/Unreal Engine games on the web does not count.
 2. Have at least two features in your backend that is not a REST CRUD operation
     - For example, you have a websocket endpoint that can listen to events and change your frontend accordingly, or, your API is powered by GraphQL.
-3. Integrate with at least one external API
-    - If you don’t have ideas, Github Student Developer Pack has plenty of external APIs you can work with.
-4. Be deployed on at least one VM (yes, managed Kubernetes clusters count)
+3. Be deployed on at least one VM (yes, managed Kubernetes clusters count)
+
+# Challenge Factor
+The course staff acknowledges that some projects will take more time than others. We encourage you to use more
+complex technologies and more complex workflows.
+
+Therefore your project will receive an challenge factor that ranges between 0.5 and 1.5 that we will use to adjust
+your project final mark. For instance, a challenging project with a challenge factor of 1.2 and a score of 78/100 will
+receive a final mark of 93/100.
+
+To obtain at least a 1.0 challenge factor, a project must at least cover and implement three of the following concepts:
+
+- OAuth 2.0 Client (Lecture 5)
+    - Can your application interact with other OAuth 2.0 providers?
+    - Do you request and use more than just the trivial scopes (eg. name, date of birth, etc.) from the external OAuth 2.0 provider?
+- Real-time interactions (Lecture 9)
+    - Can your application support real time interactions, such as real time collaboration? (Excluding real time chat, that is boring)
+- Non-trivial frontend (Lecture 2, 10)
+    - Does your application utilize more than just HTML/CSS/JS, such as HTML web components, animations, 3D rendering? OR
+    - Does your application live somewhere unconventional? (i.e. instead of being a website itself,  is it an embeddable that can live in any arbitrary website?
+- Webhooks (Lecture 9)
+    - You either broadcast your own webhooks to external services, or receive and process webhooks from external services.
+- No-code/Low-code platforms
+    - Nowadays, barriers of entry to create websites/apps are getting lower and lower. Can your app allow non-developers to create their own apps/websites?
+- Workers (Lecture 9)
+    - You use workers to do processing that is independent of an HTTP call, such as sending emails 1 hour after registration, or batch data processing jobs.
+- In depth work with a specific web technology
+    - For example, you want to use webpack to implement module federation. This is an acceptable advance usage of Webpack.
+- Integration with cloud technologies (Lecture 8)
+    - Use technologies that cloud providers offer, such as Amazon Simple Queue Service, Cloudflare Workers, Google BigQuery, etc.
+- Interactions with other hardware with web technologies
+- Your application is fully end to end tested with a testing framework (Lecture 11)
+- Other topics you may propose that are not covered above. Please talk with your TA or the course instructor to get these approved.
+
+To obtain more than a 1.0 challenge factor, your project must cover more of the above topics in depth. For example, instead of integrating with external OAuth providers, you become an OAuth provider yourself. Here are also a few non-exhaustive concepts you could apply to increase your challenge factor
+- Multi-tenancy (Lecture 8)
+    - If multiple users register for your application, can your information be stored in multiple databases instead of a single one?
+- Secure interactions with the operating system (Lecture 6)
+    - Can your application securely interact with the operating system, or manage, or provision docker containers?
+- Scalability (Lecture 8)
+    - Does your application explicitly take into account scalability in its design?
+
 
 # Syllabus
 The project comes in 4 deliverables:
@@ -32,7 +71,7 @@ The final version will be graded according to the following components:
 - Is it well implemented? 15%
 - Quality of UX/UI 10%
 
-> All team members must ut their best effort to contribute to the project. **The instructor reserves the right to assign
+> All team members must put their best effort to contribute to the project. **The instructor reserves the right to assign
 different grades to each of the team members based on their individual contributions on Github**.
 
 # Academic Integrity

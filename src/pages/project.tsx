@@ -6,10 +6,12 @@ import {graphql} from "gatsby";
 import {components} from "../components/mdx";
 import {MDXRenderer} from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
+import Seo from "../components/seo";
 
 // markup
 const ProjectPage = ({ data }) => {
   return <Layout activePage={"index"}>
+    <Seo title={'Project'}/>
     <Hero title='Project'>
       Demonstrate your learning outcomes through creating a web application.
     </Hero>

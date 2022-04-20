@@ -6,6 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 import { Container } from "@chakra-ui/react";
 import { components } from "../components/mdx";
+import Seo from "../components/seo";
 
 // markup
 const IndexPage = ({ data }) => {
