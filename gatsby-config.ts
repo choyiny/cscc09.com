@@ -19,6 +19,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-yaml",
+    "gatsby-plugin-ts-config",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
