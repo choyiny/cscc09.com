@@ -1,12 +1,18 @@
 import React from "react";
 import {
-  AccordionButton, AccordionIcon, AccordionItem, AccordionPanel,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
   Box,
   HStack,
   Tag,
   Text,
-  Link, VStack,
+  Link,
+  VStack,
+  Grid,
 } from "@chakra-ui/react";
+import { LinkCard } from "./link-card";
 
 /**
  * Return true if the lecture is close enough to the number of days from today.
@@ -22,34 +28,66 @@ export default function LectureItem({ lecture }) {
     <AccordionItem isDisabled={lecture.isHoliday}>
       <h2>
         <AccordionButton>
-          <Box flex='1' textAlign='left'>
+          <Box flex="1" textAlign="left">
             {lecture.date} - {lecture.title}
           </Box>
           <HStack spacing={1}>
-            {isCloseEnough(lecture, 21) && lecture.lab && <Tag colorScheme='yellow'>Lab: {lecture.lab.title} {isCloseEnough(lecture) && 'hi'}</Tag>}
-            {isCloseEnough(lecture, 21) && lecture.assignment && <Tag colorScheme='orange'>Assignment: {lecture.assignment.title}</Tag>}
-            {isCloseEnough(lecture, 21) && lecture.project && <Tag colorScheme='red'>Project: {lecture.project.title}</Tag>}
+            {isCloseEnough(lecture, 21) && lecture.lab && (
+              <Tag colorScheme="yellow">
+                Lab: {lecture.lab.title} {isCloseEnough(lecture) && "hi"}
+              </Tag>
+            )}
+            {isCloseEnough(lecture, 21) && lecture.assignment && (
+              <Tag colorScheme="orange">
+                Assignment: {lecture.assignment.title}
+              </Tag>
+            )}
+            {isCloseEnough(lecture, 21) && lecture.project && (
+              <Tag colorScheme="red">Project: {lecture.project.title}</Tag>
+            )}
           </HStack>
           <AccordionIcon />
         </AccordionButton>
       </h2>
       <AccordionPanel pb={4}>
         <Text>{lecture.description}</Text>
-        <VStack>
-          {isCloseEnough(lecture, 21) && lecture.googleSlides &&
-            <Link textDecoration='underline' href={lecture.googleSlides}>Google Slides</Link>
-          }
-          {isCloseEnough(lecture, 21) && lecture?.lab &&
-            <Link textDecoration='underline' href={lecture.lab.link}>Lab: {lecture.lab.title} (Due Date: {lecture.lab.dueDate})</Link>
-          }
-          {isCloseEnough(lecture, 21) && lecture?.assignment &&
-            <Link textDecoration='underline' href={lecture.assignment.link}>Link to Assignment</Link>
-          }
-          {isCloseEnough(lecture, 21) && lecture?.project &&
-            <Link textDecoration='underline' href={lecture.project.link}>Link to Project</Link>
-          }
-        </VStack>
+        <Grid
+          templateColumns={[`repeat(1, 1fr)`, null, `repeat(3, 1fr)`]}
+          gap={[4, null, 8]}
+          my="1em"
+        >
+          {isCloseEnough(lecture, 21) && <LinkCard
+            name="Lecture Slides"
+            description=""
+            link={lecture.googleSlides}
+            backgroundColor="blue.500"
+          />}
+          {isCloseEnough(lecture, 21) && lecture.lab && (
+            <LinkCard
+              name={"Lab: " + lecture.lab.title}
+              description={'Due Date: ' + lecture.lab.dueDate + ' 11:59pm'}
+              link={lecture.lab.link}
+              backgroundColor="blue.500"
+            />
+          )}
+          {isCloseEnough(lecture, 21) && lecture.assignment && (
+            <LinkCard
+              name={"Assignment: " + lecture.assignment.title}
+              description=""
+              link={lecture.assignment.link}
+              backgroundColor="blue.500"
+            />
+          )}
+          {isCloseEnough(lecture, 21) && lecture.project && (
+            <LinkCard
+              name={"Project: " + lecture.project.title}
+              description=""
+              link={lecture.project.link}
+              backgroundColor="blue.500"
+            />
+          )}
+        </Grid>
       </AccordionPanel>
     </AccordionItem>
-  )
+  );
 }

@@ -6,7 +6,7 @@ import {
   Table,
   Code,
   Text,
-  UnorderedList, Tr, Td, Th,
+  UnorderedList, Tr, Td, Th, TableContainer,
 } from "@chakra-ui/react";
 
 export const components = {
@@ -24,7 +24,9 @@ export const components = {
   ul: (props: object) => <UnorderedList {...props} mb='1em'/>,
   code: (props: object) => <Code colorScheme='gray' {...props}/>,
   table: (props: object) => (
-    <Table variant="simple" {...props}/>
+    <TableContainer>
+      <Table variant="simple" {...props}/>
+    </TableContainer>
   ),
   tr: (props: object) => <Tr {...props}/>,
   td: (props: object) => <Td {...props}/>,
