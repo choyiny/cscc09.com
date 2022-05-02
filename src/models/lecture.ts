@@ -2,7 +2,7 @@ type Work = {
   title: string;
   link: string;
   dueDate: string;
-}
+};
 
 type Lecture = {
   title: string;
@@ -17,4 +17,4 @@ type Lecture = {
   lab: Work;
   assignment: Work;
   project: Work;
-}
+};

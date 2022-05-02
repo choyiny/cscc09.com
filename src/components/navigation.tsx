@@ -14,7 +14,8 @@ import {
   PopoverContent,
   useColorModeValue,
   useBreakpointValue,
-  useDisclosure, Image,
+  useDisclosure,
+  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -255,7 +256,6 @@ const MobileNavItem = ({ label, children, href, to }: NavItem) => {
               <Link key={child.label} py={2} href={child.href}>
                 {child.label}
               </Link>
-
             ))}
         </Stack>
       </Collapse>
@@ -281,8 +281,16 @@ const NAV_ITEMS: Array<NavItem> = [
     to: "/lectures",
   },
   {
+    label: "Team",
+    to: "/team",
+  },
+  {
     label: "Project",
     to: "/project",
+  },
+  {
+    label: "Resources",
+    to: "/resource",
   },
   {
     label: "Feedback",

@@ -56,16 +56,18 @@ export default function LectureItem({ lecture }) {
           gap={[4, null, 8]}
           my="1em"
         >
-          {isCloseEnough(lecture, 21) && <LinkCard
-            name="Lecture Slides"
-            description=""
-            link={lecture.googleSlides}
-            backgroundColor="blue.500"
-          />}
+          {isCloseEnough(lecture, 21) && (
+            <LinkCard
+              name="Lecture Slides"
+              description=""
+              link={lecture.googleSlides}
+              backgroundColor="blue.500"
+            />
+          )}
           {isCloseEnough(lecture, 21) && lecture.lab && (
             <LinkCard
               name={"Lab: " + lecture.lab.title}
-              description={'Due Date: ' + lecture.lab.dueDate + ' 11:59pm'}
+              description={"Due Date: " + lecture.lab.dueDate + " 11:59pm"}
               link={lecture.lab.link}
               backgroundColor="blue.500"
             />

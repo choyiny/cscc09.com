@@ -7,7 +7,7 @@ import Seo from "./seo";
 export default function Layout({ children, activePage }) {
   return (
     <ChakraProvider>
-      <Seo/>
+      <Seo />
       <Navigation />
       <main>{children}</main>
       <Footer />

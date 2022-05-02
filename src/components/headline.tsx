@@ -1,12 +1,23 @@
 import React from "react";
-import {Box, Heading, Image, Link, Text, useColorModeValue} from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Image,
+  Link,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import UtscLogo from "../images/utsc-logo.svg";
 import UtscLogoWhite from "../images/utsc-logo-white.svg";
 
 export default function Headline() {
   return (
     <Box textAlign="center" py={10} px={6}>
-      <Image src={useColorModeValue(UtscLogo, UtscLogoWhite)} w='300px' mx='auto'/>
+      <Image
+        src={useColorModeValue(UtscLogo, UtscLogoWhite)}
+        w="300px"
+        mx="auto"
+      />
       <Heading as="h2" size="xl" mt={6} mb={2}>
         <Text as={"span"} color={"blue.400"} fontWeight={"bold"}>
           CSCC09

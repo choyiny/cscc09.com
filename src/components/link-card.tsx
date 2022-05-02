@@ -2,12 +2,7 @@ import * as React from "react";
 import { Image, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
 import { transforms } from "../constants/motion";
 
-export const LinkCard = ({
-  name,
-  description,
-  link,
-  ...rest
-}) => {
+export const LinkCard = ({ name, description, link, ...rest }) => {
   return (
     <LinkBox
       p={6}

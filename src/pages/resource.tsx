@@ -1,20 +1,20 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import { Container } from "@chakra-ui/react";
-import { graphql } from "gatsby";
+import Seo from "../components/seo";
 import { components } from "../components/mdx";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
-import Seo from "../components/seo";
+import { Container } from "@chakra-ui/react";
+import {graphql} from "gatsby";
 
-// markup
-const ProjectPage = ({ data }) => {
+const ResourcesPage = ({ data }) => {
   return (
-    <Layout activePage={"project"}>
-      <Seo title={"Project"} />
-      <Hero title="Project">
-        Demonstrate your learning outcomes through creating a web application.
+    <Layout activePage={"resources"}>
+      <Seo title={"Resources"} />
+      <Hero title="Resources">
+        Interesting resources that might be useful to you in web development.
+        Feel free to make a PR to add to this list!
       </Hero>
       <Container maxWidth={{ md: "80%", sm: "100%" }}>
         <MDXProvider components={components}>
@@ -25,11 +25,12 @@ const ProjectPage = ({ data }) => {
   );
 };
 
-export default ProjectPage;
+export default ResourcesPage;
+
 
 export const query = graphql`
-  query ProjectSummary {
-    mdx(slug: { eq: "project" }) {
+  query ResourcesQuery {
+    mdx(slug: { eq: "resources" }) {
       body
       frontmatter {
         title
@@ -37,3 +38,4 @@ export const query = graphql`
     }
   }
 `;
+

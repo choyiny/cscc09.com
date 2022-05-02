@@ -9,8 +9,9 @@ export default function Seo({ title, children }) {
   const { href } = useLocation();
 
   const seo = {
-    title: title || 'CSCC09 @ UTSC - Programming on the Web',
-    description: 'An introduction to software development on the web. Concepts underlying the development of programs that operate on the web. Operational concepts of the internet and the web, static and dynamic client content, dynamically served content, n-tiered architectures, web development processes and security on the web.',
+    title: title || "CSCC09 @ UTSC - Programming on the Web",
+    description:
+      "An introduction to software development on the web. Concepts underlying the development of programs that operate on the web. Operational concepts of the internet and the web, static and dynamic client content, dynamically served content, n-tiered architectures, web development processes and security on the web.",
   };
 
   return (

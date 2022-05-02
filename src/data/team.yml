@@ -1,0 +1,50 @@
+- team:
+    - name: Cho Yin Yong
+      role: Instructor
+      title: Team Lead, Innovation at Verto Health
+      expertise:
+        - Web Development
+        - Sales Engineering
+      website: https://choy.in
+      github: https://github.com/choyiny
+    - name: Aleksander Bodurri
+      role: Industry
+      title: Angular Team Member
+      expertise:
+        - Angular
+        - Vue
+        - Webpack
+      blurb: ""
+    - name: Sandrine Monfourny-Daigneault
+      role: Industry
+      title: Engineer II at Spotify
+      expertise:
+        - Serverless
+        - AWS
+        - Node.js
+    - name: Zhili Pan
+      role: Industry
+      title: Service Engineer at Microsoft
+      expertise:
+        - Azure
+        - Infrastructure Security
+    - name: Samuel Zhou
+      role: Industry
+      title: Team Lead, Development at Verto Health
+      expertise:
+        - Flask
+        - SQL
+        - Optimizaitons
+    - name: Spencer Mccoubrey
+      role: Industry
+      title: Senior Software Engineer at Okta
+      expertise:
+        - OAuth
+        - Backend Infrastructure
+    - name: Bojan Oro
+      role: Industry
+      title: Team Lead, Infrastructure at Verto Health
+      expertise:
+        - Kubernetes
+        - Docker
+        - Infrastructure as code

@@ -1,102 +1,102 @@
 - lectures:
-  - title: HTML/CSS
-    description: Understand how to create layouts for websites.
-    googleSlides: ""
-    date: 2022-05-10
-  - title: Javascript
-    description: Programatically manipulate the Document Object Model (DOM)
-    googleSlides: ""
-    lab:
-      title: HTML/CSS
-      link: ''
-      dueDate: 2022-05-23
-    date: 2022-05-17
-  - title: Web API
-    description: Learn how to create elegant Application Programming Interfaces (API)
-    googleSlides: ""
-    lab:
-      title: Javascript
-      link: ''
-      dueDate: 2022-05-30
-    assignment:
-      title: Frontend
-      link: ''
-      dueDate: 2022-05-30
-    date: 2022-05-24
-  - title: Storing Data
-    description: How to add state to HTTP, a stateless protocol
-    googleSlides: ""
-    lab:
-      title: Web API
-      link: ''
-      dueDate: 2022-06-06
-    date: 2022-05-31
-  - title: User Management
-    description: Authentication and authorization of application users
-    googleSlides: ""
-    lab:
-      title: Storing Data
-      link: ''
-    assignment:
-      title: Backend
-      link: ''
-    date: 2022-06-07
-  - title: Security
-    description: Best practices for securing your application to prevent malicious activity
-    googleSlides: ""
-    lab:
-      title: Managing Users
-      link: ''
-    project:
-      title: 'Proposal'
-      link: '/project'
-      dueDate: 2022-06-20
-    date: 2022-06-14
-  - title: Reading Week
-    isHoliday: true
-    date: 2022-06-21
-  - title: Intro to DevOps
-    description: Deploying your own application to the Cloud
-    googleSlides: ""
-    lab:
-      title: Security
-      link: ''
-    assignment:
-      title: Managing Users
-      link: ''
-    date: 2022-06-28
-  - title: Maintaining Web Applications
-    description: What it takes to maintain a large scale web app
-    googleSlides: ""
-    lab:
-      title: Deployment
-      link: ''
-    date: 2022-07-05
-  - title: Advanced Backend Concepts
-    description: Webhooks, websockets and workers
-    googleSlides: ""
-    lab:
-      title: CI/CD
-      link: ''
-    project:
-      title: Beta Version
-      link: ''
-    date: 2022-07-12
-  - title: Advanced Frontend Concepts
-    description: Webpack, module federation, and smart-dumb components
-    googleSlides: ""
-    date: 2022-07-19
-  - title: Documentation and Testing
-    description: Be confident that the application is functioning as expected
-    googleSlides: ""
-    date: 2022-07-26
-  - title: Web Architecture Considerations
-    description: Understand which -ilities are critical to your web architecture
-    googleSlides: ""
-    project:
-      title: Final Version + Presentation
-      link: ''
-    date: 2022-08-02
-  - title: Final Presentations
-    description: Presenting your project to the class
-    date: 2022-08-09
+    - title: HTML/CSS
+      description: Understand how to create layouts for websites.
+      googleSlides: ""
+      date: 2022-05-10
+    - title: Javascript
+      description: Programatically manipulate the Document Object Model (DOM)
+      googleSlides: ""
+      lab:
+        title: HTML/CSS
+        link: ""
+        dueDate: 2022-05-23
+      date: 2022-05-17
+    - title: Web API
+      description: Learn how to create elegant Application Programming Interfaces (API)
+      googleSlides: ""
+      lab:
+        title: Javascript
+        link: ""
+        dueDate: 2022-05-30
+      assignment:
+        title: Frontend
+        link: ""
+        dueDate: 2022-05-30
+      date: 2022-05-24
+    - title: Storing Data
+      description: How to add state to HTTP, a stateless protocol
+      googleSlides: ""
+      lab:
+        title: Web API
+        link: ""
+        dueDate: 2022-06-06
+      date: 2022-05-31
+    - title: User Management
+      description: Authentication and authorization of application users
+      googleSlides: ""
+      lab:
+        title: Storing Data
+        link: ""
+      assignment:
+        title: Backend
+        link: ""
+      date: 2022-06-07
+    - title: Security
+      description: Best practices for securing your application to prevent malicious activity
+      googleSlides: ""
+      lab:
+        title: Managing Users
+        link: ""
+      project:
+        title: "Proposal"
+        link: "/project"
+        dueDate: 2022-06-20
+      date: 2022-06-14
+    - title: Reading Week
+      isHoliday: true
+      date: 2022-06-21
+    - title: Intro to DevOps
+      description: Deploying your own application to the Cloud
+      googleSlides: ""
+      lab:
+        title: Security
+        link: ""
+      assignment:
+        title: Managing Users
+        link: ""
+      date: 2022-06-28
+    - title: Maintaining Web Applications
+      description: What it takes to maintain a large scale web app
+      googleSlides: ""
+      lab:
+        title: Deployment
+        link: ""
+      date: 2022-07-05
+    - title: Advanced Backend Concepts
+      description: Webhooks, websockets and workers
+      googleSlides: ""
+      lab:
+        title: CI/CD
+        link: ""
+      project:
+        title: Beta Version
+        link: ""
+      date: 2022-07-12
+    - title: Advanced Frontend Concepts
+      description: Webpack, module federation, and smart-dumb components
+      googleSlides: ""
+      date: 2022-07-19
+    - title: Documentation and Testing
+      description: Be confident that the application is functioning as expected
+      googleSlides: ""
+      date: 2022-07-26
+    - title: Web Architecture Considerations
+      description: Understand which -ilities are critical to your web architecture
+      googleSlides: ""
+      project:
+        title: Final Version + Presentation
+        link: ""
+      date: 2022-08-02
+    - title: Final Presentations
+      description: Presenting your project to the class
+      date: 2022-08-09
