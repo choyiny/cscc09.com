@@ -10,6 +10,7 @@ export default function Seo({ title, children }) {
 
   const seo = {
     title: title || "CSCC09 @ UTSC - Programming on the Web",
+    siteTitle: "CSCC09 @ UTSC - Programming on the Web",
     description:
       "An introduction to software development on the web. Concepts underlying the development of programs that operate on the web. Operational concepts of the internet and the web, static and dynamic client content, dynamically served content, n-tiered architectures, web development processes and security on the web.",
   };
@@ -18,7 +19,7 @@ export default function Seo({ title, children }) {
     <Helmet
       title={title}
       defaultTitle={seo.title}
-      titleTemplate={`%s | ${seo.title}`}
+      titleTemplate={`%s | ${seo.siteTitle}`}
     >
       <html lang="en-CA" />
       <meta name="description" content={seo.description} />
