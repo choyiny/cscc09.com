@@ -32,17 +32,17 @@ export default function LectureItem({ lecture }) {
             {lecture.date} - {lecture.title}
           </Box>
           <HStack spacing={1}>
-            {isCloseEnough(lecture, 21) && lecture.lab && (
+            {isCloseEnough(lecture, 8) && lecture.lab && (
               <Tag colorScheme="yellow">
                 Lab: {lecture.lab.title} {isCloseEnough(lecture) && "hi"}
               </Tag>
             )}
-            {isCloseEnough(lecture, 21) && lecture.assignment && (
+            {isCloseEnough(lecture, 8) && lecture.assignment && (
               <Tag colorScheme="orange">
                 Assignment: {lecture.assignment.title}
               </Tag>
             )}
-            {isCloseEnough(lecture, 21) && lecture.project && (
+            {isCloseEnough(lecture, 8) && lecture.project && (
               <Tag colorScheme="red">Project: {lecture.project.title}</Tag>
             )}
           </HStack>
@@ -56,7 +56,7 @@ export default function LectureItem({ lecture }) {
           gap={[4, null, 8]}
           my="1em"
         >
-          {isCloseEnough(lecture, 21) && (
+          {isCloseEnough(lecture, 8) && (
             <LinkCard
               name="Lecture Slides"
               description=""
@@ -64,7 +64,7 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {isCloseEnough(lecture, 21) && lecture.lab && (
+          {isCloseEnough(lecture, 8) && lecture.lab && (
             <LinkCard
               name={"Lab: " + lecture.lab.title}
               description={"Due Date: " + lecture.lab.dueDate + " 11:59pm"}
@@ -72,7 +72,7 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {isCloseEnough(lecture, 21) && lecture.assignment && (
+          {isCloseEnough(lecture, 8) && lecture.assignment && (
             <LinkCard
               name={"Assignment: " + lecture.assignment.title}
               description=""
@@ -80,7 +80,7 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {isCloseEnough(lecture, 21) && lecture.project && (
+          {isCloseEnough(lecture, 8) && lecture.project && (
             <LinkCard
               name={"Project: " + lecture.project.title}
               description=""
