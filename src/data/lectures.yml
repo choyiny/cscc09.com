@@ -37,6 +37,7 @@
       lab:
         title: Storing Data
         link: ""
+        dueDate: 2022-06-13
       assignment:
         title: Backend
         link: ""
@@ -47,6 +48,7 @@
       lab:
         title: Managing Users
         link: ""
+        dueDate: 2022-06-20
       project:
         title: "Proposal"
         link: "/project"
@@ -61,6 +63,7 @@
       lab:
         title: Security
         link: ""
+        dueDate: 2022-07-06
       assignment:
         title: Managing Users
         link: ""
@@ -71,6 +74,7 @@
       lab:
         title: Deployment
         link: ""
+        dueDate: 2022-07-13
       date: 2022-07-05
     - title: Advanced Backend Concepts
       description: Webhooks, websockets and workers
@@ -78,6 +82,7 @@
       lab:
         title: CI/CD
         link: ""
+        dueDate: 2022-07-20
       project:
         title: Beta Version
         link: ""
