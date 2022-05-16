@@ -22,10 +22,8 @@ function isCloseEnough(dateString: string, days: number) {
   // debug mode!
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  if (params.get('viewAll') === 'definitely') {
-   return true;
-  }
-  const today = new Date();
+  const debugDate: string = params.get('preview') || null;
+  const today = debugDate ? new Date(debugDate): new Date();
   const d = new Date(dateString);
   return (d - today) / (1000 * 60 * 60 * 24) < days;
 }
@@ -39,12 +37,12 @@ export default function LectureItem({ lecture }) {
             {lecture.date} - {lecture.title}
           </Box>
           <HStack spacing={1}>
-            {lecture.lab && isCloseEnough(lecture.lab.dueDate, 7) && (
+            {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && (
               <Tag colorScheme="yellow">
                 Lab: {lecture.lab.title}
               </Tag>
             )}
-            {isCloseEnough(lecture.realDate, 0) && lecture.assignment && (
+            {lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && (
               <Tag colorScheme="orange">
                 Assignment: {lecture.assignment.title}
               </Tag>
@@ -63,7 +61,7 @@ export default function LectureItem({ lecture }) {
           gap={[4, null, 8]}
           my="1em"
         >
-          {isCloseEnough(lecture.realDate, 0) && (
+          {isCloseEnough(lecture.realDate, 1) && (
             <LinkCard
               name="Lecture Slides"
               description=""
@@ -71,18 +69,18 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {isCloseEnough(lecture.realDate, 1) && lecture.lab && (
+          {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && (
             <LinkCard
               name={"Lab: " + lecture.lab.title}
-              description={"Due Date: " + lecture.lab.dueDate + " 11:59pm"}
+              description={"Show your completed lab to the TA during your practical for a grade"}
               link={lecture.lab.link}
               backgroundColor="blue.500"
             />
           )}
-          {isCloseEnough(lecture.realDate, 1) && lecture.assignment && (
+          {lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && (
             <LinkCard
               name={"Assignment: " + lecture.assignment.title}
-              description=""
+              description={"Due Date: " + lecture.assignment.dueDate + " 11:59pm"}
               link={lecture.assignment.link}
               backgroundColor="blue.500"
             />

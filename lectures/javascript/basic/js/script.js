@@ -9,7 +9,7 @@ window.onload = function () {
     ".content"
   ).innerHTML = `<h1 class="title">This is a heading.</h1>`;
 
-  document.querySelector("#generate-paragraph").onclick = function () {
+  document.querySelector("#generate-paragraph").onclick = function() {
     document
       .querySelector(".content")
       .appendChild(createParagraph("This is a paragraph."));

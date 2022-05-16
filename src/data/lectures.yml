@@ -10,6 +10,10 @@
         title: HTML/CSS
         link: https://classroom.github.com/a/08SalzhW
         dueDate: 2022-05-23
+      assignment:
+        title: Frontend
+        link: ""
+        dueDate: 2022-05-30
       date: 2022-05-17
     - title: Web API
       description: Learn how to create elegant Application Programming Interfaces (API)
@@ -17,11 +21,7 @@
       lab:
         title: Javascript
         link: ""
-        dueDate: 2022-05-30
-      assignment:
-        title: Frontend
-        link: ""
-        dueDate: 2022-05-30
+        dueDate: 2022-05-31
       date: 2022-05-24
     - title: Storing Data
       description: How to add state to HTTP, a stateless protocol
@@ -41,6 +41,7 @@
       assignment:
         title: Backend
         link: ""
+        dueDate: 2022-06-14
       date: 2022-06-07
     - title: Security
       description: Best practices for securing your application to prevent malicious activity
@@ -67,6 +68,7 @@
       assignment:
         title: Managing Users
         link: ""
+        dueDate: 2022-07-07
       date: 2022-06-28
     - title: Maintaining Web Applications
       description: What it takes to maintain a large scale web app

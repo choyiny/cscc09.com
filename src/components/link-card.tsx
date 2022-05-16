@@ -22,7 +22,7 @@ export const LinkCard = ({ name, description, link, ...rest }) => {
       {...rest}
     >
       <LinkOverlay href={link} mb="1em">
-        <Text fontWeight="bold" fontSize="2xl">
+        <Text fontWeight="bold" fontSize="xl">
           {name}
         </Text>
       </LinkOverlay>
