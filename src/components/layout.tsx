@@ -3,7 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Navigation from "./navigation";
 import Footer from "./footer";
 import Seo from "./seo";
-import theme from "../constants/theme";
+import theme from "../theme/config";
 
 export default function Layout({ children, activePage }) {
   return (
