@@ -5,14 +5,14 @@
       date: 2022-05-10
     - title: Javascript
       description: Programatically manipulate the Document Object Model (DOM)
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/126tNEVu6uJ16AR_3xpEeQS4webgyjrblwbwFleIwEgQ/edit?usp=sharing
       lab:
         title: HTML/CSS
         link: https://classroom.github.com/a/08SalzhW
         dueDate: 2022-05-23
       assignment:
         title: Frontend
-        link: ""
+        link: https://classroom.github.com/a/YPYHGoAe
         dueDate: 2022-05-30
       date: 2022-05-17
     - title: Web API
@@ -20,7 +20,7 @@
       googleSlides: ""
       lab:
         title: Javascript
-        link: ""
+        link: https://classroom.github.com/a/wh4loy5N
         dueDate: 2022-05-31
       date: 2022-05-24
     - title: Storing Data
