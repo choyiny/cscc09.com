@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDo</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/form.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" id="title">ToDo</a>
+    </header>
+
+    <p id="error-box"></p>
+
+    <form id="add-item" class="complex-form">
+      <input
+        id="content-form"
+        type="text"
+        class="form-element"
+        placeholder="Enter your ToDo item"
+        name="item"
+        required
+      />
+    </form>
+
+    <div id="items">
+      <!--div class="item">
+            <div class="item-content">Fill the C09 Github registration form!</div>
+            <div class="delete-icon icon"></div>
+        </div-->
+    </div>
+
+    <footer>
+      <a href="/credits.html">credits</a>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

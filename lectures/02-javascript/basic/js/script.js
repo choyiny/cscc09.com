@@ -1,5 +1,7 @@
 (function() {
-  "use strict";
+  'use strict';
+
+  a = 1;
 
   function createParagraph(content) {
     // <p></p>

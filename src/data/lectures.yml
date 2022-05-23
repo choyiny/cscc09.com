@@ -17,7 +17,7 @@
       date: 2022-05-17
     - title: Web API
       description: Learn how to create elegant Application Programming Interfaces (API)
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1BcDfVqGvMDRW2X0znddO9447j8waEtyKRDu4nWEcJyE/edit?usp=sharing
       lab:
         title: Javascript
         link: https://classroom.github.com/a/wh4loy5N
@@ -28,7 +28,7 @@
       googleSlides: ""
       lab:
         title: Web API
-        link: ""
+        link: https://classroom.github.com/a/4B4YzJ21
         dueDate: 2022-06-06
       date: 2022-05-31
     - title: User Management
