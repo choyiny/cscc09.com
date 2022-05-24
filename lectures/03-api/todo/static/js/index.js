@@ -6,6 +6,7 @@
       console.error("[error]", err);
       var errorBox = document.querySelector("#error-box");
       errorBox.innerHTML = err;
+      // do as I say, not as I do
       errorBox.style.visibility = "visible";
     }
 

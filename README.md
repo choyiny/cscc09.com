@@ -23,3 +23,8 @@ Enjoy the course!
 3.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
+
+## 👋 Ongoing Challenges
+- Interesting and original Javascript snippets! Submit a PR and put your snippet under `lectures/02-javascript`.
+- Find and fix typos.
+- Improve accessibility on the website and make it more student friendly.

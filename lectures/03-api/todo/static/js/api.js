@@ -18,6 +18,7 @@ const apiService = (function () {
     .then((val) => callback(null, val));
   }
 
+  // note to self, try to rewrite this in class without the callback model
   module.addItem = function (content, callback) {
     send("POST", "/api/items/", { content: content }, function (err, res) {
       if (err) return callback(err);
