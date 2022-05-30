@@ -36,10 +36,13 @@
   window.onload = function () {
     // onclick listener for generating a paragraph
     document.querySelector("#generate-paragraph").onclick = function () {
+      const btn = document.querySelector("#generate-paragraph");
+      btn.setAttribute("disabled", "true");
       generateJoke((_, data) => {
         document
           .querySelector(".content")
           .appendChild(createParagraph(data.joke));
+        btn.removeAttribute("disabled");
       });
     };
   };

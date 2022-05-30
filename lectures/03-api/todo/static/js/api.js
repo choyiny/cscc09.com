@@ -37,5 +37,9 @@ const apiService = (function () {
     send("GET", "/api/items/", null, callback);
   };
 
+  module.getItemsBetter = function() {
+    return fetch("/api/items").then(res => res.json());
+  }
+
   return module;
 })();

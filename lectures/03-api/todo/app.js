@@ -17,13 +17,16 @@ app.use(function (req, res, next) {
   next();
 });
 
-let items = [];
+const items = [];
 
 app.get("/api/items/", function (req, res, next) {
   res.json(items);
 });
 
 app.post("/api/items/", function (req, res, next) {
+  if (!req.body.content) {
+    return res.status(422).json({"errors":[{"content": "is required"}]})
+  }
   let item = new Item(req.body);
   items.push(item);
   res.json(item);
@@ -37,7 +40,7 @@ app.delete("/api/items/:id/", function (req, res, next) {
   let index = items.findIndex(function (e) {
     return e.id === parseInt(req.params.id);
   });
-  if (index === -1) res.json(null);
+  if (index === -1) res.status(404).json(null);
   else {
     let item = items[index];
     items.splice(index, 1);
