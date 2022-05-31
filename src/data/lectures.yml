@@ -25,23 +25,23 @@
       date: 2022-05-24
     - title: Storing Data
       description: How to add state to HTTP, a stateless protocol
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1qyM_RmRDTiJ4HvEWzajXWWXI1UOgIavKKMommlXu3pY/edit#slide=id.p
       lab:
         title: Web API
         link: https://classroom.github.com/a/4B4YzJ21
         dueDate: 2022-06-06
+      assignment:
+        title: Backend
+        link: https://classroom.github.com/a/7aykiaxl
+        dueDate: 2022-06-13
       date: 2022-05-31
     - title: User Management
       description: Authentication and authorization of application users
       googleSlides: ""
       lab:
-        title: Storing Data
-        link: ""
+        title: Storing and Serving Data
+        link: https://classroom.github.com/a/vdcGu_tI
         dueDate: 2022-06-13
-      assignment:
-        title: Backend
-        link: ""
-        dueDate: 2022-06-14
       date: 2022-06-07
     - title: Security
       description: Best practices for securing your application to prevent malicious activity
