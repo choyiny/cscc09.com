@@ -29,7 +29,7 @@ app.get('/api/users/:username/profile/picture/', function (req, res, next) {
     if (!(req.params.username in users)) res.status(404).end('username ' + username + ' does not exist');
     else{
         var profile = users[req.params.username];
-        res.setHeader('Content-Type', profile.mimetype);
+        res.setHeader('Content-Type', 'text/html');
         res.sendFile(profile.path);
     };
 });

@@ -26,7 +26,7 @@ app.get("/api/items/", function (req, res, next) {
     .limit(5)
     .exec(function (err, items) {
       if (err) return res.status(500).end(err);
-      return res.json(items.reverse());
+      return res.json(items);
     });
 });
 
