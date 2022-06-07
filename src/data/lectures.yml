@@ -1,11 +1,11 @@
 - lectures:
     - title: HTML/CSS
       description: Understand how to create layouts for websites.
-      googleSlides: https://docs.google.com/presentation/d/1plm0goqBu8hQyn4yWP723uSsXD6d3jr447tTtg4HkzA/edit?usp=sharing
+      googleSlides: https://docs.google.com/presentation/d/1plm0goqBu8hQyn4yWP723uSsXD6d3jr447tTtg4HkzA
       date: 2022-05-10
     - title: Javascript
       description: Programatically manipulate the Document Object Model (DOM)
-      googleSlides: https://docs.google.com/presentation/d/126tNEVu6uJ16AR_3xpEeQS4webgyjrblwbwFleIwEgQ/edit?usp=sharing
+      googleSlides: https://docs.google.com/presentation/d/126tNEVu6uJ16AR_3xpEeQS4webgyjrblwbwFleIwEgQ
       lab:
         title: HTML/CSS
         link: https://classroom.github.com/a/08SalzhW
@@ -17,7 +17,7 @@
       date: 2022-05-17
     - title: Web API
       description: Learn how to create elegant Application Programming Interfaces (API)
-      googleSlides: https://docs.google.com/presentation/d/1BcDfVqGvMDRW2X0znddO9447j8waEtyKRDu4nWEcJyE/edit?usp=sharing
+      googleSlides: https://docs.google.com/presentation/d/1BcDfVqGvMDRW2X0znddO9447j8waEtyKRDu4nWEcJyE
       lab:
         title: Javascript
         link: https://classroom.github.com/a/wh4loy5N
@@ -25,7 +25,7 @@
       date: 2022-05-24
     - title: Storing Data
       description: How to add state to HTTP, a stateless protocol
-      googleSlides: https://docs.google.com/presentation/d/1qyM_RmRDTiJ4HvEWzajXWWXI1UOgIavKKMommlXu3pY/edit#slide=id.p
+      googleSlides: https://docs.google.com/presentation/d/1qyM_RmRDTiJ4HvEWzajXWWXI1UOgIavKKMommlXu3pY
       lab:
         title: Web API
         link: https://classroom.github.com/a/4B4YzJ21
@@ -35,9 +35,9 @@
         link: https://classroom.github.com/a/7aykiaxl
         dueDate: 2022-06-13
       date: 2022-05-31
-    - title: User Management
+    - title: Authentication and Authorization
       description: Authentication and authorization of application users
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1I5t3kJh7PrrPNYa6o-xNMmdPTz5uPE62TPtoQD0ALTc
       lab:
         title: Storing and Serving Data
         link: https://classroom.github.com/a/vdcGu_tI
@@ -47,8 +47,8 @@
       description: Best practices for securing your application to prevent malicious activity
       googleSlides: ""
       lab:
-        title: Managing Users
-        link: ""
+        title: Authentication and Authorization
+        link: https://classroom.github.com/a/TvQ-GegZ
         dueDate: 2022-06-20
       project:
         title: "Proposal"
