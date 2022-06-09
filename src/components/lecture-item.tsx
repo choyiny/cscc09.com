@@ -47,7 +47,7 @@ export default function LectureItem({ lecture }) {
                 Assignment: {lecture.assignment.title}
               </Tag>
             )}
-            {isCloseEnough(lecture.realDate, 0) && lecture.project && (
+            {lecture.project && (
               <Tag colorScheme="red">Project: {lecture.project.title}</Tag>
             )}
           </HStack>
@@ -85,10 +85,10 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {isCloseEnough(lecture.realDate, 1) && lecture.project && (
+          {lecture.project && (
             <LinkCard
               name={"Project: " + lecture.project.title}
-              description=""
+              description={"Due Date: " + lecture.project.dueDate + " 11:59pm"}
               link={lecture.project.link}
               backgroundColor="blue.500"
             />

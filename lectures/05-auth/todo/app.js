@@ -15,7 +15,8 @@ const cookie = require('cookie');
 
 const session = require('express-session');
 app.use(session({
-    secret: 'please change this secret',
+    // secret: 'please change this secret',
+    secret: process.env.SECRET_KEY,
     resave: false,
     saveUninitialized: true,
 }));
@@ -45,6 +46,8 @@ app.post('/signup/', function (req, res, next) {
     if (!('username' in req.body)) return res.status(400).end('username is missing');
     if (!('password' in req.body)) return res.status(400).end('password is missing');
     let username = req.body.username;
+    // usually, when you sign up, you will want to verify both password and passwordConfirmation
+    // on top of that, definitely check for password strength!
     let password = req.body.password;
     // check if user already exists in the database
     users.findOne({_id: username}, function(err, user){

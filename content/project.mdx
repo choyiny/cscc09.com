@@ -3,21 +3,19 @@ slug: project
 title: Project
 ---
 
-**<u>Note: Projects start in week 6, but be prepared to think of an idea. This page will be constantly updated
-with the latest information in the coming weeks.</u>**
-
 To succeed in web development, you must be extremely hands on. 40% of your course grade will be determined through this
 project that you will work on as a group of 2-3 people. Your application must be deployed on the cloud and available
-for the public to view and use.
+for the public to view and use. Please note that if you get <50% in the project, you will get no more than a 47 in your
+final grade.
 
 # Required Elements
-You must demonstrate knowledge obtained in this class. To obtain a passing grade (>=50%), your project must:
+You must demonstrate knowledge obtained in this class. To obtain a **passing grade** (>=50%), your project must:
 1. Use a frontend framework, rather than vanilla Javascript ([React](https://reactjs.org), [Angular](https://angular.io), [Vue](https://vuejs.org) or any descendants)
     - Note: If you decide to make a game, it must be web based and coded from scratch (not with a template), such as with
       three.js. Embedding Unity/Unreal Engine games on the web does not count.
-2. Have at least two features in your backend that is not a REST CRUD operation
+2. Have at least 1 feature in your backend that is not a REST CRUD operation
     - For example, you have a websocket endpoint that can listen to events and change your frontend accordingly, or, your API is powered by GraphQL.
-3. Be deployed on at least one VM (yes, managed Kubernetes clusters count)
+3. Be deployed on at least one VM (yes, managed Kubernetes clusters count) and must be accessible by the **public**.
 
 # Challenge Factor
 The course staff acknowledges that some projects will take more time than others. We encourage you to use more
@@ -52,12 +50,16 @@ To obtain at least a 1.0 challenge factor, a project must at least cover and imp
 - Other topics you may propose that are not covered above. Please talk with your TA or the course instructor to get these approved.
 
 To obtain more than a 1.0 challenge factor, your project must cover more of the above topics in depth. For example, instead of integrating with external OAuth providers, you become an OAuth provider yourself. Here are also a few non-exhaustive concepts you could apply to increase your challenge factor
-- Multi-tenancy (Lecture 8)
-    - If multiple users register for your application, can your information be stored in multiple databases instead of a single one?
 - Secure interactions with the operating system (Lecture 6)
     - Can your application securely interact with the operating system, or manage, or provision docker containers?
 - Scalability (Lecture 8)
     - Does your application explicitly take into account scalability in its design?
+
+Please consult with the instructor if you are curious as to what could affect your challenge factor.
+
+# Don't
+- Implement web based chat
+- Implement another web gallery (or PDF gallery, or video gallery...)
 
 # Syllabus
 The project comes in 4 deliverables:
@@ -90,19 +92,24 @@ Each team member is responsible and will be held accountable for the work he or 
 
 # Deliverables
 ## Proposal
-After registration, each team will be assigned a new private Github repository for the project. By the project proposal
-deadline, the team should have pushed the proposal to their project repository. The proposal will take the form of a
-README.md file at the root of your project repository on Github. This file should be properly formatted in markdown.
+You must register your team on [Github](https://classroom.github.com/a/ya3RGBPr) by the deadline. After registration,
+each team will be assigned a new private Github repository for the project. By the project proposal
+deadline, the team should have pushed the proposal to their project repository and **submit the repository to Gradescope**.
+The proposal will take the form of a `README.md` file at the root of your project repository on Github.
+This file should be properly formatted in markdown.
 
 To receive full credits, the proposal should contain the following information:
 
 - Project Title
 - Team Members
-- a description of the web application
-- a description of the key features that will be completed by the Beta version
-- a description of the additional features that will be complete by the Final version
-- a description of the technology stack that you will use to build and deploy it
-- a description of the top 5 technical challenges
+- Description of the web application
+- 3+ concepts used for the challenge factor, and how each concept will be applied
+- List the key features that would be completed by the beta version
+- List the additional features that would be completed by the final version
+- Describe the tech stack that would be used to build the application
+- Describe the method of deployment
+
+The instructor will assign a preliminary challenge factor for reference.
 
 ## Beta Version
 By the beta version deadline, your team should have:
@@ -110,12 +117,16 @@ By the beta version deadline, your team should have:
 - scheduled a 20 minute meeting to demo and discuss the beta version.
 
 The meeting with the TA must be scheduled before the deadline but it can take place after the deadline. To receive
-full credits, your team should demonstrate that the key features of your application work.
+full credits, your team should demonstrate that the key features of your application work during the TA meeting.
 
 ## Final Version
 By the final version deadline, your team should have:
 - pushed the final version to the project repository on Github
+- Submit the repository on Gradescope
 - deployed the application and provide its public URL in the `README.md` file
+
+The web application must be available throughout the marking period, which is 2 weeks after the final version.
+**If the application is not deployed, a failing grade will be awarded.**
 
 ## Presentation
 You are going to take a video demoing your app. This video must 3 min long (+-20 seconds). It should show your web app
