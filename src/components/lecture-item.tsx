@@ -61,7 +61,7 @@ export default function LectureItem({ lecture }) {
           gap={[4, null, 8]}
           my="1em"
         >
-          {isCloseEnough(lecture.realDate, 1) && (
+          {isCloseEnough(lecture.realDate, 1) && lecture.googleSlides && (
             <LinkCard
               name="Lecture Slides"
               description=""
@@ -69,7 +69,7 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && (
+          {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && lecture.lab.link && (
             <LinkCard
               name={"Lab: " + lecture.lab.title}
               description={"Show your completed lab to the TA during your practical for a grade"}
@@ -77,7 +77,7 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && (
+          {lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && lecture.assignment.link && (
             <LinkCard
               name={"Assignment: " + lecture.assignment.title}
               description={"Due Date: " + lecture.assignment.dueDate + " 11:59pm"}
