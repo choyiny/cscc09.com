@@ -5,3 +5,5 @@ services:
     image: bkimminich/juice-shop
     ports:
       - 8084:3000
+    environment:
+      - NODE_ENV=unsafe

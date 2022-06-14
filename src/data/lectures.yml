@@ -45,7 +45,7 @@
       date: 2022-06-07
     - title: Security
       description: Best practices for securing your application to prevent malicious activity
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1ETKDU6aR1b_yee-1sxsh1k637cQ780t0v0yovNRnQFg
       lab:
         title: Authentication and Authorization
         link: https://classroom.github.com/a/TvQ-GegZ
