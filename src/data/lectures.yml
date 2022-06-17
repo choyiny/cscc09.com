@@ -78,7 +78,7 @@
         link: ""
         dueDate: 2022-07-13
       date: 2022-07-05
-    - title: Advanced Backend Concepts
+    - title: Advanced Backend Concepts & Topic TBD (Guest Lecture - Samuel Zhou)
       description: Webhooks, websockets and workers
       googleSlides: ""
       lab:
@@ -90,8 +90,8 @@
         link: "/project"
         dueDate: 2022-07-18
       date: 2022-07-12
-    - title: Advanced Frontend Concepts
-      description: Webpack, module federation, and smart-dumb components
+    - title: Advanced Frontend Concepts & Browser Debugging (Guest Lecture - Aleksander Bodurri)
+      description: Smart-dumb components, browser debugging.
       googleSlides: ""
       date: 2022-07-19
     - title: Documentation and Testing
@@ -106,6 +106,6 @@
         link: "/project"
         dueDate: 2022-08-01
       date: 2022-08-02
-    - title: Final Review
-      description: Reviewing key points of the final exam
+    - title: Final Exam Review
+      description: Reviewing key points for the final exam
       date: 2022-08-09
