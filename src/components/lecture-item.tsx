@@ -37,7 +37,7 @@ export default function LectureItem({ lecture }) {
             {lecture.date} - {lecture.title}
           </Box>
           <HStack spacing={1}>
-            {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && (
+            {lecture.lab && (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) && (
               <Tag colorScheme="yellow">
                 Lab: {lecture.lab.title}
               </Tag>
@@ -69,7 +69,7 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && lecture.lab.link && (
+          {lecture.lab && (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) && lecture.lab.link && (
             <LinkCard
               name={"Lab: " + lecture.lab.title}
               description={"Show your completed lab to the TA during your practical for a grade"}

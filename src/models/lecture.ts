@@ -2,6 +2,7 @@ type Work = {
   title: string;
   link: string;
   dueDate: string;
+  bonus: boolean;
 };
 
 type Lecture = {

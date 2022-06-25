@@ -64,27 +64,30 @@
       date: 2022-06-21
     - title: Intro to DevOps
       description: Deploying your own application to the Cloud
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1fXaFJ5D-CL9-yCJqQJHJzOrtjXVX3I1ogC0M7xbC7xw
       lab:
         title: Security
-        link: ""
+        link: https://classroom.github.com/a/npA1XjfN
         dueDate: 2022-07-06
+        bonus: true
       date: 2022-06-28
     - title: Maintaining Web Applications
       description: What it takes to maintain a large scale web app
       googleSlides: ""
       lab:
-        title: Deployment
-        link: ""
+        title: Intro to React
+        link: https://classroom.github.com/a/OnhyRVDb
         dueDate: 2022-07-13
+        bonus: true
       date: 2022-07-05
     - title: Advanced Backend Concepts & Topic TBD (Guest Lecture - Samuel Zhou)
       description: Webhooks, websockets and workers
       googleSlides: ""
       lab:
-        title: CI/CD
-        link: ""
+        title: Deploy with Docker
+        link: https://classroom.github.com/a/sZ9urCud
         dueDate: 2022-07-20
+        bonus: true
       project:
         title: Beta Version
         link: "/project"
@@ -93,6 +96,11 @@
     - title: Advanced Frontend Concepts & Browser Debugging (Guest Lecture - Aleksander Bodurri)
       description: Smart-dumb components, browser debugging.
       googleSlides: ""
+      lab:
+        title: CI/CD
+        link: https://classroom.github.com/a/oM3TP8KW
+        dueDate: 2022-07-20
+        bonus: true
       date: 2022-07-19
     - title: Documentation and Testing
       description: Be confident that the application is functioning as expected
