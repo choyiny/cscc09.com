@@ -62,7 +62,7 @@
     - title: Reading Week
       isHoliday: true
       date: 2022-06-21
-    - title: Intro to DevOps
+    - title: Intro to Deployments
       description: Deploying your own application to the Cloud
       googleSlides: https://docs.google.com/presentation/d/1fXaFJ5D-CL9-yCJqQJHJzOrtjXVX3I1ogC0M7xbC7xw
       lab:
@@ -71,9 +71,9 @@
         dueDate: 2022-07-06
         bonus: true
       date: 2022-06-28
-    - title: Maintaining Web Applications
+    - title: Large Scale Web Applications
       description: What it takes to maintain a large scale web app
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1Ok4fbDGd6rDjBEHbdMJtzVzfK2hqF8-sx5cT8w0ku_0
       lab:
         title: Intro to React
         link: https://classroom.github.com/a/OnhyRVDb
