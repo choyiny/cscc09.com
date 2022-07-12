@@ -80,9 +80,9 @@
         dueDate: 2022-07-13
         bonus: true
       date: 2022-07-05
-    - title: Advanced Backend Concepts & Topic TBD (Guest Lecture - Samuel Zhou)
+    - title: Real-time web applications & Using External Services (Guest Lecture - Samuel Zhou)
       description: Webhooks, websockets and workers
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1-8WhvsbAlrzP6wWCpZVetDiZYG16Mjte3piHT4gXvY4
       lab:
         title: Deploy with Docker
         link: https://classroom.github.com/a/sZ9urCud
