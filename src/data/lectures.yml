@@ -95,7 +95,7 @@
       date: 2022-07-12
     - title: Advanced Frontend Concepts & Browser Debugging (Guest Lecture - Aleksander Bodurri)
       description: Smart-dumb components, browser debugging.
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1YSia5T3MyZooCnJmjh38GQv09n5cp5OT5VD1w61zfJc
       lab:
         title: CI/CD
         link: https://classroom.github.com/a/oM3TP8KW
