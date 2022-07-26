@@ -104,16 +104,16 @@
       date: 2022-07-19
     - title: Documentation and Testing
       description: Be confident that the application is functioning as expected
-      googleSlides: ""
+      googleSlides: https://docs.google.com/presentation/d/1FPOshMyLKZLK3dC_FBIXqK0P7m0c9p5DjYNF8TyQyyE/
       date: 2022-07-26
-    - title: Web Architecture Considerations
-      description: Understand which -ilities are critical to your web architecture
-      googleSlides: ""
+    - title: Web applications and the future
+      description: Web workers, service workers, going offline
+      googleSlides: https://docs.google.com/presentation/d/1HlVKF6LJo5ejGtE3cS7fhzMa-mBiRLGbITBC2UOa7eo/
       project:
         title: Final Version + Presentation
         link: "/project"
         dueDate: 2022-08-01
       date: 2022-08-02
-    - title: Final Exam Review
-      description: Reviewing key points for the final exam
+    - title: Project Showcase & Final Exam Review
+      description: A showcase of the best projects this semester and a quick review of the final exam.
       date: 2022-08-09
