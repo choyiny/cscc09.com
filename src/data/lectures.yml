@@ -106,7 +106,7 @@
       description: Be confident that the application is functioning as expected
       googleSlides: https://docs.google.com/presentation/d/1FPOshMyLKZLK3dC_FBIXqK0P7m0c9p5DjYNF8TyQyyE/
       date: 2022-07-26
-    - title: Web applications and the future
+    - title: Advanced Web Development
       description: Web workers, service workers, going offline
       googleSlides: https://docs.google.com/presentation/d/1HlVKF6LJo5ejGtE3cS7fhzMa-mBiRLGbITBC2UOa7eo/
       project:
