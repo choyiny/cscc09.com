@@ -29,7 +29,7 @@ export const components = {
   code: (props: object) => <Code colorScheme="gray" {...props} />,
   table: (props: object) => (
     <TableContainer>
-      <Table variant="simple" size='sm' {...props} />
+      <Table variant="simple" size="sm" {...props} />
     </TableContainer>
   ),
   tr: (props: object) => <Tr {...props} />,

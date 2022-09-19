@@ -16,7 +16,13 @@ const LecturesPage = ({ data }) => {
       <Container maxWidth={{ md: "90%", sm: "100%" }} mb="3em">
         <Accordion allowToggle>
           {lectures.map((lecture: Lecture, index: number) => {
-            return <LectureItem lecture={lecture} index={index} key={'lecture-' + index} />;
+            return (
+              <LectureItem
+                lecture={lecture}
+                index={index}
+                key={"lecture-" + index}
+              />
+            );
           })}
         </Accordion>
       </Container>

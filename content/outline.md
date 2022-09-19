@@ -4,6 +4,7 @@ title: Course Outline
 ---
 
 # Course Objectives
+
 Web technologies dominate the tech scene - the big names like Amazon, Netflix, Google, etc... got its name through
 the browser. Most technology startups nowadays are also built on web technologies, too, as a result, Full Stack
 Software Developers are among the most sought out jobs in the industry. New frameworks, and new technologies come
@@ -16,6 +17,7 @@ fit with ever-growing internet population, and, perhaps, even sustain
 a ["Reddit Hug of Death"](https://en.wikipedia.org/wiki/Slashdot_effect).
 
 # Learning Outcomes
+
 Upon successful completion of this course, students will be able to:
 
 1. Write and debug javascript applications that manipulate the DOM
@@ -26,6 +28,7 @@ Upon successful completion of this course, students will be able to:
 6. Explain and use multiple models for communication between a web server and client
 
 # Prerequisites
+
 Students should be comfortable with working in a unix-style environment from CSCB09, and have a good understanding
 of relational databases in CSCC43. No assumptions are made about your web dev background; all the required concepts will
 be introduced as needed in the course. However, students must be prepared to learn new technologies and frameworks in a
@@ -34,17 +37,18 @@ short amount of time.
 For specific prerequisite requirements see the [UTSC Registrar](https://utsc.calendar.utoronto.ca/course/cscc09h3).
 
 # Course Staff
+
 We encourage you to post questions regarding course materials and assignments on Slack. However, if you need
 extended support, the course staff will hold office hours.
 
 |              | Office Hours                    | Location | Contact               |
-|--------------|---------------------------------|----------|-----------------------|
+| ------------ | ------------------------------- | -------- | --------------------- |
 | Cho Yin Yong | Tuesday 7-8pm or by appointment | IC402    | Slack only (no email) |
 
-
 # Course Timing
+
 |         | Time              | Location | Instructor   |
-|---------|-------------------|----------|--------------|
+| ------- | ----------------- | -------- | ------------ |
 | LEC01   | Tuesday 5-7pm     | HW216    | Cho Yin Yong |
 | LEC02   | Wednesday 10-12pm | SW143    | Cho Yin Yong |
 | PRA0001 | Monday 9-11am     | BV473    |              |
@@ -53,10 +57,10 @@ extended support, the course staff will hold office hours.
 | PRA0004 | Friday 11am-1pm   | BV473    |              |
 | PRA0005 | Tuesday 10am-12pm | BV473    |              |
 
-
 # Course Information
+
 - [The course website and its Github repository](https://github.com/choyiny/cscc09.com)
-  
+
 One of the nice things about using Github for the course website is that you can contribute to the course website.
 If you see something on the course website that should be fixed, or want to improve the UI, please feel free to submit
 a pull request.
@@ -94,8 +98,8 @@ The weighting of course work is set as:
 <u>Marks of at least 50% on the project AND at least 50% on the final exam are required to pass the course. If you
 receive less than 50% on either the project or the final exam, your overall course grade will be capped at 47.</u>
 
-
 # Submission and Grading Policy
+
 For each piece of work done for this class (either a lab, an assignment or the project), the student or the team will
 be required to submit the source code on the Github repository (student repository for individual work, team repository
 for the project).
@@ -104,7 +108,7 @@ For group work, the instructor reserves the right to assign different grades to 
 their individual contributions made to the team repository.
 
 For your work to be graded, it must meet the minimum standards of a professional computer scientist. All files
-required to build the program must be committed to the repository, and the program must work. Last minute difficulties 
+required to build the program must be committed to the repository, and the program must work. Last minute difficulties
 with git can easily be avoided by ensuring all files are added to the repository well before the deadline, and that you
 know how to commit them. Your submission may receive a grade of 0, if we cannot get any part of it to work.
 
@@ -121,6 +125,7 @@ mis-marked. To request a remark, please contact your TA. Requests must be submit
 being returned.
 
 # Academic Integrity
+
 You are expected to comply with the [Code of Behaviour on Academic Matters](https://governingcouncil.utoronto.ca/secretariat/policies/code-behaviour-academic-matters-july-1-2019).
 
 Assignment solutions must be prepared individually, except where an assignment handout allows working with a partner.
@@ -158,10 +163,12 @@ Dean has imposed penalties for code violations that range from a mark of zero on
 suspension from the University.
 
 # Accessibility Needs
+
 The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have
 any accessibility concerns about the course, the classroom or course materials, please contact [AccessAbility Services](https://www.utsc.utoronto.ca/ability/welcome-accessability-services)
 as soon as possible.
 
 # Credits
+
 Thank you Professor [Thierry Sans](https://thierrysans.me) for providing amazing course material for me to run this
 course.

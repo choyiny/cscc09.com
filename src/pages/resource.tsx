@@ -6,7 +6,7 @@ import { components } from "../components/mdx";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import { Container } from "@chakra-ui/react";
-import {graphql} from "gatsby";
+import { graphql } from "gatsby";
 
 const ResourcesPage = ({ data }) => {
   return (
@@ -27,7 +27,6 @@ const ResourcesPage = ({ data }) => {
 
 export default ResourcesPage;
 
-
 export const query = graphql`
   query ResourcesQuery {
     mdx(slug: { eq: "resources" }) {
@@ -38,4 +37,3 @@ export const query = graphql`
     }
   }
 `;
-

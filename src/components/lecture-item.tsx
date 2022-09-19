@@ -13,7 +13,7 @@ import {
   Grid,
 } from "@chakra-ui/react";
 import { LinkCard } from "./link-card";
-import { useLocation } from '@reach/router';
+import { useLocation } from "@reach/router";
 
 /**
  * Return true if the lecture is close enough to the number of days from today.
@@ -22,8 +22,8 @@ function isCloseEnough(dateString: string, days: number) {
   // debug mode!
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const debugDate: string = params.get('preview') || null;
-  const today = debugDate ? new Date(debugDate): new Date();
+  const debugDate: string = params.get("preview") || null;
+  const today = debugDate ? new Date(debugDate) : new Date();
   const d = new Date(dateString);
   return (d - today) / (1000 * 60 * 60 * 24) < days;
 }
@@ -37,16 +37,16 @@ export default function LectureItem({ lecture }) {
             {lecture.date} - {lecture.title}
           </Box>
           <HStack spacing={1}>
-            {lecture.lab && (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) && (
-              <Tag colorScheme="yellow">
-                Lab: {lecture.lab.title}
-              </Tag>
-            )}
-            {lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && (
-              <Tag colorScheme="orange">
-                Assignment: {lecture.assignment.title}
-              </Tag>
-            )}
+            {lecture.lab &&
+              (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) && (
+                <Tag colorScheme="yellow">Lab: {lecture.lab.title}</Tag>
+              )}
+            {lecture.assignment &&
+              isCloseEnough(lecture.assignment.dueDate, 14) && (
+                <Tag colorScheme="orange">
+                  Assignment: {lecture.assignment.title}
+                </Tag>
+              )}
             {lecture.project && (
               <Tag colorScheme="red">Project: {lecture.project.title}</Tag>
             )}
@@ -69,22 +69,30 @@ export default function LectureItem({ lecture }) {
               backgroundColor="blue.500"
             />
           )}
-          {lecture.lab && (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) && lecture.lab.link && (
-            <LinkCard
-              name={"Lab: " + lecture.lab.title}
-              description={"Show your completed lab to the TA during your practical for a grade"}
-              link={lecture.lab.link}
-              backgroundColor="blue.500"
-            />
-          )}
-          {lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && lecture.assignment.link && (
-            <LinkCard
-              name={"Assignment: " + lecture.assignment.title}
-              description={"Due Date: " + lecture.assignment.dueDate + " 11:59pm"}
-              link={lecture.assignment.link}
-              backgroundColor="blue.500"
-            />
-          )}
+          {lecture.lab &&
+            (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) &&
+            lecture.lab.link && (
+              <LinkCard
+                name={"Lab: " + lecture.lab.title}
+                description={
+                  "Show your completed lab to the TA during your practical for a grade"
+                }
+                link={lecture.lab.link}
+                backgroundColor="blue.500"
+              />
+            )}
+          {lecture.assignment &&
+            isCloseEnough(lecture.assignment.dueDate, 14) &&
+            lecture.assignment.link && (
+              <LinkCard
+                name={"Assignment: " + lecture.assignment.title}
+                description={
+                  "Due Date: " + lecture.assignment.dueDate + " 11:59pm"
+                }
+                link={lecture.assignment.link}
+                backgroundColor="blue.500"
+              />
+            )}
           {lecture.project && (
             <LinkCard
               name={"Project: " + lecture.project.title}
