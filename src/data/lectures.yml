@@ -1,119 +1,116 @@
 - lectures:
     - title: HTML/CSS
       description: Understand how to create layouts for websites.
-      googleSlides: https://docs.google.com/presentation/d/1plm0goqBu8hQyn4yWP723uSsXD6d3jr447tTtg4HkzA
-      date: 2022-05-10
+      googleSlides: https://cscc09.com
+      date: 2023-01-09
     - title: Javascript
+      date: 2023-01-16
       description: Programatically manipulate the Document Object Model (DOM)
-      googleSlides: https://docs.google.com/presentation/d/126tNEVu6uJ16AR_3xpEeQS4webgyjrblwbwFleIwEgQ
+      googleSlides:
       lab:
         title: HTML/CSS
-        link: https://classroom.github.com/a/08SalzhW
-        dueDate: 2022-05-23
+        link: https://cscc09.com
+        dueDate: 2023-01-23
       assignment:
         title: Frontend
-        link: https://classroom.github.com/a/YPYHGoAe
+        link: https://cscc09.com
         dueDate: 2022-05-30
-      date: 2022-05-17
     - title: Web API
+      date: 2023-01-23
       description: Learn how to create elegant Application Programming Interfaces (API)
-      googleSlides: https://docs.google.com/presentation/d/1BcDfVqGvMDRW2X0znddO9447j8waEtyKRDu4nWEcJyE
+      googleSlides:
       lab:
         title: Javascript
-        link: https://classroom.github.com/a/wh4loy5N
+        link:
         dueDate: 2022-05-31
-      date: 2022-05-24
     - title: Storing Data
+      date: 2023-01-30
       description: How to add state to HTTP, a stateless protocol
-      googleSlides: https://docs.google.com/presentation/d/1qyM_RmRDTiJ4HvEWzajXWWXI1UOgIavKKMommlXu3pY
+      googleSlides:
       lab:
         title: Web API
-        link: https://classroom.github.com/a/4B4YzJ21
+        link:
         dueDate: 2022-06-06
       assignment:
         title: Backend
-        link: https://classroom.github.com/a/7aykiaxl
+        link:
         dueDate: 2022-06-13
-      date: 2022-05-31
     - title: Authentication and Authorization
+      date: 2023-02-06
       description: Authentication and authorization of application users
-      googleSlides: https://docs.google.com/presentation/d/1I5t3kJh7PrrPNYa6o-xNMmdPTz5uPE62TPtoQD0ALTc
+      googleSlides:
       lab:
         title: Storing and Serving Data
-        link: https://classroom.github.com/a/vdcGu_tI
-        dueDate: 2022-06-13
-      date: 2022-06-07
+        link:
+        dueDate:
     - title: Security
+      date: 2023-02-13
       description: Best practices for securing your application to prevent malicious activity
-      googleSlides: https://docs.google.com/presentation/d/1ETKDU6aR1b_yee-1sxsh1k637cQ780t0v0yovNRnQFg
+      googleSlides:
       lab:
         title: Authentication and Authorization
-        link: https://classroom.github.com/a/TvQ-GegZ
-        dueDate: 2022-06-20
+        link:
+        dueDate:
       project:
         title: "Proposal"
         link: "/project"
-        dueDate: 2022-06-29
+        dueDate:
       assignment:
         title: Managing Users
-        link: https://classroom.github.com/a/NO9qfaMh
-        dueDate: 2022-06-27
-      date: 2022-06-14
+        link:
+        dueDate:
     - title: Reading Week
       isHoliday: true
-      date: 2022-06-21
-    - title: Intro to Deployments
-      description: Deploying your own application to the Cloud
-      googleSlides: https://docs.google.com/presentation/d/1fXaFJ5D-CL9-yCJqQJHJzOrtjXVX3I1ogC0M7xbC7xw
+      date: 2023-02-20
+    - title: Real-time web applications and integrating with external services
+      date: 2023-02-27
+      description: How to make your application real-time; working with external services with webhooks
+      googleSlides:
       lab:
         title: Security
         link: https://classroom.github.com/a/npA1XjfN
-        dueDate: 2022-07-06
+        dueDate:
         bonus: true
-      date: 2022-06-28
-    - title: Large Scale Web Applications
-      description: What it takes to maintain a large scale web app
-      googleSlides: https://docs.google.com/presentation/d/1Ok4fbDGd6rDjBEHbdMJtzVzfK2hqF8-sx5cT8w0ku_0
+    - title: Frontend reactive frameworks and the javascript event loop
+      date: 2022-03-06
+      description: Behind the scenes of Javascript, and introduction to reactive frameworks
+      googleSlides:
       lab:
         title: Intro to React
-        link: https://classroom.github.com/a/OnhyRVDb
-        dueDate: 2022-07-13
+        link:
+        dueDate:
         bonus: true
-      date: 2022-07-05
-    - title: Real-time web applications & Using External Services (Guest Lecture - Samuel Zhou)
-      description: Webhooks, websockets and workers
-      googleSlides: https://docs.google.com/presentation/d/1-8WhvsbAlrzP6wWCpZVetDiZYG16Mjte3piHT4gXvY4
+    - title: Intro to Deployments
+      date: 2023-03-13
+      description: What it takes to put your application to the internet; use of VMs.
+      googleSlides:
       lab:
         title: Deploy with Docker
-        link: https://classroom.github.com/a/sZ9urCud
-        dueDate: 2022-07-20
+        link:
+        dueDate:
         bonus: true
       project:
         title: Beta Version
         link: "/project"
-        dueDate: 2022-07-18
-      date: 2022-07-12
-    - title: Advanced Frontend Concepts & Browser Debugging (Guest Lecture - Aleksander Bodurri)
-      description: Smart-dumb components, browser debugging.
-      googleSlides: https://docs.google.com/presentation/d/1YSia5T3MyZooCnJmjh38GQv09n5cp5OT5VD1w61zfJc
+        dueDate: 2022-01-01
+    - title: Guest Lectures - Large Scale web applications
+      date: 2023-03-20
+      description: What it takes to scale to millions of users.
+      googleSlides:
       lab:
         title: CI/CD
-        link: https://classroom.github.com/a/oM3TP8KW
+        link:
         dueDate: 2022-07-20
         bonus: true
-      date: 2022-07-19
-    - title: Documentation and Testing
-      description: Be confident that the application is functioning as expected
-      googleSlides: https://docs.google.com/presentation/d/1FPOshMyLKZLK3dC_FBIXqK0P7m0c9p5DjYNF8TyQyyE/
-      date: 2022-07-26
-    - title: Advanced Web Development
-      description: Web workers, service workers, going offline
-      googleSlides: https://docs.google.com/presentation/d/1HlVKF6LJo5ejGtE3cS7fhzMa-mBiRLGbITBC2UOa7eo/
+    - title: Guest Lectures - Topic TBD
+      date: 2023-03-27
+      description: Topic TBD
+      googleSlides:
+    - title: Exam Review and Final Presentaitons
+      date: 2022-04-03
+      description: Exam Review and final presentations
+      googleSlides:
       project:
         title: Final Version + Presentation
         link: "/project"
-        dueDate: 2022-08-01
-      date: 2022-08-02
-    - title: Project Showcase & Final Exam Review
-      description: A showcase of the best projects this semester and a quick review of the final exam.
-      date: 2022-08-09
+        dueDate:

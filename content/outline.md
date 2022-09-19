@@ -18,17 +18,18 @@ a ["Reddit Hug of Death"](https://en.wikipedia.org/wiki/Slashdot_effect).
 # Learning Outcomes
 Upon successful completion of this course, students will be able to:
 
-1. Describe the components of a web application
-2. Explain the basic architecture of a web server
-3. Compare different frameworks from a software architecture point of view, highlighting similarities and differences
-4. Write and debug programs that manipulate the DOM
-5. Use browser developer tools to analyze and debug a frontend web application
-6. Describe and use multiple models for communication between a web server and client
-7. Build a web application using a variety of JavaScript libraries and frameworks
+1. Write and debug javascript applications that manipulate the DOM
+2. Build a web application using a reactive frontend framework
+3. Use browser developer tools to analyse a debug a frontend web application
+4. Apply design patterns and principles to web applications
+5. Compare different frameworks from a software architecture point of view, highlighting similarities and differences
+6. Explain and use multiple models for communication between a web server and client
 
 # Prerequisites
-No assumptions are made about prior exposure to web development. Students should be comfortable with programming,
-learning new programming languages and frameworks on their own.
+Students should be comfortable with working in a unix-style environment from CSCB09, and have a good understanding
+of relational databases in CSCC43. No assumptions are made about your web dev background; all the required concepts will
+be introduced as needed in the course. However, students must be prepared to learn new technologies and frameworks in a
+short amount of time.
 
 For specific prerequisite requirements see the [UTSC Registrar](https://utsc.calendar.utoronto.ca/course/cscc09h3).
 
@@ -36,18 +37,22 @@ For specific prerequisite requirements see the [UTSC Registrar](https://utsc.cal
 We encourage you to post questions regarding course materials and assignments on Slack. However, if you need
 extended support, the course staff will hold office hours.
 
-|   | Office Hours  | Location  | Contact  |
-|---|---|---|---|
-| Cho Yin Yong | Tuesday 7-8pm or by appointment  |  IC402 | Slack only (no email) |
-| Jacky Zhuang | Thursday 3-4pm | BV473 | Slack only (no email) |
-| Yusuf Khan | Tuesday 2-3pm | IC402 | Slack only (no email) |
+|              | Office Hours                    | Location | Contact               |
+|--------------|---------------------------------|----------|-----------------------|
+| Cho Yin Yong | Tuesday 7-8pm or by appointment | IC402    | Slack only (no email) |
+
 
 # Course Timing
-|   | Time  | Location  | Instructor  |
-|---|---|---|---|
-|  LEC30 | Tuesday 5-7pm  |  IC230 | Cho Yin Yong |
-| PRA3001 | Tuesday 3-5pm  | BV473  | Yusuf Khan  |
-| PRA3002  | Thursday 6-8pm  | BV473  | Jacky Zhuang |
+|         | Time              | Location | Instructor   |
+|---------|-------------------|----------|--------------|
+| LEC01   | Tuesday 5-7pm     | HW216    | Cho Yin Yong |
+| LEC02   | Wednesday 10-12pm | SW143    | Cho Yin Yong |
+| PRA0001 | Monday 9-11am     | BV473    |              |
+| PRA0002 | Monday 3-5pm      | BV473    |              |
+| PRA0003 | Thursday 3-5pm    | BV473    |              |
+| PRA0004 | Friday 11am-1pm   | BV473    |              |
+| PRA0005 | Tuesday 10am-12pm | BV473    |              |
+
 
 # Course Information
 - [The course website and its Github repository](https://github.com/choyiny/cscc09.com)
@@ -58,11 +63,11 @@ a pull request.
 
 - [Slack](https://utsc-cscc09.slack.com/join/signup#/domain-signup)
 
-The slack #summer-2022 channel is the best place to ask technical questions, and general questions about the course, assignments
+The slack #winter-2023 channel is the best place to ask technical questions, and general questions about the course, assignments
 and labs. For personal issues, please private message the instructor. I try to respond by the end of the next day. However, due to
 volume, it may take longer, especially on weekends.
 
-- [Anonymous Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfZMl6DBOKlGzwyIcHkm6Q8ENDr_7i2GjLb1Ov9g9Mmp67VvQ/viewform)
+- [Anonymous Feedback Form](https://forms.gle/edroA3UghZfPWGCT7)
 
 If you have feedback about the course, you can send an anonymous feedback to the course instructor (you also have the
 option of including your name). Since the sender cannot be determined, comments sent through the feedback form are
@@ -87,7 +92,7 @@ The weighting of course work is set as:
 - Final Exam 25%
 
 <u>Marks of at least 50% on the project AND at least 50% on the final exam are required to pass the course. If you
-receive less than 50% on either the project or the final exam, your overall course grade will be capped at 49.</u>
+receive less than 50% on either the project or the final exam, your overall course grade will be capped at 47.</u>
 
 
 # Submission and Grading Policy

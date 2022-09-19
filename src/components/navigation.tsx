@@ -4,7 +4,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -15,7 +14,6 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
-  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -70,7 +68,7 @@ export default function WithSubnavigation() {
             <Text as={"span"} color={"blue.400"} fontWeight={"bold"}>
               CSCC09
             </Text>{" "}
-            Summer 2022
+            Winter 2023
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -298,6 +296,6 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Feedback",
-    href: "https://forms.gle/8vBFEtH87mnbynYM9",
+    href: "https://forms.gle/edroA3UghZfPWGCT7",
   },
 ];
