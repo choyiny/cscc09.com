@@ -50,30 +50,33 @@ These are example project ideas that scored very well in the past:
 These are some examples that were overdone in the past and are not so interesting:
 - Collaborative whiteboard
 - Collaborative text editor
+- Kahoot clone (this depends!)
+
+A good idea often comes from existing apps - the most interesting application you've seen out there is probably
+something you could do!
 
 # Syllabus
-The project comes in 4 deliverables:
-
-| Deliverable   | Weight |
-|---------------|--------|
-| Proposal      | 5%     |
-| Alpha Version | 5%     |
-| Beta version  | 10%    |
-| Final Version | 80%    |
-
-
-# Deliverables
-All team members must put their best effort to contribute to the project. **The instructor reserves the right to assign
+The project comes in 6 parts. All team members must put their best effort to contribute to the project. **The instructor reserves the right to assign
 different grades to each of the team members based on their individual contributions on Github**.
 
-# Proposal (5%)
+| Deliverable                | Weight         |
+|----------------------------|----------------|
+| Proposal                   | 5%             |
+| Alpha Version              | 5%             |
+| Beta Version               | 10%            |
+| Final Version              | 75%            |
+| Video Demo                 | 5%             |
+| Final Lecture Presentation | up to 5% bonus |
+
+
+# Proposal (5%) - Github and Gradescope
 You must register your team on [Github](https://classroom.github.com/a/ya3RGBPr) by the deadline. After registration,
 each team will be assigned a new private Github repository for the project. By the project proposal
 deadline, the team should have pushed the proposal to their project repository and **submit the repository to Gradescope**.
 The proposal will take the form of a `README.md` file at the root of your project repository on Github.
 This file should be properly formatted in markdown.
 
-To receive full credits, the proposal should contain the following information:
+The proposal should contain the following information:
 
 - Project title and team name
 - Your focus (frontend focused or backend focused)
@@ -82,20 +85,20 @@ To receive full credits, the proposal should contain the following information:
 - An explanation on how you will fulfil the core requirements and additional requirements of your chosen stream
 - What you aim to complete for the alpha version, beta version, and final version.
 
-# Alpha Version (5%)
+# Alpha Version (5%) - Github
 You must schedule a 15-minute meeting with a TA. To receive full credit, demonstrate to the TA you have sufficient
 progress towards a final product. This meeting is also an opportunity to raise any concerns about the team.
 
 At this point, all your code should be pushed to `main` branch on Github.
 
-# Beta Version (10%)
+# Beta Version (10%) - Github
 You must schedule a 15-minute meeting with an assigned industry expert. During the meeting, you will demonstrate
 a majority of features completed. You will be graded from 1-10 on how good this project is if it was considered in
 a hiring decision. (1 - will not hire, 10 - definitely hire)
 
 At this point, all your code should be pushed to `main` branch on Github.
 
-# Final Version (80%)
+# Final Version (75%) - Github and Gradescope
 You must push everything to `main` branch on Github, and also submit the code through Gradescope.
 
 You must add the application's deployed URL to `README.md`.
@@ -103,13 +106,18 @@ You must add the application's deployed URL to `README.md`.
 Your application must remain available throughout the marking period, which is 2 weeks after the final version deadline.
 If the application is not deployed, you will not receive credit for the final version.
 
-# Presentation
-You are going to take a video demoing your app. This video must 3 min long (+-20 seconds). It should show your web app
-(no slides, no code) and the soundtrack should be you explaining what you are doing on screen.
+# Video Demo (5%) - Github and Gradescope
+Record a 3-minute-long video demonstrating the core features of your web application. You should record the video as if
+it was part of a hiring process.
 
-Upload your video to Youtube and include it in `README.md`
+Do not show slides, do not show code. Do not spend too long on unimportant features such as login/signup.
 
-Do not spend too long on unimportant features such as login/signup, and show the most impressive features first.
+Upload your video to Youtube and include it in `README.md`. The presentation is going to determine who gets to present
+at the final lecture.
+
+# Final Lecture Presentation
+The top projects of this course will be selected to present in the final lecture to showcase to the entire class.
+Industry experts will be invited as judges to select the top 3 projects, which will get a bonus attached to their project.
 
 # Recommendations
 Here are some key recommendations to consider:

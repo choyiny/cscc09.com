@@ -116,12 +116,12 @@ one of the instructors immediately. You will need to have a properly completed I
 registered doctor in order to be given special consideration.
 
 If a piece of work has been mis-marked or if you believe the rubric used to evaluate the work is not appropriate,
-you may request a re-mark. For a re-mark to succeed, you must clearly and concisely express what you believe was
-mis-marked. To request a re-mark, please contact your TA. Requests must be submitted within 1 week of the marks
+you may request a remark. For a remark to succeed, you must clearly and concisely express what you believe was
+mis-marked. To request a remark, please contact your TA. Requests must be submitted within 1 week of the marks
 being returned.
 
 # Academic Integrity
-You are expected to comply with the Code of Behaviour on Academic Matters.
+You are expected to comply with the [Code of Behaviour on Academic Matters](https://governingcouncil.utoronto.ca/secretariat/policies/code-behaviour-academic-matters-july-1-2019).
 
 Assignment solutions must be prepared individually, except where an assignment handout allows working with a partner.
 Note that working with a partner may be restricted to just part of an assignment, such as programming task, whereas the
@@ -146,8 +146,8 @@ violation of the UTSC Academic Code whether you copy someone else’s work or al
 These rules are meant to ensure that all students understand their solutions well enough to prepare the solutions
 themselves. If challenged you must be able to reproduce and explain your work.
 
-You are not allowed to ask for help outside of the course. Asking for help anywhere else online or in private
-chat groups (unless the private group chat was setup between the group members of the same group project) will be
+You are not allowed to ask for help outside the course. Asking for help anywhere else online or in private
+chat groups (unless the private group chat was set up between the group members of the same group project) will be
 considered as unauthorized help.
 
 The course staff reserves the right to use code and text analysis tools to compare your submission with others to verify
@@ -159,9 +159,9 @@ suspension from the University.
 
 # Accessibility Needs
 The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have
-any accessibility concerns about the course, the classroom or course materials, please contact AccessAbility Services
-as soon as possible: https://www.utsc.utoronto.ca/ability/welcome-accessability-services
+any accessibility concerns about the course, the classroom or course materials, please contact [AccessAbility Services](https://www.utsc.utoronto.ca/ability/welcome-accessability-services)
+as soon as possible.
 
 # Credits
-Thank you Professor [Thierry Sans](https://thierrysans.me) for providing amazing Course Material for me to run this
+Thank you Professor [Thierry Sans](https://thierrysans.me) for providing amazing course material for me to run this
 course.

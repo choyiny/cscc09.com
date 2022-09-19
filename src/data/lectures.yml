@@ -1,11 +1,15 @@
 - lectures:
-    - title: HTML/CSS
-      description: Understand how to create layouts for websites.
+    - title: Intro to Web Dev, HTML/CSS
+      description:
+        An introduction to web development and its evolution; How to succeed in this course; A quick (re)introduction
+        to HTML and CSS - how to create nice layouts.
       googleSlides: https://cscc09.com
       date: 2023-01-09
     - title: Javascript
       date: 2023-01-16
-      description: Programatically manipulate the Document Object Model (DOM)
+      description:
+        Learn how to programatically manipulate the Document Object Model (DOM) through Javascript; common
+        coding practices when working with the language; limitations of Javascript running in the browser.
       googleSlides:
       lab:
         title: HTML/CSS
@@ -14,101 +18,116 @@
       assignment:
         title: Frontend
         link: https://cscc09.com
-        dueDate: 2022-05-30
+        dueDate: 2023-01-30
     - title: Web API
       date: 2023-01-23
-      description: Learn how to create elegant Application Programming Interfaces (API)
+      description:
+        Create elegant RESTful Application Programming Interfaces (API) with Express.js; Breaking down the HTTP
+        request; Using Javascript to make HTTP requests on the browser without reloading.
       googleSlides:
       lab:
         title: Javascript
         link:
-        dueDate: 2022-05-31
+        dueDate: 2023-01-30
     - title: Storing Data
       date: 2023-01-30
-      description: How to add state to HTTP, a stateless protocol
+      description:
+        Determine the best way of storing application data; Storing and serving images; Using ORMs in backend code;
+        Learn the different methods of pagination and how to properly paginate in the backend; Solving the N+1 problem.
       googleSlides:
       lab:
         title: Web API
         link:
-        dueDate: 2022-06-06
+        dueDate: 2023-02-06
       assignment:
         title: Backend
         link:
-        dueDate: 2022-06-13
+        dueDate: 2023-02-13
+      project:
+        title: "Proposal"
+        link: "/project"
+        dueDate: 2023-02-17
     - title: Authentication and Authorization
       date: 2023-02-06
-      description: Authentication and authorization of application users
+      description:
+        Protect views from unauthorized individuals; A deep dive into the Open Authorization (OAuth) protocol;
+        Learn the differences between authentication and authorization.
       googleSlides:
       lab:
         title: Storing and Serving Data
         link:
-        dueDate:
+        dueDate: 2023-02-13
     - title: Security
       date: 2023-02-13
-      description: Best practices for securing your application to prevent malicious activity
+      description:
+        A demonstration of common exploits of the web, such as XSS, CSRF, SQL Injection, etc. How to protect a web
+        application from these attacks.
       googleSlides:
       lab:
         title: Authentication and Authorization
         link:
-        dueDate:
-      project:
-        title: "Proposal"
-        link: "/project"
-        dueDate:
+        dueDate: 2023-02-27
       assignment:
         title: Managing Users
         link:
-        dueDate:
+        dueDate: 2023-02-27
     - title: Reading Week
       isHoliday: true
       date: 2023-02-20
     - title: Real-time web applications and integrating with external services
       date: 2023-02-27
-      description: How to make your application real-time; working with external services with webhooks
+      description:
+        Technologies to enable real-time features on a web application; integrating with external services through
+        using their API and consuming webhooks.
       googleSlides:
       lab:
         title: Security
         link: https://classroom.github.com/a/npA1XjfN
-        dueDate:
+        dueDate: 2023-03-06
         bonus: true
     - title: Frontend reactive frameworks and the javascript event loop
       date: 2022-03-06
-      description: Behind the scenes of Javascript, and introduction to reactive frameworks
+      description:
+        An introduction to Angular, a frontend web framework; A deep dive into the Javascript event loop and how code
+        is interpreted.
       googleSlides:
-      lab:
-        title: Intro to React
-        link:
-        dueDate:
-        bonus: true
+      project:
+        title: Alpha Version
+        link: "/project"
+        dueDate: 2022-01-01
     - title: Intro to Deployments
       date: 2023-03-13
-      description: What it takes to put your application to the internet; use of VMs.
+      description:
+        Learn how to deploy a web application to the internet through the use of a Virtual Machine (VM) and Docker;
+        Best practices on deployment architecture.
       googleSlides:
       lab:
         title: Deploy with Docker
         link:
-        dueDate:
+        dueDate: 2023-03-20
+        bonus: true
+    - title: Guest Lectures - Large Scale web applications
+      date: 2023-03-20
+      description:
+      googleSlides:
+      lab:
+        title: CI/CD
+        link:
+        dueDate: 2023-03-27
         bonus: true
       project:
         title: Beta Version
         link: "/project"
         dueDate: 2022-01-01
-    - title: Guest Lectures - Large Scale web applications
-      date: 2023-03-20
-      description: What it takes to scale to millions of users.
-      googleSlides:
-      lab:
-        title: CI/CD
-        link:
-        dueDate: 2022-07-20
-        bonus: true
     - title: Guest Lectures - Topic TBD
       date: 2023-03-27
       description: Topic TBD
       googleSlides:
     - title: Exam Review and Final Presentaitons
       date: 2022-04-03
-      description: Exam Review and final presentations
+      description:
+        A summary of what was covered in the past 11-weeks; showcasing the best web application projects developed in
+        this course.
       googleSlides:
       project:
         title: Final Version + Presentation
