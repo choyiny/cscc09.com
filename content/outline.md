@@ -93,7 +93,6 @@ The weighting of course work is set as:
 - Project 40%
 - Final Exam 25%
 
-
 <u>Marks of at least 50% on the project AND at least 50% on the final exam are required to pass the course. If you
 receive less than 50% on either the project or the final exam, your overall course grade will be capped at 47.</u>
 
