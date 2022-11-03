@@ -57,11 +57,11 @@
         title: Storing and Serving Data
         link:
         dueDate: 2023-02-13
-    - title: Security
+    - title: Frontend reactive frameworks and the javascript event loop
       date: 2023-02-13
       description:
-        A demonstration of common exploits of the web, such as XSS, CSRF, SQL Injection, etc. How to protect a web
-        application from these attacks.
+        An introduction to Angular, a frontend web framework; A deep dive into the Javascript event loop and how code
+        is interpreted.
       googleSlides:
       lab:
         title: Authentication and Authorization
@@ -80,17 +80,16 @@
         Technologies to enable real-time features on a web application; integrating with external services through
         using their API and consuming webhooks.
       googleSlides:
-      lab:
-        title: Security
-        link: https://classroom.github.com/a/npA1XjfN
-        dueDate: 2023-03-06
-        bonus: true
-    - title: Frontend reactive frameworks and the javascript event loop
+    - title: Web Application Security
       date: 2022-03-06
       description:
-        An introduction to Angular, a frontend web framework; A deep dive into the Javascript event loop and how code
-        is interpreted.
+        A demonstration of common exploits of the web, such as XSS, CSRF, SQL Injection, etc. How to protect a web
+        application from these attacks.
       googleSlides:
+      lab:
+        title: Security
+        link:
+        dueDate: 2023-03-13
       project:
         title: Alpha Version
         link: "/project"
@@ -123,7 +122,7 @@
       date: 2023-03-27
       description: Topic TBD
       googleSlides:
-    - title: Exam Review and Final Presentaitons
+    - title: Exam Review and Final Presentations
       date: 2022-04-03
       description:
         A summary of what was covered in the past 11-weeks; showcasing the best web application projects developed in

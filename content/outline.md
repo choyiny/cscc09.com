@@ -10,18 +10,17 @@ the browser. Most technology startups nowadays are also built on web technologie
 Software Developers are among the most sought out jobs in the industry. New frameworks, and new technologies come
 every day, making web development more and more accessible to a wider population.
 
-Our goal in this course is the learn the fundamental concepts of web programming, such as the architectures, protocols,
+Our goal in this course is to learn the fundamental concepts of web programming, such as the architectures, protocols,
 languages, and the design patterns. With this knowledge, you will be able to traverse through the most popular frameworks
 out there both in the frontend, and the backend. We will also learn how to maintain a large scale web application to
-fit with ever-growing internet population, and, perhaps, even sustain
-a ["Reddit Hug of Death"](https://en.wikipedia.org/wiki/Slashdot_effect).
+fit with ever-growing internet population, and how to protect your web application against a ["Reddit Hug of Death"](https://en.wikipedia.org/wiki/Slashdot_effect).
 
 # Learning Outcomes
 
 Upon successful completion of this course, students will be able to:
 
 1. Write and debug javascript applications that manipulate the DOM
-2. Build a web application using a reactive frontend framework
+2. Build a web application using a reactive frontend framework like Angular
 3. Use browser developer tools to analyse a debug a frontend web application
 4. Apply design patterns and principles to web applications
 5. Compare different frameworks from a software architecture point of view, highlighting similarities and differences
@@ -29,10 +28,10 @@ Upon successful completion of this course, students will be able to:
 
 # Prerequisites
 
-Students should be comfortable with working in a unix-style environment from CSCB09, and have a good understanding
+Students should be comfortable working in a unix-style environment from CSCB09, and have a good understanding
 of relational databases in CSCC43. No assumptions are made about your web dev background; all the required concepts will
 be introduced as needed in the course. However, students must be prepared to learn new technologies and frameworks in a
-short amount of time.
+short amount of time on their own.
 
 For specific prerequisite requirements see the [UTSC Registrar](https://utsc.calendar.utoronto.ca/course/cscc09h3).
 
@@ -82,10 +81,9 @@ considered public, and they may receive a response at the beginning of class or 
 The numeric marks of labs, assignments, project and final exam will be used to compute a composite numeric score
 that will determine your final letter grade for the course:
 
-- Exercises: Each exercise is meant to be doable within your practical session and is closely related to your
-  assignment. **We will take the best 5 only.**
-- Assignments: Over the term, you will complete 3 individual assignments (worth 10% each).
-- Project: As a team, you will develop a web application of your choice and present it the last week of class.
+- Exercises: Each exercise is closely related to your assignment, and is graded during practicals. **We will take the best 5 only.**
+- Assignments: Over the term, you will complete 3 individual assignments.
+- Project: As a team, you will develop a novel web application by applying concepts learnt in this course.
 - Final Exam: The final exam is comprehensive, 3 hours, and held during the exam period.
 
 The weighting of course work is set as:
@@ -94,6 +92,7 @@ The weighting of course work is set as:
 - Assignments 30%
 - Project 40%
 - Final Exam 25%
+
 
 <u>Marks of at least 50% on the project AND at least 50% on the final exam are required to pass the course. If you
 receive less than 50% on either the project or the final exam, your overall course grade will be capped at 47.</u>
@@ -170,5 +169,5 @@ as soon as possible.
 
 # Credits
 
-Thank you Professor [Thierry Sans](https://thierrysans.me) for providing amazing course material for me to run this
+Many thanks to Professor [Thierry Sans](https://thierrysans.me) for providing me course material for me to run this
 course.
