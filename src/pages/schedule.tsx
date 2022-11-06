@@ -1,39 +1,43 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import { Accordion, Container } from "@chakra-ui/react";
-import LectureItem from "../components/lecture-item";
+import {
+  Box,
+  Tag,
+  Container,
+  Divider,
+  Grid,
+  GridItem,
+  Heading,
+  Text,
+  useColorModeValue, Button, Link
+} from "@chakra-ui/react";
 import { graphql } from "gatsby";
 import Seo from "../components/seo";
+import LectureItem from "../components/lecture-item";
 
 // markup
-const LecturesPage = ({ data }) => {
+const SchedulePage = ({ data }) => {
   const lectures = data.lecturesYaml.lectures;
   return (
     <Layout activePage={"lecture"}>
-      <Seo title={"Course Schedule"} />
-      <Hero title="Course Schedule">Lecture Slides and course work.</Hero>
+      <Seo title={"Lectures"} />
+      <Hero title="Lectures">An outline of what we're going to cover in 12 weeks.</Hero>
       <Container maxWidth={{ md: "90%", sm: "100%" }} mb="3em">
-        <Accordion allowToggle>
-          {lectures.map((lecture: Lecture, index: number) => {
-            return (
-              <LectureItem
-                lecture={lecture}
-                index={index}
-                key={"lecture-" + index}
-              />
-            );
-          })}
-        </Accordion>
+        {lectures.map((lecture: Lecture, index: number) => {
+          return (
+            <LectureItem lecture={lecture} index={index}/>
+          );
+        })}
       </Container>
     </Layout>
   );
 };
 
-export default LecturesPage;
+export default SchedulePage;
 
 export const query = graphql`
-  query Lectures {
+  query Schedule {
     lecturesYaml {
       lectures {
         description

@@ -10,7 +10,7 @@ import {
   Text,
   Link,
   VStack,
-  Grid,
+  Grid, GridItem, Heading, Button, useColorModeValue, Divider, Stack,
 } from "@chakra-ui/react";
 import { LinkCard } from "./link-card";
 import { useLocation } from "@reach/router";
@@ -23,86 +23,98 @@ function isCloseEnough(dateString: string, days: number) {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const debugDate: string = params.get("preview") || null;
+  if (debugDate === 'all') {
+    return true;
+  }
   const today = debugDate ? new Date(debugDate) : new Date();
   const d = new Date(dateString);
   return (d - today) / (1000 * 60 * 60 * 24) < days;
 }
 
-export default function LectureItem({ lecture }) {
+export default function LectureItem({ lecture, index }) {
   return (
-    <AccordionItem isDisabled={lecture.isHoliday}>
-      <h2>
-        <AccordionButton>
-          <Box flex="1" textAlign="left">
-            {lecture.date} - {lecture.title}
+    <Box
+      width={'100%'}
+      p={8}
+      pb={0}
+    >
+      <Grid
+        templateColumns='repeat(8, 1fr)'
+        gap={4}
+      >
+        <GridItem colSpan={1}>
+          <Box display={'flex'} height={'100%'} alignItems={'center'}>
+            <Heading size={'3xl'} >{index + 1}</Heading>
           </Box>
-          <HStack spacing={1}>
-            {lecture.lab &&
-              (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) && (
-                <Tag colorScheme="yellow">Lab: {lecture.lab.title}</Tag>
-              )}
-            {lecture.assignment &&
-              isCloseEnough(lecture.assignment.dueDate, 14) && (
-                <Tag colorScheme="orange">
+        </GridItem>
+        <GridItem colSpan={7}>
+          <Heading size={'xl'}>{lecture.title}</Heading>
+          <Tag> Week of {lecture.date}</Tag>
+          <Text>{lecture.description}</Text>
+          <Stack spacing={4} direction={['column', 'column', 'row']} mt={5}>
+            {
+              lecture.googleSlides && (
+                <Button
+                  px={8}
+                  bg={useColorModeValue('teal.900', 'teal.900')}
+                  color={'white'}
+                  rounded={'md'}
+                  _hover={{
+                    transform: 'translateY(-2px)',
+                    boxShadow: 'lg',
+                  }}
+                  as={Link}
+                  href={lecture.googleSlides}
+                >
+                  Lecture Slides
+                </Button>
+              )
+            }
+            {
+              lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && (
+                <Button
+                  px={8}
+                  bg={useColorModeValue('teal.900', 'teal.900')}
+                  color={'white'}
+                  rounded={'md'}
+                  _hover={{
+                    transform: 'translateY(-2px)',
+                    boxShadow: 'lg',
+                  }}
+                  as={Link}
+                  href={lecture.lab.link}
+                >
+                  Lab: {lecture.lab.title}
+                </Button>
+              )
+            }
+            {
+              lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && (
+                <Button
+                  px={8}
+                  bg={useColorModeValue('teal.900', 'teal.900')}
+                  color={'white'}
+                  rounded={'md'}
+                  _hover={{
+                    transform: 'translateY(-2px)',
+                    boxShadow: 'lg',
+                  }}
+                  as={Link}
+                  href={lecture.assignment.link}
+                >
                   Assignment: {lecture.assignment.title}
-                </Tag>
-              )}
-            {lecture.project && (
-              <Tag colorScheme="red">Project: {lecture.project.title}</Tag>
-            )}
-          </HStack>
-          <AccordionIcon />
-        </AccordionButton>
-      </h2>
-      <AccordionPanel pb={4}>
-        <Text>{lecture.description}</Text>
-        <Grid
-          templateColumns={[`repeat(1, 1fr)`, null, `repeat(3, 1fr)`]}
-          gap={[4, null, 8]}
-          my="1em"
-        >
-          {isCloseEnough(lecture.realDate, 1) && lecture.googleSlides && (
-            <LinkCard
-              name="Lecture Slides"
-              description=""
-              link={lecture.googleSlides}
-              backgroundColor="blue.500"
-            />
-          )}
-          {lecture.lab &&
-            (isCloseEnough(lecture.lab.dueDate, 14) || lecture.lab.bonus) &&
-            lecture.lab.link && (
-              <LinkCard
-                name={"Lab: " + lecture.lab.title}
-                description={
-                  "Show your completed lab to the TA during your practical for a grade"
-                }
-                link={lecture.lab.link}
-                backgroundColor="blue.500"
-              />
-            )}
-          {lecture.assignment &&
-            isCloseEnough(lecture.assignment.dueDate, 14) &&
-            lecture.assignment.link && (
-              <LinkCard
-                name={"Assignment: " + lecture.assignment.title}
-                description={
-                  "Due Date: " + lecture.assignment.dueDate + " 11:59pm"
-                }
-                link={lecture.assignment.link}
-                backgroundColor="blue.500"
-              />
-            )}
-          {lecture.project && (
-            <LinkCard
-              name={"Project: " + lecture.project.title}
-              description={"Due Date: " + lecture.project.dueDate + " 11:59pm"}
-              link={lecture.project.link}
-              backgroundColor="blue.500"
-            />
-          )}
-        </Grid>
-      </AccordionPanel>
-    </AccordionItem>
+                </Button>
+              )
+            }
+          </Stack>
+          {
+            lecture.assignment && isCloseEnough(lecture.assignment.dueDate, 14) && (
+              <Text>Assignment Due Date: {lecture.assignment.dueDate}</Text>
+            )
+          }
+        </GridItem>
+      </Grid>
+      <Divider pt={8}/>
+    </Box>
   );
 }

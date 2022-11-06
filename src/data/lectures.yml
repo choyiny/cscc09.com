@@ -108,6 +108,8 @@
     - title: Guest Lectures - Large Scale web applications
       date: 2023-03-20
       description:
+        This course will go over strategies of maintaining large scale web applications; such as implementing a web
+        caching layer, database migrations, etc.
       googleSlides:
       lab:
         title: CI/CD

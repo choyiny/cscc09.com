@@ -281,8 +281,8 @@ const NAV_ITEMS: Array<NavItem> = [
     to: "/",
   },
   {
-    label: "Course Schedule",
-    to: "/lectures",
+    label: "Schedule",
+    to: "/schedule",
   },
   {
     label: "Team",
