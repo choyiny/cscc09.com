@@ -10,7 +10,9 @@ import {
   GridItem,
   Heading,
   Text,
-  useColorModeValue, Button, Link
+  useColorModeValue,
+  Button,
+  Link,
 } from "@chakra-ui/react";
 import { graphql } from "gatsby";
 import Seo from "../components/seo";
@@ -22,12 +24,12 @@ const SchedulePage = ({ data }) => {
   return (
     <Layout activePage={"lecture"}>
       <Seo title={"Lectures"} />
-      <Hero title="Lectures">An outline of what we're going to cover in 12 weeks.</Hero>
+      <Hero title="Lectures">
+        An outline of what we're going to cover in 12 weeks.
+      </Hero>
       <Container maxWidth={{ md: "90%", sm: "100%" }} mb="3em">
         {lectures.map((lecture: Lecture, index: number) => {
-          return (
-            <LectureItem lecture={lecture} index={index}/>
-          );
+          return <LectureItem lecture={lecture} index={index} />;
         })}
       </Container>
     </Layout>

@@ -2,7 +2,7 @@
   "name": "cscc09",
   "version": "1.0.0",
   "private": true,
-  "description": "cscc09",
+  "description": "Course Website for CSCC09 - Programming on the Web at the University of Toronto Scarborough",
   "author": "Cho Yin Yong",
   "keywords": [
     "gatsby"
@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "npx prettier --write ."
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^2.0.4",
