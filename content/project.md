@@ -12,59 +12,24 @@ final grade.
 
 You must demonstrate knowledge obtained in this class. These are the core requirements.
 
-1. Frontend: Use a reactive frontend framework such as [React](https://reactjs.org), [Angular](https://angular.io), [Vue](https://vuejs.org).
+1. Frontend: Use a reactive frontend framework such as [Angular](https://angular.io), [React](https://reactjs.org), or [Vue](https://vuejs.org).
 2. Backend: Your API must be RESTful where appropriate.
 3. Deployment: Be deployed on a Cloud VM such as a DigitalOcean droplet, AWS Lightsail VM, etc. Do not deploy on Kubernetes, or non VMs like Heroku.
 
-Furthermore, your project must choose 1 of 2 streams to focus on:
+Furthermore, the project must complete at least 3.5 complexity points per team member rounded down.
+(i.e. 7 complexity points for 2 people, 10 complexity points for 3 people)
 
-**Backend Focused**
-
-1. External Provider: Your application must integrate with at least one external provider.
-2. Webhooks: Your application must listen to at least 1 webhook message from an external provider.
-3. Real-time: Your application must have a real-time component associated with it.
-
-**Frontend Focused**
-
-1. PWA: Your web application must work offline, and supports browser based notifications with the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) and Notifications API
-2. CSS: The presentation of the website must be mobile-responsive, and
-3. Novel Browser Feature: Your application must make use of interesting browser APIs such as the
-   [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API), [Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture), or WebRTC.
-
-The grading scheme for the above streams are different. Please choose according to your interests. Also, note that
-this project is not a hackathon project, and you will be graded based on successful application of concepts as learnt
-in this course.
+Note that this project is not a hackathon project, and you will be graded based on successful application of concepts
+as learnt in this course.
 
 # Challenge Factor
+If your team completes less than required complexity points, then your challenge factor will be less than 1.
 
-The course staff acknowledges that some projects will take more time than others. We encourage you to use more
-complex technologies and more complex workflows.
+Your team may optionally decide to do more complexity points, in which case, a bonus may be given based on the depth
+of integration with the technology, up to x1.2. Please state in the `README.md` which complexity points are attempted
+as bonus as they will be evaluated separately.
 
-Therefore your project will receive a challenge factor that ranges between 0.5 and 1.5 that we will use to adjust
-your project final mark. For instance, a challenging project with a challenge factor of 1.2 and a score of 78/100 will
-receive a final mark of 93/100.
-
-These are project ideas that will score **poorly**:
-
-- Implement web based chat
-- Implement another web gallery (or book gallery, or video gallery...)
-
-These are example project ideas that scored very well in the past:
-
-- A VR web based game built on three.js
-- A collaborative development environment, with shell access to the underlying VM. (Github Codespaces clone)
-- A browser based speaker that can sync music across multiple devices with lag considerations
-
-These are some examples that were overdone in the past and are not so interesting:
-
-- Collaborative whiteboard
-- Collaborative text editor
-- Kahoot clone (this depends!)
-
-This is also not a blockchain course - please try not to work on the blockchain.
-
-A good idea often comes from existing apps - the most interesting application you've seen out there is probably
-something you could do!
+For instance, a challenging project with a challenge factor of 1.2 and a score of 78/100 will receive a final mark of 93/100.
 
 # Syllabus
 
@@ -94,8 +59,9 @@ The proposal should contain the following information:
 - Your focus (frontend focused or backend focused)
 - Team members with student numbers
 - Description of the web application
-- An explanation on how you will fulfil the core requirements and additional requirements of your chosen stream
-- What you aim to complete for the alpha version, beta version, and final version.
+- What complexity points will this project contain
+- (optional) What complexity points will be attempted as bonus for the challenge factor 
+- What you aim to complete for the alpha version, beta version, and final version
 
 # Alpha Version (5%) - Github
 

@@ -93,7 +93,7 @@
       project:
         title: Alpha Version
         link: "/project"
-        dueDate: 2022-01-01
+        dueDate: 2023-03-06
     - title: Intro to Deployments
       date: 2023-03-13
       description:
@@ -119,7 +119,7 @@
       project:
         title: Beta Version
         link: "/project"
-        dueDate: 2022-01-01
+        dueDate: 2023-03-20
     - title: Guest Lectures - Topic TBD
       date: 2023-03-27
       description: Topic TBD
@@ -133,4 +133,4 @@
       project:
         title: Final Version + Presentation
         link: "/project"
-        dueDate:
+        dueDate: 2023-04-03
