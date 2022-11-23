@@ -81,7 +81,7 @@ considered public, and they may receive a response at the beginning of class or 
 The numeric marks of labs, assignments, project and final exam will be used to compute a composite numeric score
 that will determine your final letter grade for the course:
 
-- Exercises: Each exercise is closely related to your assignment, and is graded during practicals. **We will take the best 5 only.**
+- Labs: Each lab is closely related to your assignment, and is graded during practicals. **We will take the best 5 only.**
 - Assignments: Over the term, you will complete 3 individual assignments.
 - Project: As a team, you will develop a novel web application by applying concepts learnt in this course.
 - Final Exam: The final exam is comprehensive, 3 hours, and held during the exam period.
