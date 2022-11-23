@@ -101,29 +101,32 @@ export default function LectureItem({ lecture, index }) {
                 </Button>
               )}
             {lecture.project && (
-                <Button
-                  px={8}
-                  bg={useColorModeValue("teal.700", "teal.700")}
-                  color={"white"}
-                  rounded={"md"}
-                  _hover={{
-                    transform: "translateY(-2px)",
-                    boxShadow: "lg",
-                  }}
-                  as={Link}
-                  href={lecture.project.link}
-                >
-                  Project {lecture.project.title}
-                </Button>
-              )}
+              <Button
+                px={8}
+                bg={useColorModeValue("teal.700", "teal.700")}
+                color={"white"}
+                rounded={"md"}
+                _hover={{
+                  transform: "translateY(-2px)",
+                  boxShadow: "lg",
+                }}
+                as={Link}
+                href={lecture.project.link}
+              >
+                Project {lecture.project.title}
+              </Button>
+            )}
           </Stack>
           {lecture.assignment &&
             isCloseEnough(lecture.assignment.dueDate, 14) && (
               <Text>Assignment Due Date: {lecture.assignment.dueDate}</Text>
             )}
           {lecture.project && (
-              <Text>Project {lecture.project.title} Due Date: {lecture.project.dueDate}</Text>
-            )}
+            <Text>
+              Project {lecture.project.title} Due Date:{" "}
+              {lecture.project.dueDate}
+            </Text>
+          )}
         </GridItem>
       </Grid>
       <Divider pt={8} />

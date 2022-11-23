@@ -22,10 +22,10 @@ import LectureItem from "../components/lecture-item";
 const SchedulePage = ({ data }) => {
   const lectures = data.lecturesYaml.lectures;
   return (
-    <Layout activePage={"lecture"}>
-      <Seo title={"Lectures"} />
-      <Hero title="Lectures">
-        An outline of what we're going to cover in 12 weeks.
+    <Layout activePage={"schedule"}>
+      <Seo title={"Schedule"} />
+      <Hero title="Schedule">
+        An outline of what we're going to cover in 12 weeks, as well as assignment and project deadlines.
       </Hero>
       <Container maxWidth={{ md: "90%", sm: "100%" }} mb="3em">
         {lectures.map((lecture: Lecture, index: number) => {

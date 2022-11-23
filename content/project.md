@@ -23,6 +23,7 @@ Note that this project is not a hackathon project, and you will be graded based 
 as learnt in this course.
 
 # Challenge Factor
+
 If your team completes less than required complexity points, then your challenge factor will be less than 1.
 
 Your team may optionally decide to do more complexity points, in which case, a bonus may be given based on the depth
@@ -60,7 +61,7 @@ The proposal should contain the following information:
 - Team members with student numbers
 - Description of the web application
 - What complexity points will this project contain
-- (optional) What complexity points will be attempted as bonus for the challenge factor 
+- (optional) What complexity points will be attempted as bonus for the challenge factor
 - What you aim to complete for the alpha version, beta version, and final version
 
 # Alpha Version (5%) - Github
