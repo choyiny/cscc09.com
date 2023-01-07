@@ -16,8 +16,8 @@ You must demonstrate knowledge obtained in this class. These are the core requir
 2. Backend: Your API must be RESTful where appropriate.
 3. Deployment: Be deployed on a Cloud VM such as a DigitalOcean droplet, AWS Lightsail VM, etc. Do not deploy on Kubernetes, or non VMs like Heroku.
 
-Furthermore, the project must complete at least 3.5 complexity points per team member rounded down.
-(i.e. 7 complexity points for 2 people, 10 complexity points for 3 people)
+Furthermore, the project must complete at least 3 complexity points per team member.
+(i.e. 6 complexity points for 2 people, 9 complexity points for 3 people)
 
 Note that this project is not a hackathon project, and you will be graded based on successful application of concepts
 as learnt in this course.

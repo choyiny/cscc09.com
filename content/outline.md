@@ -38,11 +38,17 @@ For specific prerequisite requirements see the [UTSC Registrar](https://utsc.cal
 # Course Staff
 
 We encourage you to post questions regarding course materials and assignments on Slack. However, if you need
-extended support, the course staff will hold office hours.
+extended support, the course staff will hold office hours. Please contact course staff via Slack direct message,
+we will not respond to any emails.
 
-|              | Office Hours                    | Location | Contact               |
-| ------------ | ------------------------------- |----------| --------------------- |
-| Cho Yin Yong | Tuesday 7-8pm or by appointment | IC 402   | Slack only (no email) |
+|                   | Office Hours                    | Location |
+|-------------------|---------------------------------|----------|
+| Cho Yin Yong      | Tuesday 7-8pm or by appointment | IC 402   |
+| Mohamed Halat     | Monday 2-3pm                    | IC 402   |
+| Ahmed Halat       | Tuesday 10-11am                 | IC 402   |
+| Winson Yuan       | Wednesday 2-3pm                 | IC 402   |
+| Navinn Ravindaran | Thursday 4-5pm                  | IC 402   |
+| Colin Lin         | Friday 12-1pm                   | IC 402   |
 
 # Course Timing
 
