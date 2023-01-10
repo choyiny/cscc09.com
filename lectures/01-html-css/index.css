@@ -1,0 +1,10 @@
+h1 {
+  /* text color to red */
+  color: red;
+}
+
+/* select h1 with the class header */
+h1.header {
+  /* text color to blue */
+  color: red;
+}
