@@ -59,3 +59,12 @@ h2 {
   height: 100px;
   border: 1px solid white;
 }
+
+.search-bar {
+  padding: 12px;
+  margin: 10px 0px;
+  width: 348px;
+  background-color: rgb(118, 118, 118);
+  color: white;
+  border-radius: 15px;
+}

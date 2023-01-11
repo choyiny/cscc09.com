@@ -1,10 +1,15 @@
 h1 {
   /* text color to red */
   color: red;
+  background-color: blue;
+  padding: 15px 10px;
+  margin: 30px;
+  /* add a 2 pixel border that is dotted and in yellow */
+  border: 5px dotted yellow;
 }
 
 /* select h1 with the class header */
-h1.header {
-  /* text color to blue */
-  color: red;
-}
+/* h1.header { */
+/* text color to blue */
+/* color: red; */
+/* } */

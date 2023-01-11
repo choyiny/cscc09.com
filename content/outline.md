@@ -42,7 +42,7 @@ extended support, the course staff will hold office hours. Please contact course
 we will not respond to any emails.
 
 |                   | Office Hours                    | Location |
-|-------------------|---------------------------------|----------|
+| ----------------- | ------------------------------- | -------- |
 | Cho Yin Yong      | Tuesday 7-8pm or by appointment | IC 402   |
 | Mohamed Halat     | Monday 2-3pm                    | IC 402   |
 | Ahmed Halat       | Tuesday 10-11am                 | IC 402   |
@@ -53,14 +53,14 @@ we will not respond to any emails.
 # Course Timing
 
 |         | Time              | Location | Instructor        |
-|---------|-------------------|---------|-------------------|
-| LEC01   | Tuesday 5-7pm     | HW 216  | Cho Yin Yong      |
-| LEC02   | Wednesday 10-12pm | SW 143  | Cho Yin Yong      |
-| PRA0002 | Monday 3-5pm      | IC 308  | Winson Yuan       |
-| PRA0003 | Tuesday 1-3pm     | IC 308  | Ahmed Halat       |
-| PRA0004 | Tuesday 3-5pm     | IC 308  | Colin Lin         |
-| PRA0005 | Wednesday 1-3pm   | IC 308  | Mohamed Halat     |
-| PRA0006 | Friday 1-3pm      | IC 308  | Navinn Ravindaran |
+| ------- | ----------------- | -------- | ----------------- |
+| LEC01   | Tuesday 5-7pm     | HW 216   | Cho Yin Yong      |
+| LEC02   | Wednesday 10-12pm | SW 143   | Cho Yin Yong      |
+| PRA0002 | Monday 3-5pm      | IC 308   | Winson Yuan       |
+| PRA0003 | Tuesday 1-3pm     | IC 308   | Ahmed Halat       |
+| PRA0004 | Tuesday 3-5pm     | IC 308   | Colin Lin         |
+| PRA0005 | Wednesday 1-3pm   | IC 308   | Mohamed Halat     |
+| PRA0006 | Friday 1-3pm      | IC 308   | Navinn Ravindaran |
 
 # Course Information
 
