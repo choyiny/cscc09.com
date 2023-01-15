@@ -27,6 +27,6 @@ Enjoy the course!
 
 ## 👋 Ongoing Challenges
 
-- Interesting and original Javascript snippets! Submit a PR and put your snippet under `lectures/02-javascript`.
+- Interesting and original Javascript snippets! Submit a PR and put your snippet under `cool_javascript_snippets/`.
 - Find and fix typos.
 - Improve accessibility on the website and make it more student friendly.

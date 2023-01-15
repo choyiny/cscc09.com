@@ -10,7 +10,7 @@
       description:
         Learn how to programatically manipulate the Document Object Model (DOM) through Javascript; common
         coding practices when working with the language; limitations of Javascript running in the browser.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/1YoFt4fet-O1BaVeTS1qOMtslcrtdxoYrLIR5bpcLlsk/edit?usp=sharing
       lab:
         title: HTML/CSS
         link: https://classroom.github.com/a/vhxgVyas
@@ -27,7 +27,7 @@
       googleSlides:
       lab:
         title: Javascript
-        link:
+        link: https://classroom.github.com/a/U7PQWC_5
         dueDate: 2023-01-30
     - title: Storing Data
       date: 2023-01-30
