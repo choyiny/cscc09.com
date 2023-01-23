@@ -49,3 +49,8 @@
   width: 100%;
   margin-bottom: 1em;
 }
+
+.loading-text {
+  text-align: center;
+  margin-top: 2em;
+}

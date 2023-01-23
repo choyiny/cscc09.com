@@ -22,7 +22,7 @@
     document
       .querySelector("#dont-click-me")
       .addEventListener("click", function () {
-        console.log("You clicked me!")
+        console.log("You clicked me!");
       });
 
     // form submit listener

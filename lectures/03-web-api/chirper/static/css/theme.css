@@ -40,6 +40,11 @@ h2 {
   cursor: pointer;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .btn-transparent {
   background-color: rgba(0, 0, 0, 0);
   color: white;

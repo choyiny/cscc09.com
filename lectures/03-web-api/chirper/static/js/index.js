@@ -30,13 +30,13 @@
         e.preventDefault();
         const formData = new FormData(e.target);
         const formProps = Object.fromEntries(formData);
-        ChirpService.editChirp(chirp.id, formProps.chirp);
-        // update DOM
-        newChirp.querySelector(".edit-chirp-form").classList.add("hidden");
-        newChirp.querySelector(".edit").classList.remove("hidden");
-        newChirp.querySelector(".chirp-content").classList.remove("hidden");
-        newChirp.querySelector(".chirp-content").innerHTML = formProps.chirp;
-        // update();
+        ChirpApiService.editChirp(chirp.id, formProps.chirp).then(() => {
+          // update DOM
+          newChirp.querySelector(".edit-chirp-form").classList.add("hidden");
+          newChirp.querySelector(".edit").classList.remove("hidden");
+          newChirp.querySelector(".chirp-content").classList.remove("hidden");
+          newChirp.querySelector(".chirp-content").innerHTML = formProps.chirp;
+        });
       });
 
     return newChirp;
@@ -46,10 +46,13 @@
     // reset chirps section
     document.querySelector(".chirps").innerHTML = "";
     // loop through chirps and append to DOM
-    ChirpService.getChirps().forEach(function (chirp) {
-      const newChirp = createChirpElement(chirp);
-      // prepend to DOM
-      document.querySelector(".chirps").prepend(newChirp);
+    ChirpApiService.getChirps().then((response) => {
+      const chirps = response.chirps;
+      chirps.forEach(function (chirp) {
+        const newChirp = createChirpElement(chirp);
+        // prepend to DOM
+        document.querySelector(".chirps").prepend(newChirp);
+      });
     });
   }
 
@@ -61,11 +64,16 @@
       .querySelector("#dont-click-me")
       .addEventListener("click", function () {
         // randomly remove a chirp
-        const chirps = ChirpService.getChirps();
-        const randomIndex = Math.floor(Math.random() * chirps.length);
-        document
-          .querySelector(".chirps [data-id='" + randomIndex + "']")
-          .remove();
+        ChirpApiService.getChirps().then((response) => {
+          const chirps = response.chirps;
+          const randomIndex = Math.floor(Math.random() * chirps.length);
+          const removeChirpId = chirps[randomIndex].id;
+          ChirpApiService.deleteChirp(removeChirpId).then((res) => {
+            document
+              .querySelector(".chirps [data-id='" + removeChirpId + "']")
+              .remove();
+          });
+        });
       });
 
     // form submit listener
@@ -82,8 +90,9 @@
           return;
         }
 
-        ChirpService.addChirp(formProps.chirp);
-        update();
+        ChirpApiService.addChirp(formProps.chirp).then(() => {
+          update();
+        });
 
         // clear input field
         e.target.reset();
