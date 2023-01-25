@@ -26,7 +26,7 @@ const chirps = [];
 app.post("/chirps", function (req, res, next) {
   const chirp = new Chirp(req.body);
   chirps.unshift(chirp);
-  return res.json(chirp);
+  return res.status(200).json(chirp);
 });
 
 app.get("/chirps", function (req, res, next) {

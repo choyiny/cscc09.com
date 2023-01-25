@@ -101,15 +101,15 @@
         }
 
         ChirpApiService.addChirp(formProps.chirp)
-          .then(() => {
-            return update();
-          })
+          .then(() => update())
           .then(() => {
             // clear input field
             e.target.reset();
             // enable submit button
             e.target.querySelector(".chirp-submit").disabled = false;
           });
+
+        // more lines of code here
       });
   });
 })();

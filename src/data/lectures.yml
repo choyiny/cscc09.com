@@ -24,7 +24,7 @@
       description:
         Create elegant RESTful Application Programming Interfaces (API) with Express.js; Breaking down the HTTP
         request; Using Javascript to make HTTP requests on the browser without reloading.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/1nBrExanISldyU6Kr1c4ygu0sP4IZ4dVr-IlgEaG4tms/edit
       lab:
         title: Javascript
         link: https://classroom.github.com/a/U7PQWC_5
