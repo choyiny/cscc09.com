@@ -26,11 +26,12 @@ const chirps = [];
 app.post("/chirps", function (req, res, next) {
   const chirp = new Chirp(req.body);
   chirps.unshift(chirp);
-  return res.status(200).json(chirp);
+  return res.json(chirp);
 });
 
 app.get("/chirps", function (req, res, next) {
   return res.json({
+    total: chirps.length,
     chirps,
   });
 });

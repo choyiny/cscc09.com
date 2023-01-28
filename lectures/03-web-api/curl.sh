@@ -1,0 +1,2 @@
+# make a curl POST request to https://v2.jokeapi.dev/joke/Programming with request JSON {"test": "test"}
+curl -X POST -H "Content-Type: application/json" -d '{"test": "test"}' https://v2.jokeapi.dev/joke/Programming

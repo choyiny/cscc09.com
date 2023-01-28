@@ -101,7 +101,7 @@
         }
 
         ChirpApiService.addChirp(formProps.chirp)
-          .then(() => update())
+          .then(update)
           .then(() => {
             // clear input field
             e.target.reset();
