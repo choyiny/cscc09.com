@@ -7,7 +7,7 @@ import path from "path";
 
 const PORT = 3000;
 export const app = express();
-const upload = multer({ dest: 'uploads/' })
+const upload = multer({ dest: "uploads/" });
 app.use(bodyParser.json());
 
 app.use(express.static("static"));
@@ -20,8 +20,8 @@ try {
   console.error("Unable to connect to the database:", error);
 }
 
-app.post("/chirps", upload.single('image'), async (req, res, next) => {
-  // INSERT INTO Chirp (content, imageMetadata, ChirpId) VALUES (req.body.content, req.file, req.body.ChirpId)
+app.post("/chirps", upload.single("image"), async (req, res, next) => {
+  // INSERT INTO chirps (content, imageMetadata, ChirpId) VALUES (req.body.content, req.file, req.body.ChirpId)
   const chirp = await Chirp.create({
     content: req.body.content,
     imageMetadata: req.file,
@@ -31,7 +31,17 @@ app.post("/chirps", upload.single('image'), async (req, res, next) => {
 });
 
 app.get("/chirps", async (req, res, next) => {
-  // const chirps = await Chirp.findAll({ limit: 20, where: { ChirpId: null }})
+  // rewrite above to order by createdAt desc
+  // const chirps = await Chirp.findAll({
+  //   limit: 20,
+  //   where: {
+  //     // only get top level chirps
+  //     ChirpId: null,
+  //   },
+  //   order: [
+  //     ['createdAt', 'DESC']
+  //   ]
+  // });
   // return res.json({ chirps })
   // Demonstration of N+1 problem
   // return res.json({
@@ -47,12 +57,13 @@ app.get("/chirps", async (req, res, next) => {
   //   }))
   // });
   const chirps = await Chirp.findAll({
-    limit: 5,
+    limit: 10,
     where: {
       // only get top level chirps
       ChirpId: null,
     },
-    include: Chirp
+    order: [["createdAt", "DESC"]],
+    include: Chirp,
   });
   return res.json({ chirps });
 });
@@ -87,7 +98,7 @@ app.patch("/chirps/:id/", async (req, res, next) => {
   return res.json(chirp);
 });
 
-app.delete("/chirps/:id", async (req, res, next) => {
+app.delete("/chirps/:id/", async (req, res, next) => {
   const chirp = await Chirp.findByPk(req.params.id);
   if (!chirp) {
     return res

@@ -32,25 +32,29 @@
     }
 
     // clicking on edit
-    newChirp.querySelector(".edit-button").addEventListener("click", function () {
-      newChirp.querySelector(".edit-chirp-form").classList.remove("hidden");
-      newChirp.querySelector(".edit-chirp").value = chirp.content;
-      newChirp.querySelector(".actions").classList.add("hidden");
-      newChirp.querySelector(".chirp-content").classList.add("hidden");
-    });
+    newChirp
+      .querySelector(".edit-button")
+      .addEventListener("click", function () {
+        newChirp.querySelector(".edit-chirp-form").classList.remove("hidden");
+        newChirp.querySelector(".edit-chirp").value = chirp.content;
+        newChirp.querySelector(".actions").classList.add("hidden");
+        newChirp.querySelector(".chirp-content").classList.add("hidden");
+      });
 
     // clicking on view replies
-    newChirp.querySelector(".view-replies").addEventListener("click", function () {
-      const replies = chirp.Chirps;
-      const repliesContainer = document.createElement("div");
-      repliesContainer.classList.add("replies-container");
-      replies.forEach((reply) => {
-        const replyComponent = createChirpComponent(reply);
-        repliesContainer.appendChild(replyComponent);
+    newChirp
+      .querySelector(".view-replies")
+      .addEventListener("click", function () {
+        const replies = chirp.Chirps;
+        const repliesContainer = document.createElement("div");
+        repliesContainer.classList.add("replies-container");
+        replies.forEach((reply) => {
+          const replyComponent = createChirpComponent(reply);
+          repliesContainer.appendChild(replyComponent);
+        });
+        newChirp.querySelector(".replies").innerHTML = "";
+        newChirp.querySelector(".replies").appendChild(repliesContainer);
       });
-      newChirp.querySelector(".replies").innerHTML = "";
-      newChirp.querySelector(".replies").appendChild(repliesContainer);
-    });
 
     // clicking on confirm
     newChirp
@@ -87,7 +91,7 @@
       chirps.forEach(function (chirp) {
         const newChirp = createChirpComponent(chirp);
         // prepend to DOM
-        document.querySelector(".chirps").prepend(newChirp);
+        document.querySelector(".chirps").append(newChirp);
       });
     });
   }

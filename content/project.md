@@ -4,16 +4,19 @@ title: Project
 ---
 
 The project gives you the opportunity to demonstrate that you have mastered full stack development concepts learnt from
-this course. As a team of 2-3, you will create a publicly available web application. 
+this course. As a team of 2-3, you will create a publicly available web application.
 
 # Required Elements
+
 1. Frontend: Use a reactive frontend framework such as [Angular](https://angular.io), [React](https://reactjs.org), or [Vue](https://vuejs.org).
 2. Backend: Your API must be RESTful where appropriate.
 3. Deployment: Be deployed on a Cloud VM such as a DigitalOcean droplet, AWS Lightsail VM, etc. Do not deploy on Kubernetes, or non VMs like Heroku.
 4. Accessible by the general public: A person does not need to talk to your team to access the full application.
 
 # Challenge Factor
+
 The project must complete enough [complexity points](https://docs.google.com/spreadsheets/d/1rwvxBiIK_B1DsDoYgQu8l2LZFiDy3RW6HTDg-oEWQGY/edit#gid=0).
+
 - For 2 people, you must complete at least 7 complexity points.
 - For 3 people, you must complete at least 9 complexity points.
 
