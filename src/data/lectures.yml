@@ -34,7 +34,7 @@
       description:
         Determine the best way of storing application data; Storing and serving images; Using ORMs in backend code;
         Learn the different methods of pagination and how to properly paginate in the backend; Solving the N+1 problem.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/13CBYeDZuixDc6JUnEREnpsr82EUo6mH1fp8x0NF2_K8/edit#slide=id.g17913147cc1_0_34
       lab:
         title: Web API
         link: https://classroom.github.com/a/8tlrlZpj

@@ -289,10 +289,6 @@ const NAV_ITEMS: Array<NavItem> = [
     to: "/team",
   },
   {
-    label: "Project",
-    to: "/project",
-  },
-  {
     label: "Resources",
     to: "/resource",
   },
