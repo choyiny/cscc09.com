@@ -52,7 +52,7 @@
       description:
         Protect views from unauthorized individuals; A deep dive into the Open Authorization (OAuth) protocol;
         Learn the differences between authentication and authorization.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/1wDgeC590gvwwpkBySM62GcqgWui7Hn04kghbQPdA8FU
       lab:
         title: Storing and Serving Data
         link: https://classroom.github.com/a/eM_WHdj_
@@ -62,14 +62,14 @@
       description:
         An introduction to Angular, a frontend web framework; A deep dive into the Javascript event loop and how code
         is interpreted.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/1ODp-Q35JuXzCUb_HkDN1fCMMhwjFgmDXhUAKsQvKSxQ
       lab:
         title: Authentication and Authorization
-        link:
+        link: https://classroom.github.com/a/rk2qQ9J5
         dueDate: 2023-02-27
       assignment:
         title: Managing Users
-        link:
+        link: https://classroom.github.com/a/CtU6Tann
         dueDate: 2023-02-27
     - title: Reading Week
       isHoliday: true
