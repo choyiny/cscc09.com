@@ -1,15 +1,9 @@
 import React from "react";
 import {
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
   Box,
-  HStack,
   Tag,
   Text,
   Link,
-  VStack,
   Grid,
   GridItem,
   Heading,
@@ -18,7 +12,6 @@ import {
   Divider,
   Stack,
 } from "@chakra-ui/react";
-import { LinkCard } from "./link-card";
 import { useLocation } from "@reach/router";
 
 /**
@@ -67,23 +60,26 @@ export default function LectureItem({ lecture, index }) {
                 Lecture Slides
               </Button>
             )}
-            {lecture.lab && isCloseEnough(lecture.lab.dueDate, 14) && (
-              <Button
-                px={8}
-                bg={useColorModeValue("teal.900", "teal.900")}
-                color={"white"}
-                rounded={"md"}
-                _hover={{
-                  transform: "translateY(-2px)",
-                  boxShadow: "lg",
-                }}
-                as={Link}
-                href={lecture.lab.link}
-              >
-                Lab: {lecture.lab.title}
-              </Button>
-            )}
+            {lecture.lab &&
+              lecture.lab.link &&
+              isCloseEnough(lecture.lab.dueDate, 14) && (
+                <Button
+                  px={8}
+                  bg={useColorModeValue("teal.900", "teal.900")}
+                  color={"white"}
+                  rounded={"md"}
+                  _hover={{
+                    transform: "translateY(-2px)",
+                    boxShadow: "lg",
+                  }}
+                  as={Link}
+                  href={lecture.lab.link}
+                >
+                  Lab: {lecture.lab.title}
+                </Button>
+              )}
             {lecture.assignment &&
+              lecture.assignment.link &&
               isCloseEnough(lecture.assignment.dueDate, 14) && (
                 <Button
                   px={8}
