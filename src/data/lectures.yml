@@ -57,11 +57,11 @@
         title: Storing and Serving Data
         link: https://classroom.github.com/a/eM_WHdj_
         dueDate: 2023-02-13
-    - title: Frontend reactive frameworks and the javascript event loop
+    - title: Javascript Event Loop & Frontend Frameworks
       date: 2023-02-13
       description:
-        An introduction to Angular, a frontend web framework; A deep dive into the Javascript event loop and how code
-        is interpreted.
+        An introduction to the Javascript event loop and how to debounce in Javascript using setTimeout.
+        Learn how to use a frontend framework (Angular) to build a web application.
       googleSlides: https://docs.google.com/presentation/d/1ODp-Q35JuXzCUb_HkDN1fCMMhwjFgmDXhUAKsQvKSxQ
       lab:
         title: Authentication and Authorization
