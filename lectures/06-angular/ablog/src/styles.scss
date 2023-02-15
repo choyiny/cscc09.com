@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 12 grid bootstrap layout */
+.col-1 {
+  flex-basis: calc(1 / 12 * 100%);
+}
+.col-2 {
+  flex-basis: calc(2 / 12 * 100%);
+}
+.col-3 {
+  flex-basis: calc(3 / 12 * 100%);
+}
+.col-4 {
+  flex-basis: calc(4 / 12 * 100%);
+}
+.col-5 {
+  flex-basis: calc(5 / 12 * 100%);
+}
+.col-6 {
+  flex-basis: calc(6 / 12 * 100%);
+}
+.col-7 {
+  flex-basis: calc(7 / 12 * 100%);
+}
+.col-8 {
+  flex-basis: calc(8 / 12 * 100%);
+}
+.col-9 {
+  flex-basis: calc(9 / 12 * 100%);
+}
+.col-10 {
+  flex-basis: calc(10 / 12 * 100%);
+}
+.col-11 {
+  flex-basis: calc(11 / 12 * 100%);
+}
+.col-12 {
+  flex-basis: calc(12 / 12 * 100%);
+}
+.col-auto {
+  flex: 1;
+}
+
+/* for mobile */
+@media (max-width: 576px) {
+  .col-sm-1 {
+    flex-basis: calc(1 / 12 * 100%);
+  }
+  .col-sm-2 {
+    flex-basis: calc(2 / 12 * 100%);
+  }
+  .col-sm-3 {
+    flex-basis: calc(3 / 12 * 100%);
+  }
+  .col-sm-4 {
+    flex-basis: calc(4 / 12 * 100%);
+  }
+  .col-sm-5 {
+    flex-basis: calc(5 / 12 * 100%);
+  }
+  .col-sm-6 {
+    flex-basis: calc(6 / 12 * 100%);
+  }
+  .col-sm-7 {
+    flex-basis: calc(7 / 12 * 100%);
+  }
+  .col-sm-8 {
+    flex-basis: calc(8 / 12 * 100%);
+  }
+  .col-sm-9 {
+    flex-basis: calc(9 / 12 * 100%);
+  }
+  .col-sm-10 {
+    flex-basis: calc(10 / 12 * 100%);
+  }
+  .col-sm-11 {
+    flex-basis: calc(11 / 12 * 100%);
+  }
+  .col-sm-12 {
+    flex-basis: calc(12 / 12 * 100%);
+  }
+  .col-sm-auto {
+    flex: 1;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #3c3d3f;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn {
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #3c3d3f;
+  background: #ffffff;
+  border: 2px solid black;
+  padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+  background: #3c3d3f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.complex-form {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px #3c3d3f solid;
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.complex-form .form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: -20px -10px 20px -10px;
+  padding: 10px 0px 10px 25px;
+  color: white;
+  background-color: #3c3d3f;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.complex-form .form-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.complex-form .form-element {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid black;
+}
