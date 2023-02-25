@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chirper</title>
+    <link rel="stylesheet" type="text/css" href="css/cols.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/twitter.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-3 row">
+        <div class="col-4"></div>
+        <div class="col-6">
+          <img class="logo" src="bird.svg" />
+          <button class="btn btn-menu">Explore</button>
+          <button class="btn btn-menu">Settings</button>
+        </div>
+      </div>
+      <div class="col-5 col-sm-12 chirp-section">
+        <form id="new-chirp">
+          <input
+            name="content"
+            class="new-chirp-input"
+            type="text"
+            placeholder="What's happening?"
+          />
+          <input type="file" name="image" id="image" class="image-input" />
+          <input
+            type="submit"
+            class="btn btn-blue chirp-submit"
+            value="Chirp"
+          />
+        </form>
+        <div class="chirps">
+          <p class="loading-text">Loading chirps...</p>
+        </div>
+      </div>
+      <div class="col-4 right">
+        <div class="card">
+          <h2 class="card-title">New to Chirper?</h2>
+          <button class="btn" id="dont-click-me">Don't click me</button>
+        </div>
+      </div>
+    </div>
+    <div class="banner row align-center">
+      <div class="col-3"></div>
+      <div class="col-auto">
+        <h2>Don't miss what's happening</h2>
+        <p>People on Chirper are the first to know.</p>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-transparent">Log in</button>
+        <button class="btn">Sign up</button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.socket.io/3.1.3/socket.io.min.js"
+    integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/chirp-api-service.js"></script>
+  <script src="js/index.js"></script>
+</html>
