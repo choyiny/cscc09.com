@@ -100,14 +100,18 @@ app.delete("/chirps/:id/", async (req, res, next) => {
   return res.json(chirp);
 });
 
-app.post("/webhook/twilio", express.urlencoded({extended:false}), async (req, res, next) => {
-  // FYI - this is missing validation!
-  const chirp = await Chirp.create({
-    content: req.body.Body,
-  });
-  io.emit("chirp", chirp);
-  return res.json(chirp);
-});
+app.post(
+  "/webhook/twilio",
+  express.urlencoded({ extended: false }),
+  async (req, res, next) => {
+    // FYI - this is missing validation!
+    const chirp = await Chirp.create({
+      content: req.body.Body,
+    });
+    io.emit("chirp", chirp);
+    return res.json(chirp);
+  }
+);
 
 httpServer.listen(PORT, (err) => {
   if (err) console.log(err);
