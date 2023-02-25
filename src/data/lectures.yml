@@ -79,17 +79,21 @@
       description:
         Technologies to enable real-time features on a web application; integrating with external services through
         using their API and consuming webhooks.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/16f5pd63X2WuQog4loC38LSvT7w8eGAv5UporBar-030
+      lab:
+        title: Angular Microblog
+        link: https://classroom.github.com/a/q0TbeoZs
+        dueDate: 2023-03-06
     - title: Web Application Security
       date: 2022-03-06
       description:
         A demonstration of common exploits of the web, such as XSS, CSRF, SQL Injection, etc. How to protect a web
         application from these attacks.
-      googleSlides:
-      lab:
-        title: Security
-        link:
-        dueDate: 2023-03-13
+      googleSlides: https://docs.google.com/presentation/d/18L27ycFQl8m-JpidaKB6YqMuyTOQk1WYtxFjbBbkj-I
+      # lab:
+      #   title: Security
+      #   link:
+      #   dueDate: 2023-03-13
       project:
         title: Alpha Version
         link: "/project"
