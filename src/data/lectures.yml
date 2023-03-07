@@ -97,7 +97,7 @@
       project:
         title: Alpha Version
         link: "/project"
-        dueDate: 2023-03-06
+        dueDate: 2023-03-08
     - title: Intro to Deployments
       date: 2023-03-13
       description:

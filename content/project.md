@@ -67,8 +67,8 @@ The proposal should contain the following information:
 
 # Alpha Version (5%) - Github
 
-You must schedule a 15-minute meeting with a TA. To receive full credit, demonstrate to the TA you have sufficient
-progress towards a final product. This meeting is also an opportunity to raise any concerns about the team.
+You must schedule a 15-minute meeting with a TA before the deadline. To receive full credit, demonstrate to the TA you have
+sufficient progress towards a final product. This meeting is also an opportunity to raise any concerns about the team.
 
 At this point, all your code should be pushed to `main` branch on Github.
 
