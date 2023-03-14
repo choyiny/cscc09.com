@@ -50,7 +50,6 @@ export const query = graphql`
           title
           link
           dueDate(formatString: "MMMM DD, YYYY")
-          bonus
         }
         assignment {
           title

@@ -103,23 +103,18 @@
       description:
         Learn how to deploy a web application to the internet through the use of a Virtual Machine (VM) and Docker;
         Best practices on deployment architecture.
+      googleSlides: https://docs.google.com/presentation/d/17vHgzzhStKKPOF_Q5SUK8D1MC431hYi3qyggzrfwYTo
+    - title: Large Scale web applications
+      date: 2023-03-20
+      description:
+        This lecture will go over strategies of maintaining large scale web applications; such as implementing a web
+        caching layer, database migrations, etc. Samuel Zhou, a Team Lead at Verto Health, will also be giving a Guest
+        Lecture on this topic.
       googleSlides:
       lab:
         title: Deploy with Docker
         link:
-        dueDate: 2023-03-20
-        bonus: true
-    - title: Guest Lectures - Large Scale web applications
-      date: 2023-03-20
-      description:
-        This course will go over strategies of maintaining large scale web applications; such as implementing a web
-        caching layer, database migrations, etc.
-      googleSlides:
-      lab:
-        title: CI/CD
-        link:
         dueDate: 2023-03-27
-        bonus: true
       project:
         title: Beta Version
         link: "/project"
@@ -128,6 +123,10 @@
       date: 2023-03-27
       description: Topic TBD
       googleSlides:
+      lab:
+        title: CI/CD
+        link:
+        dueDate: 2023-04-03
     - title: Exam Review and Final Presentations
       date: 2022-04-03
       description:
