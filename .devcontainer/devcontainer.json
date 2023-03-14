@@ -1,0 +1,40 @@
+{
+  "name": "cscc09",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [8000],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "onCreateCommand": "yarn run develop",
+
+  "remoteUser": "root",
+  "customizations": {
+    "codespaces": {},
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.automationProfile.linux": {
+          "path": "zsh",
+          "args": ["-l", "-i"],
+          "icon": "terminal"
+        }
+      },
+      "extensions": [
+        "onatm.open-in-new-window",
+        "esbenp.prettier-vscode",
+        "spmeesseman.vscode-taskexplorer",
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}
