@@ -6,4 +6,4 @@ WORKDIR /usr/src/app
 COPY package.json yarn.lock
 
 # install dependencies
-RUN yarn install
+RUN npm install -g gatsby-cli && yarn install
