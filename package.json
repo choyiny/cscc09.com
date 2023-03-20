@@ -26,6 +26,7 @@
     "@mdx-js/react": "v1",
     "framer-motion": "^6.3.0",
     "gatsby": "^4.12.1",
+    "gatsby-cli": "4.12.1",
     "gatsby-plugin-google-analytics": "^4.12.1",
     "gatsby-plugin-image": "^2.12.1",
     "gatsby-plugin-manifest": "^4.12.1",
@@ -37,6 +38,7 @@
     "gatsby-source-filesystem": "^4.12.1",
     "gatsby-transformer-sharp": "^4.12.1",
     "gatsby-transformer-yaml": "^4.12.1",
+    "global": "^4.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"

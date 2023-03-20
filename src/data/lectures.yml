@@ -119,10 +119,10 @@
         title: Beta Version
         link: "/project"
         dueDate: 2023-03-20
-    - title: Guest Lectures - Topic TBD
+    - title: Guest Lectures - Intro to Chrome Devtools
       date: 2023-03-27
-      description: Topic TBD
-      googleSlides:
+      description: Intro to Chrome Devtools by Aleksander Bodurri, Core Contributor at Angular.
+      googleSlides: https://classroom.github.com/a/WNCrKxov
       lab:
         title: CI/CD
         link:
