@@ -118,14 +118,14 @@
       project:
         title: Beta Version
         link: "/project"
-        dueDate: 2023-03-20
+        dueDate: 2023-03-22
     - title: Guest Lectures - Intro to Chrome Devtools
       date: 2023-03-27
       description: Intro to Chrome Devtools by Aleksander Bodurri, Core Contributor at Angular.
       googleSlides: https://classroom.github.com/a/WNCrKxov
       lab:
         title: CI/CD
-        link:
+        link: https://classroom.github.com/a/WNCrKxov
         dueDate: 2023-04-03
     - title: Exam Review and Final Presentations
       date: 2022-04-03
