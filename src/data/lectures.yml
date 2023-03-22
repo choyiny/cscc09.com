@@ -110,7 +110,7 @@
         This lecture will go over strategies of maintaining large scale web applications; such as implementing a web
         caching layer, database migrations, etc. Samuel Zhou, a Team Lead at Verto Health, will also be giving a Guest
         Lecture on this topic.
-      googleSlides:
+      googleSlides: https://docs.google.com/presentation/d/1H4CKwRFGi_yfEqEHCilzBWK1HrXlLjRkOKPJKy049TA
       lab:
         title: Deploy with Docker
         link: https://classroom.github.com/a/Tmgb1EEN
@@ -122,7 +122,7 @@
     - title: Guest Lectures - Intro to Chrome Devtools
       date: 2023-03-27
       description: Intro to Chrome Devtools by Aleksander Bodurri, Core Contributor at Angular.
-      googleSlides: https://classroom.github.com/a/WNCrKxov
+      googleSlides: https://docs.google.com/presentation/d/1zdqxAd8Kvgdg9T5wD9uJpBPehFoKlIuPGNwoNEsMXjQ
       lab:
         title: CI/CD
         link: https://classroom.github.com/a/WNCrKxov
