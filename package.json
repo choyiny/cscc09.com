@@ -25,7 +25,7 @@
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
     "framer-motion": "^6.3.0",
-    "gatsby": "^4.12.1",
+    "gatsby": "^4.25.7",
     "gatsby-cli": "4.12.1",
     "gatsby-plugin-google-analytics": "^4.12.1",
     "gatsby-plugin-image": "^2.12.1",
