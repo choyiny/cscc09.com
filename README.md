@@ -18,15 +18,9 @@ Enjoy the course!
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    yarn run develop
+    yarn dev
     ```
 
 3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
-
-## 👋 Ongoing Challenges
-
-- Interesting and original Javascript snippets! Submit a PR and put your snippet under `cool_javascript_snippets/`.
-- Find and fix typos.
-- Improve accessibility on the website and make it more student friendly.
+    Your site is now running at http://localhost:5173!
