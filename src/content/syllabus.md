@@ -40,15 +40,15 @@ We encourage you to post questions regarding course materials and assignments on
 extended support, the course staff will hold office hours. Please contact course staff via Slack direct message,
 we will not respond to any emails.
 
-|                   | Office Hours                            | Location |
-| ----------------- | --------------------------------------- | -------- |
-| Cho Yin Yong      | Thursday 7-8pm or by online appointment | TBD      |
+|              | Office Hours                            | Location |
+| ------------ | --------------------------------------- | -------- |
+| Cho Yin Yong | Thursday 7-8pm or by online appointment | TBD      |
 
 # Course Timing
 
-|         | Time               | Location | Instructor        |
-| ------- | ------------------ | -------- | ----------------- |
-| LEC01   | Thursday 5-7pm     | TBD      | Cho Yin Yong      |
+|       | Time           | Location | Instructor   |
+| ----- | -------------- | -------- | ------------ |
+| LEC01 | Thursday 5-7pm | TBD      | Cho Yin Yong |
 
 # Course Information
 

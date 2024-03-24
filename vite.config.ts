@@ -2,7 +2,6 @@
 
 import { defineConfig } from "vite";
 import analog from "@analogjs/platform";
-import angular from "@analogjs/vite-plugin-angular";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -32,19 +31,12 @@ export default defineConfig(({ mode }) => ({
           "/lectures/11",
           "/lectures/12",
           "/work",
-          "/work/team-formation",
-          "/work/group-presentation",
-          "/work/group-assignment",
-          "/work/open-source-project",
           "/team",
         ],
         sitemap: {
           host: "https://cscc09.com",
         },
       },
-    }),
-    angular({
-      inlineStylesExtension: "scss",
     }),
   ],
   test: {
