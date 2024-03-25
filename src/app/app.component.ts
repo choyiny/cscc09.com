@@ -1,11 +1,11 @@
-import { NgFor, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 import { RouterModule, RouterOutlet } from "@angular/router";
+import { environment } from "../environments/environment";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, RouterModule, NgFor, NgIf],
+  imports: [RouterOutlet, RouterModule],
   template: `
     <nav class="noprint">
       <div class="burger">
@@ -17,20 +17,32 @@ import { RouterModule, RouterOutlet } from "@angular/router";
       </div>
 
       <ul class="links">
-        <li><span class="course">CSCC09</span> Summer 2024</li>
-
-        <li *ngFor="let item of navItems">
-          <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+        <li>
+          <span class="course">{{ courseCode }}</span> {{ semester }}
         </li>
+
+        @for (item of navItems; track item) {
+          <li>
+            @if (item.path.startsWith("http")) {
+              <a class="nav-link" href="{{ item.path }}" target="_blank">{{
+                item.name
+              }}</a>
+            } @else {
+              <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+            }
+          </li>
+        }
       </ul>
     </nav>
 
     <div>
       <div class="collapse hidden" #collapse>
         <ul class="links">
-          <li *ngFor="let item of navItems">
-            <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
-          </li>
+          @for (item of navItems; track item) {
+            <li>
+              <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+            </li>
+          }
         </ul>
       </div>
     </div>
@@ -186,8 +198,19 @@ export class AppComponent {
       path: "/work",
     },
     {
+      name: "Resources",
+      path: "/extra-resources",
+    },
+    {
       name: "Team",
       path: "/team",
     },
+    {
+      name: "Feedback",
+      path: "https://forms.gle/aJ6bsaZ7cBmp2u6W7",
+    },
   ];
+
+  courseCode = environment.courseCode;
+  semester = environment.semester;
 }

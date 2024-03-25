@@ -5,14 +5,14 @@ import {
 } from "@analogjs/content";
 import { Component, inject } from "@angular/core";
 import { LectureAttributes } from "../interfaces/file-attributes";
-import { AsyncPipe, NgIf } from "@angular/common";
+import { AsyncPipe } from "@angular/common";
 import { Meta, Title } from "@angular/platform-browser";
 import { getMeta } from "../meta/route-meta";
 import { SafePipe } from "../pipes/safe.pipe";
 
 @Component({
   standalone: true,
-  imports: [MarkdownComponent, AsyncPipe, NgIf, SafePipe],
+  imports: [MarkdownComponent, AsyncPipe, SafePipe],
   styles: [
     `
       .container {
@@ -26,30 +26,30 @@ import { SafePipe } from "../pipes/safe.pipe";
   ],
   template: `
     <div class="container">
-      <ng-container *ngIf="lecture">
+      @if (lecture) {
         <h1>
           Week {{ lecture.attributes.week }}: {{ lecture.attributes.title }}
         </h1>
         <p>{{ lecture.attributes.description }}</p>
         <analog-markdown [content]="lecture.content"></analog-markdown>
-        <a
-          *ngIf="lecture.attributes.googleSlidesUrl"
-          [href]="lecture.attributes.googleSlidesUrl"
-          target="_blank"
-          >Lecture Slides</a
-        >
-        <iframe
-          *ngIf="lecture.attributes.googleSlidesUrl"
-          [src]="lecture.attributes.googleSlidesUrl + 'embed' | safe"
-          frameborder="0"
-          width="100%"
-          height="500"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        >
-        </iframe>
-      </ng-container>
+        @if (lecture.attributes.googleSlidesUrl) {
+          <a [href]="lecture.attributes.googleSlidesUrl" target="_blank"
+            >Lecture Slides</a
+          >
+        }
+        @if (lecture.attributes.googleSlidesUrl) {
+          <iframe
+            [src]="lecture.attributes.googleSlidesUrl + 'embed' | safe"
+            frameborder="0"
+            width="100%"
+            height="500"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          >
+          </iframe>
+        }
+      }
     </div>
   `,
   providers: [Meta],

@@ -33,12 +33,30 @@ app-root {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 1.35rem;
+  margin: 1.5em 0;
+}
+
 body {
   margin: 0;
 }
 
-h1 {
-  font-size: 1.25rem;
+.container {
+  margin-top: 3em;
+}
+
+.container header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.container header h1 {
+  font-size: 1.875rem;
+}
+
+.container header p {
+  color: #718096;
 }
 
 table {

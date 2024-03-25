@@ -1,7 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { CourseworkAttributes } from "../interfaces/file-attributes";
 import { ContentFile, injectContentFiles } from "@analogjs/content";
-import { NgFor, NgIf } from "@angular/common";
+
 import { RouterLink } from "@angular/router";
 import { RouteMeta } from "@analogjs/router";
 import { getRouteMeta } from "../meta/route-meta";
@@ -14,7 +14,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
 
 @Component({
   standalone: true,
-  imports: [NgIf, RouterLink],
+  imports: [RouterLink],
   selector: "app-coursework-item",
   styles: [
     `
@@ -58,20 +58,25 @@ export const routeMeta: RouteMeta = getRouteMeta({
     `,
   ],
   template: `
-    <a
-      [routerLink]="isReleased() ? '/work/' + work.slug : []"
-      class="work-item"
-      *ngIf="work"
-      [class]="{ disabled: !isReleased() }"
-    >
-      <div class="work-details">
-        <div class="work-title">{{ work.attributes.title }}</div>
-        <div class="work-date" *ngIf="isReleased()">
-          Due on {{ getDateString(work.attributes.dueDate) }}
+    @if (work) {
+      <a
+        [routerLink]="isReleased() ? '/work/' + work.slug : []"
+        class="work-item"
+        [class]="{ disabled: !isReleased() }"
+      >
+        <div class="work-details">
+          <div class="work-title">{{ work.attributes.title }}</div>
+          @if (isReleased()) {
+            <div class="work-date">
+              Due on {{ getDateString(work.attributes.dueDate) }}
+            </div>
+          }
+          @if (!isReleased()) {
+            <div class="work-date">Coming Soon</div>
+          }
         </div>
-        <div class="work-date" *ngIf="!isReleased()">Coming Soon</div>
-      </div>
-    </a>
+      </a>
+    }
   `,
 })
 class CourseworkItemComponent {
@@ -98,7 +103,7 @@ class CourseworkItemComponent {
 
 @Component({
   standalone: true,
-  imports: [NgFor, CourseworkItemComponent],
+  imports: [CourseworkItemComponent],
   styles: [
     `
       .container {
@@ -115,10 +120,9 @@ class CourseworkItemComponent {
   template: `
     <div class="container">
       <h1>Coursework</h1>
-      <app-coursework-item
-        *ngFor="let coursework of courseworkList"
-        [work]="coursework"
-      ></app-coursework-item>
+      @for (coursework of courseworkList; track coursework) {
+        <app-coursework-item [work]="coursework"></app-coursework-item>
+      }
     </div>
   `,
 })

@@ -32,6 +32,7 @@ export default defineConfig(({ mode }) => ({
           "/lectures/12",
           "/work",
           "/team",
+          "/extra-resources",
         ],
         sitemap: {
           host: "https://cscc09.com",

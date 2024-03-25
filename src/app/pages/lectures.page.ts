@@ -1,7 +1,7 @@
 import { injectContentFiles } from "@analogjs/content";
 import { Component, Input } from "@angular/core";
 import { LectureAttributes } from "../interfaces/file-attributes";
-import { NgFor, NgIf } from "@angular/common";
+
 import { RouterLink } from "@angular/router";
 import { RouteMeta } from "@analogjs/router";
 import { getRouteMeta } from "../meta/route-meta";
@@ -14,7 +14,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
 
 @Component({
   standalone: true,
-  imports: [NgIf, RouterLink],
+  imports: [RouterLink],
   selector: "app-lecture-item",
   styles: [
     `
@@ -62,24 +62,22 @@ export const routeMeta: RouteMeta = getRouteMeta({
     `,
   ],
   template: `
-    <a
-      [routerLink]="'/lectures/' + lecture.slug"
-      class="lecture-item"
-      *ngIf="lecture"
-    >
-      <div class="lecture-number">
-        <span>{{ lecture.attributes.week }}</span>
-      </div>
-      <div class="lecture-details">
-        <div class="lecture-title">{{ lecture.attributes.title }}</div>
-        <div class="lecture-date">
-          Week of {{ getDateString(lecture.attributes.date) }}
+    @if (lecture) {
+      <a [routerLink]="'/lectures/' + lecture.slug" class="lecture-item">
+        <div class="lecture-number">
+          <span>{{ lecture.attributes.week }}</span>
         </div>
-        <div class="lecture-description">
-          {{ lecture.attributes.description }}
+        <div class="lecture-details">
+          <div class="lecture-title">{{ lecture.attributes.title }}</div>
+          <div class="lecture-date">
+            Week of {{ getDateString(lecture.attributes.date) }}
+          </div>
+          <div class="lecture-description">
+            {{ lecture.attributes.description }}
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    }
   `,
 })
 class LectureItemComponent {
@@ -95,19 +93,9 @@ class LectureItemComponent {
 
 @Component({
   standalone: true,
-  imports: [NgFor, LectureItemComponent],
+  imports: [LectureItemComponent],
   styles: [
     `
-      .container {
-        margin-top: 3em;
-      }
-
-      h1 {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 2em;
-      }
-
       .lecture-container {
         margin-bottom: 1em;
       }
@@ -115,11 +103,13 @@ class LectureItemComponent {
   ],
   template: `
     <div class="container">
-      <h1>Schedule</h1>
+      <header>
+        <h1>Schedule</h1>
+      </header>
       <div class="lecture-container">
-        <ng-container *ngFor="let lecture of lectures">
+        @for (lecture of lectures; track lecture) {
           <app-lecture-item [lecture]="lecture"></app-lecture-item>
-        </ng-container>
+        }
       </div>
     </div>
   `,

@@ -5,13 +5,13 @@ import {
 } from "@analogjs/content";
 import { Component, inject } from "@angular/core";
 import { CourseworkAttributes } from "../interfaces/file-attributes";
-import { AsyncPipe, NgIf } from "@angular/common";
+import { AsyncPipe } from "@angular/common";
 import { Meta, Title } from "@angular/platform-browser";
 import { getMeta } from "../meta/route-meta";
 
 @Component({
   standalone: true,
-  imports: [MarkdownComponent, AsyncPipe, NgIf],
+  imports: [MarkdownComponent, AsyncPipe],
   styles: [
     `
       .container {
@@ -25,11 +25,11 @@ import { getMeta } from "../meta/route-meta";
   ],
   template: `
     <div class="container">
-      <ng-container *ngIf="handout">
+      @if (handout) {
         <h1>{{ handout.attributes.title }}</h1>
         <p>{{ handout.attributes.description }}</p>
         <analog-markdown [content]="handout.content"></analog-markdown>
-      </ng-container>
+      }
     </div>
   `,
 })

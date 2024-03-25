@@ -4,15 +4,9 @@ title: Course Outline
 
 # Course Objectives
 
-Web technologies dominate the tech scene - the big names like Amazon, Netflix, Google, etc... got its name through
-the browser. Most technology startups nowadays are also built on web technologies, too, as a result, Full Stack
-Software Developers are among the most sought out jobs in the industry. New frameworks, and new technologies come
-every day, making web development more and more accessible to a wider population.
+Web technologies dominate the tech scene - the big names like Amazon, Netflix, Google, etc... got its name through the browser. Most technology startups nowadays are also built on web technologies, too, as a result, Full Stack Software Developers are among the most sought out jobs in the industry. New frameworks, and new technologies come every day, making web development more and more accessible to a wider population.
 
-Our goal in this course is to learn the fundamental concepts of web programming, such as the architectures, protocols,
-languages, and the design patterns. With this knowledge, you will be able to traverse through the most popular frameworks
-out there both in the frontend, and the backend. We will also learn how to maintain a large scale web application to
-fit with ever-growing internet population, and how to protect your web application against a ["Reddit Hug of Death"](https://en.wikipedia.org/wiki/Slashdot_effect).
+Our goal in this course is to learn the fundamental concepts of web programming, such as the architectures, protocols, languages, and the design patterns. With this knowledge, you will be able to traverse through the most popular frameworks out there both in the frontend, and the backend. We will also learn how to maintain a large scale web application to fit with ever-growing internet population, and how to protect your web application against malicious actors, and even a ["Reddit Hug of Death"](https://en.wikipedia.org/wiki/Slashdot_effect).
 
 # Learning Outcomes
 
