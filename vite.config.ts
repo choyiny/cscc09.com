@@ -2,6 +2,10 @@
 
 import { defineConfig } from "vite";
 import analog from "@analogjs/platform";
+import * as fs from 'fs';
+
+const lectures = fs.readdirSync('./src/content/lectures');
+const coursework = fs.readdirSync('./src/content/coursework');
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -18,21 +22,11 @@ export default defineConfig(({ mode }) => ({
         routes: async () => [
           "/",
           "/lectures",
-          "/lectures/1",
-          "/lectures/2",
-          "/lectures/3",
-          "/lectures/4",
-          "/lectures/5",
-          "/lectures/6",
-          "/lectures/7",
-          "/lectures/8",
-          "/lectures/9",
-          "/lectures/10",
-          "/lectures/11",
-          "/lectures/12",
+          ...lectures.map(post => `/lectures/${post.replace('.md', '')}`),
+          ...coursework.map(post => `/work/${post.replace('.md', '')}`),
           "/work",
           "/team",
-          "/extra-resources",
+          "/resources",
         ],
         sitemap: {
           host: "https://cscc09.com",
