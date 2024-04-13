@@ -38,7 +38,11 @@ class MemberComponent {
   standalone: true,
   styles: [
     `
-      h6 {
+      section {
+        margin-bottom: 3em;
+        .staff-type {
+          font-size: 1.75rem;
+        }
       }
 
       ul {
@@ -49,6 +53,12 @@ class MemberComponent {
 
         li {
           width: calc(35% - 64px);
+        }
+
+        @media (max-width: 768px) {
+          li {
+            width: 100%;
+          }
         }
       }
     `,
@@ -61,7 +71,7 @@ class MemberComponent {
     @for (staffType of staff; track staffType) {
       @if (staffType.members.length) {
         <section>
-          <h1>{{ staffType.name }}</h1>
+          <h1 class="staff-type">{{ staffType.name }}</h1>
           <ul>
             @for (member of staffType.members; track member) {
               <li>

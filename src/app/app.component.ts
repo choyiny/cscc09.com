@@ -119,9 +119,9 @@ import { environment } from "../environments/environment";
         width: 100%;
         border-bottom: 1px solid #171923;
 
-        ul {
-          @media screen and (max-width: 48em) {
-            display: none;
+        ul li:not(:first-child) {
+          @media screen and (max-width: 767px) {
+            display: none !important;
           }
         }
       }
@@ -157,9 +157,15 @@ import { environment } from "../environments/environment";
         margin: 0;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         main {
           max-width: 90%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .collapse {
+          display: none;
         }
       }
 
@@ -199,7 +205,7 @@ export class AppComponent {
     },
     {
       name: "Resources",
-      path: "/extra-resources",
+      path: "/resources",
     },
     {
       name: "Team",

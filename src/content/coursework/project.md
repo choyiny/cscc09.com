@@ -1,35 +1,41 @@
 ---
 title: Group Project
-releaseDate:
-dueDate:
+releaseDate: 2024-05-23
+dueDate: 2024-06-06
 ---
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.
 
 ## Required Elements
 
-Projects must fulfill the following minimum requirements:
+> Projects must fulfill the following minimum requirements:
 
 - The application must use a modern frontend framework such as Angular, Vue3+, or NextJS
-  - You are not allowed to directly use `create-react-app` or create a Barebones React application
+
+  - You are not allowed to create a Barebones React application ([why?](https://react.dev/learn/start-a-new-react-project))
   - Mobile app frameworks such as Expo / NativeScript is not allowed
+
 - The application's API is RESTful where appropriate
-- The application must be deployed on a Virtual Machine
+- ⚠️ The application must be deployed on a Virtual Machine
 - The application must be accessible to the general public without extra steps. i.e. A person does not need to talk to your team to access the full application.
-- The application must interact with a third-party API. Beware of usage limits in the free tier.
+- The application must interact with at least one third-party API. Beware of usage limits in the free tier as that may cause your app to not function properly.
 - The application must use OAuth 2.0 (an authorization mechanism) for any purpose.
 
-Furthermore, you must choose 2 out of 3 additional requirements to complete:
+<u>Projects will NOT receive a passing grade (i.e. adjusted to <=49) if the above requirements are not fulfilled.</u>
+
+# Additional Requirements
+
+You must also choose 2 out of 3 Additional Requirements to complete:
 
 - A piece of the application must interact with a webhook by an external service
 - A piece of the application is “real-time”, which means it can reflect other user changes without refreshing
 - A piece of the application has functionality that executes a long-running task (something that could take more than 10 seconds to complete)
 
-<u>Projects will not receive a passing grade if the above requirements are not fulfilled.</u>
+<u>Projects will NOT receive a passing grade (i.e. adjusted to <=49) if the above requirements are not fulfilled.</u>
 
-## Ineligible elements
+## ⚠️ Ineligible elements ⚠️
 
-Projects will not be given credit for the following items:
+> Projects will not be given credit for the following items:
 
 - Deployment with Kubernetes
 - “Real-time” web chat
@@ -46,6 +52,8 @@ Outstanding web applications will be chosen to present in the last lecture. Sele
 With 9 weeks to complete the project, it must be of fair complexity. (not that of a basic CRUD application, like Web Gallery) It is recommended that progress be made every week towards project completion.
 
 You will be notified after proposal submission if you do not reach the complexity factor. You will be given a complexity factor from 0.5 to 1, which will be used to multiply your final grade for the project. For example, if you attained a grade of 90 with a challenge factor of 0.7, your final grade will be 63.
+
+An example of a project that will receive a complexity factor <1 is a project that only touches on the "Ineligible elements".
 
 You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
 
@@ -71,7 +79,8 @@ The proposal should contain the following information:
 - Project title and team name
 - Team members with @mail.utoronto.ca emails
 - Brief description of the web application
-- Bullet points outlining how to fulfil project minimum requirements and additional requirements
+- Bullet points outlining how to fulfil "Required Elements"
+- Bullet points outlining how to fulfil "Additional Requirements"
 - Your alpha version, beta version, and final version milestones
 
 ## Alpha Version (5%) - Github

@@ -12,6 +12,7 @@ export const environment = {
         {
           name: "Cho Yin Yong",
           title: "Engineering Manager, Verto Health",
+          website: "https://choy.in",
         },
       ],
     },
@@ -21,7 +22,33 @@ export const environment = {
     },
     {
       name: "Industry Experts",
-      members: [],
+      members: [
+        {
+          name: "Sandrine Monfourny-Daigneault",
+          title: "Senior Engineer, Spotify",
+        },
+        {
+          name: "Samuel Zhou",
+          title: "Architect, Verto Health",
+        },
+        {
+          name: "Aleksander Bodurri",
+          title:
+            "Angular Core Contributor and Team Lead, Development, Verto Health",
+        },
+        {
+          name: "Zhili (Jerry) Pan",
+          title: "MSc. Cybersecurity, ETH Zürich",
+        },
+        {
+          name: "Jacky Zhuang",
+          title: "Associate Software Engineer, Veeva Systems",
+        },
+        {
+          name: "Frederic Pun",
+          title: "Full-Stack Software Engineer, Cisco Meraki",
+        },
+      ],
     },
   ],
 };

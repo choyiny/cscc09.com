@@ -36,10 +36,10 @@ export const routeMeta: RouteMeta = getRouteMeta({
       h1 {
         font-size: 2em;
         line-height: 1.2;
-      }
-
-      .code {
-        color: #4299e1;
+        color: transparent;
+        background-image: linear-gradient(to right, #b4cded, #4299e1);
+        background-clip: text;
+        -webkit-background-clip: text;
       }
     `,
   ],

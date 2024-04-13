@@ -60,7 +60,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
   template: `
     @if (work) {
       <a
-        [routerLink]="isReleased() ? '/work/' + work.slug : []"
+        [routerLink]="isReleased() ? '/work/' + work.slug : null"
         class="work-item"
         [class]="{ disabled: !isReleased() }"
       >

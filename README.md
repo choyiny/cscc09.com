@@ -6,6 +6,8 @@ Enjoy the course!
 
 ## 🚀 Quick start
 
+Prerequisites: Node 18+ and Yarn 1.22+ installed.
+
 1.  **Install dependencies**
 
     ```shell
