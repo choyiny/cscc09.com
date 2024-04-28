@@ -2,10 +2,10 @@
 
 import { defineConfig } from "vite";
 import analog from "@analogjs/platform";
-import * as fs from 'fs';
+import * as fs from "fs";
 
-const lectures = fs.readdirSync('./src/content/lectures');
-const coursework = fs.readdirSync('./src/content/coursework');
+const lectures = fs.readdirSync("./src/content/lectures");
+const coursework = fs.readdirSync("./src/content/coursework");
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -22,8 +22,8 @@ export default defineConfig(({ mode }) => ({
         routes: async () => [
           "/",
           "/lectures",
-          ...lectures.map(post => `/lectures/${post.replace('.md', '')}`),
-          ...coursework.map(post => `/work/${post.replace('.md', '')}`),
+          ...lectures.map((post) => `/lectures/${post.replace(".md", "")}`),
+          ...coursework.map((post) => `/work/${post.replace(".md", "")}`),
           "/work",
           "/team",
           "/resources",

@@ -48,6 +48,14 @@ export const environment = {
           name: "Frederic Pun",
           title: "Full-Stack Software Engineer, Cisco Meraki",
         },
+        {
+          name: "Francisco Lee",
+          title: "Technical Enablement Lead, DevOps",
+        },
+        {
+          name: "Olivia Zhang",
+          title: "Principal Software Engineer, Capital One",
+        },
       ],
     },
   ],

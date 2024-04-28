@@ -49,7 +49,7 @@ course staff via Slack direct message, we will not respond to any emails.
 | PRA0001 | Monday 3-5pm     | Available on ACORN | TBD          |
 | PRA0002 | Tuesday 3-5pm    | Available on ACORN | TBD          |
 | PRA0003 | Wednesday 9-11am | Available on ACORN | TBD          |
-| PRA0004 | TBD              | Available on ACORN | TBD          |
+| PRA0004 | Wednesday 7-9pm  | Available on ACORN | TBD          |
 
 Practicals are mandatory. Please attend the practical section you are registered in. If you are unable to attend a practical, please contact the instructor.
 
@@ -59,7 +59,7 @@ Practicals are mandatory. Please attend the practical section you are registered
 
 One of the nice things about using Github for the course website is that you can contribute to the course website. If you see something on the course website that should be fixed, or want to improve the UI, feel free to submit a pull request.
 
-- [Slack](https://utsc-cscc09.slack.com/join/signup#/domain-signup)
+- Slack (invitation link on Quercus)
 
 The slack #summer-2024 channel is the best place to ask technical questions, and general questions about the course, assignments and labs. For personal issues, please private message the instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
