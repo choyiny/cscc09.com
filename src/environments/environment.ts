@@ -18,7 +18,17 @@ export const environment = {
     },
     {
       name: "Teaching Assistants",
-      members: [],
+      members: [
+        {
+          name: "Porom Kamal",
+        },
+        {
+          name: "Rohan Dey",
+        },
+        {
+          name: "Maaz Hashmi",
+        },
+      ],
     },
     {
       name: "Industry Experts",
