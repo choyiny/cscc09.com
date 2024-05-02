@@ -37,9 +37,9 @@ course staff via Slack direct message, we will not respond to any emails.
 |              | Office Hours                            | Location             |
 | ------------ | --------------------------------------- | -------------------- |
 | Cho Yin Yong | Thursday 7-8pm or by online appointment | Available on Quercus |
-| Porom Kamal  | TBD                                     | Available on Quercus |
-| Rohan Dey    | TBD                                     | Available on Quercus |
-| Maaz Hashmi  | TBD                                     | Available on Quercus |
+| Porom Kamal  | Monday 1-2pm, Tuesday 1-2pm             | Available on Quercus |
+| Rohan Dey    | Wednesday 5-6pm                         | Available on Quercus |
+| Maaz Hashmi  | Thursday 12-1pm                         | Available on Quercus |
 
 # Course Timing
 
