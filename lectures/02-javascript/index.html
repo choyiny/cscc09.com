@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chirper</title>
+    <link rel="stylesheet" type="text/css" href="cols.css" />
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+    <link rel="stylesheet" type="text/css" href="chirper.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-3 row">
+        <div class="col-4"></div>
+        <div class="col-6">
+          <img class="logo" src="bird.svg" />
+          <button class="btn btn-menu">Explore</button>
+          <button class="btn btn-menu">Settings</button>
+        </div>
+      </div>
+      <div class="col-5 col-sm-12 chirp-section">
+        <form id="newChirp">
+          <input
+            name="chirp"
+            id="newChirpInput"
+            class="new-chirp-input"
+            type="text"
+            placeholder="What's happening?"
+          />
+          <input
+            id="submitChirp"
+            type="submit"
+            class="btn btn-blue"
+            value="Chirp"
+          />
+        </form>
+        <div class="chirps" id="chirpsList"></div>
+      </div>
+      <div class="col-4 right">
+        <div class="card">
+          <h2 class="card-title">New to Chirper?</h2>
+          <button class="btn" id="dontClickMe">Don't click me</button>
+        </div>
+      </div>
+    </div>
+    <div class="banner row align-center">
+      <div class="col-3"></div>
+      <div class="col-auto">
+        <h2>Don't miss what's happening</h2>
+        <p>People on Chirper are the first to know.</p>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-transparent">Log in</button>
+        <button class="btn">Sign up</button>
+      </div>
+    </div>
+  </body>
+  <script src="js/chirp-service.js"></script>
+  <script src="js/index3.js"></script>
+</html>
