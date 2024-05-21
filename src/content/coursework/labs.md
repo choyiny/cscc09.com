@@ -2,6 +2,7 @@
 title: Labs
 releaseDate: 2024-05-09
 dueDate: 2024-07-11
+pin: true
 ---
 
 Labs are designed to help you understand the concepts taught in the lectures. You will be required to show your work to the teaching assistant before the end of the practical. You will be graded at the practical based on your degree of completion.

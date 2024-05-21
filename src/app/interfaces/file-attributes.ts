@@ -16,5 +16,7 @@ export interface LectureAttributes extends FileAttributes {
 
 export interface CourseworkAttributes extends FileAttributes {
   releaseDate: string;
+  description: string;
   dueDate: Date;
+  pin: boolean;
 }

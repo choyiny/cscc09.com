@@ -135,8 +135,14 @@ export default class WorkPage {
       return isCoursework;
     },
   ).sort((a, b) => {
-    const aDate = new Date(a.attributes.releaseDate);
-    const bDate = new Date(b.attributes.releaseDate);
+    const aDate = new Date(a.attributes.dueDate);
+    const bDate = new Date(b.attributes.dueDate);
+    // if attributes.pin is true, sort it to the top
+    if (a.attributes.pin && !b.attributes.pin) {
+      return -1;
+    } else if (!a.attributes.pin && b.attributes.pin) {
+      return 1;
+    }
     return aDate.getTime() - bDate.getTime();
   });
 }

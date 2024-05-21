@@ -1,7 +1,7 @@
 ---
-title: Group Project
+title: Group Project - Proposal
 releaseDate: 2024-05-23
-dueDate: 2024-06-06
+dueDate: 2024-06-06T16:00:00-04:00
 ---
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.
@@ -14,9 +14,12 @@ The project allows you to demonstrate that you have mastered full-stack developm
 
   - You are not allowed to create a Barebones React application ([why?](https://react.dev/learn/start-a-new-react-project))
   - Mobile app frameworks such as Expo / NativeScript is not allowed
+  - Your frontend must be a Single Page Application (SPA)
 
+- The application must use Express as the core backend API
 - The application's API is RESTful where appropriate
-- ⚠️ The application must be deployed on a Virtual Machine
+- ⚠️ The application must be deployed on a Virtual Machine using Docker and Docker Compose
+  - You must commit all your deployment files to Github as well, including CI files for building images.
 - The application must be accessible to the general public without extra steps. i.e. A person does not need to talk to your team to access the full application.
 - The application must interact with at least one third-party API. Beware of usage limits in the free tier as that may cause your app to not function properly.
 - The application must use OAuth 2.0 (an authorization mechanism) for any purpose.
@@ -33,15 +36,13 @@ You must also choose 2 out of 3 Additional Requirements to complete:
 
 <u>Projects will NOT receive a passing grade (i.e. adjusted to <=49) if the above requirements are not fulfilled.</u>
 
-## ⚠️ Ineligible elements ⚠️
-
-> Projects will not be given credit for the following items:
+## ⚠️ Elements that will not be graded or given extra credit ⚠️
 
 - Deployment with Kubernetes
 - “Real-time” web chat
 - “Real-time” video chat
 - Object galleries (such as PDF galleries, video galleries, eBook galleries, etc.)
-- Usage of non-web-focused frameworks, like three.js. (Feel free to use it as a supporting element)
+- Usage of non-web-focused frameworks, like three.js. (Feel free to use it as a supporting element! It looks good)
 
 ## Final Presentations
 
@@ -83,11 +84,17 @@ The proposal should contain the following information:
 - Bullet points outlining how to fulfil "Additional Requirements"
 - Your alpha version, beta version, and final version milestones
 
+Please push to the `main` branch of your team repository and also submit the repository to Gradescope. Only
+1 person in your team needs to submit to Gradescope.
+
+You will receive full credit for the proposal if the instructor deems it to be a reasonable project.
+You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
+
 ## Alpha Version (5%) - Github
 
 You must schedule a 15-minute meeting with a TA before the deadline. To receive full credit, you must demonstrate reasonable progress toward your alpha version milestone.
 
-At this point, all your code should be pushed to the main branch on Github.
+At this point, all your code should be pushed to the `main` branch on Github.
 
 ## Beta Version (10%) - Github
 
@@ -95,7 +102,9 @@ You must schedule a 15-minute meeting with an assigned industry expert. During t
 
 You will be graded from 1-10 on how good this project is if it was considered in a hiring decision. (1 - will not hire, 10 - definitely hire)
 
-At this point, all your code should be pushed to main branch on Github.
+Note that you will be graded in comparison to other teams assigned to the same industry expert.
+
+At this point, all your code should be pushed to `main` branch on Github, and ideally deployed to a public URL already.
 
 ## Final Version (75%) - Github and Gradescope
 
