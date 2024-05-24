@@ -6,11 +6,17 @@ dueDate: 2024-06-06T16:00:00-04:00
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.
 
+## Create the repository
+
+Click here to create or join a team: https://classroom.github.com/a/4CPWkaTc
+
+One team member should create the team, others should join the team.
+
 ## Required Elements
 
 > Projects must fulfill the following minimum requirements:
 
-- The application must use a modern frontend framework such as Angular, Vue3+, or NextJS
+- The application must use a modern frontend framework such as Angular, or Vue 3
 
   - You are not allowed to create a Barebones React application ([why?](https://react.dev/learn/start-a-new-react-project))
   - Mobile app frameworks such as Expo / NativeScript is not allowed

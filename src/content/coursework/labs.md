@@ -17,7 +17,7 @@ min(5%, ∑(% of lab_i))
 | ---- | ----------------------------------------------------- | --------- |
 | 2    | [HTML/CSS](https://classroom.github.com/a/5hnI_QqY)   | 0.5%      |
 | 3    | [JavaScript](https://classroom.github.com/a/ZOY58Qxp) | 0.5%      |
-| 4    | Web API                                               | 0.5%      |
+| 4    | [Web API](https://classroom.github.com/a/_deru9In)    | 0.5%      |
 | 5    | Storing and serving data                              | 1%        |
 | 6    | Authentication and Authorization                      | 1%        |
 | 8    | VM Deployment                                         | 1%        |
