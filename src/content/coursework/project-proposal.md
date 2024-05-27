@@ -54,13 +54,9 @@ You must also choose 2 out of 3 Additional Requirements to complete:
 
 Outstanding web applications will be chosen to present in the last lecture. Selected projects (usually around 30%, maybe more) will obtain a bonus from 1% to 10%. Invited industry experts will make the final decision.
 
-## Complexity Factor
+## Complexity
 
 With 9 weeks to complete the project, it must be of fair complexity. (not that of a basic CRUD application, like Web Gallery) It is recommended that progress be made every week towards project completion.
-
-You will be notified after proposal submission if you do not reach the complexity factor. You will be given a complexity factor from 0.5 to 1, which will be used to multiply your final grade for the project. For example, if you attained a grade of 90 with a challenge factor of 0.7, your final grade will be 63.
-
-An example of a project that will receive a complexity factor <1 is a project that only touches on the "Ineligible elements".
 
 You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
 
