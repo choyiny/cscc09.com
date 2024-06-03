@@ -27,12 +27,10 @@ chirpsRouter.post("/", upload.single("image"), async (req, res, next) => {
     if (e.name === "SequelizeForeignKeyConstraintError") {
       return res.status(422).json({ error: "Invalid parent chirp id" });
     } else if (e.name === "SequelizeValidationError") {
-      return res
-        .status(422)
-        .json({
-          error:
-            "Invalid input parameters. Expected content, file and (optional) ChirpId",
-        });
+      return res.status(422).json({
+        error:
+          "Invalid input parameters. Expected content, file and (optional) ChirpId",
+      });
     } else {
       return res.status(400).json({ error: "Cannot create chirp" });
     }
