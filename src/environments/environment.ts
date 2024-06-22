@@ -66,6 +66,10 @@ export const environment = {
           name: "Olivia Zhang",
           title: "Principal Software Engineer, Capital One",
         },
+        {
+          name: "Jeffrey Cheung",
+          title: "Software Engineering Manager, Symon at Varicent",
+        },
       ],
     },
   ],
