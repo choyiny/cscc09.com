@@ -87,6 +87,7 @@ class LectureItemComponent {
     return new Date(date).toLocaleString("en-US", {
       month: "long",
       day: "numeric",
+      timeZone: "UTC",
     });
   }
 }
