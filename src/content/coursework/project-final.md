@@ -1,7 +1,7 @@
 ---
 title: Group Project - Final Version & Video Presentation
 releaseDate: 2024-05-23
-dueDate: 2024-07-25T16:00:00-04:00
+dueDate: 2024-07-29T18:00:00-04:00
 ---
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.
@@ -27,6 +27,8 @@ Upload your video to Youtube and include it in README.md. The presentation is go
 ## Final Lecture Presentation (1%-10% bonus)
 
 The top projects of this course will be selected to present in the final lecture to showcase to the entire class. Industry experts will be invited as judges to select the top 3 projects, which will get a bonus attached to their project.
+
+Click [here](https://forms.gle/U1QFLTZJsbyVNDam9) to submit.
 
 ## Academic Integrity
 
