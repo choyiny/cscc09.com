@@ -1,7 +1,7 @@
 ---
 title: Labs
-releaseDate: 2024-05-09
-dueDate: 2024-07-11
+releaseDate: 2025-05-09
+dueDate: 2025-07-11
 pin: true
 ---
 
@@ -13,16 +13,16 @@ Your labs portion of the grade will be calculated as follows:
 min(5%, ∑(% of lab_i))
 ```
 
-| Week             | Topic                                                                       | Weighting  |
-| ---------------- | --------------------------------------------------------------------------- | ---------- |
-| 2                | [HTML/CSS](https://classroom.github.com/a/5hnI_QqY)                         | 0.5%       |
-| 3                | [JavaScript](https://classroom.github.com/a/ZOY58Qxp)                       | 0.5%       |
-| 4                | [Web API](https://classroom.github.com/a/_deru9In)                          | 0.5%       |
-| 5                | [Storing and serving data](https://classroom.github.com/a/rhJ_Ezn8)         | 1%         |
-| 6                | [Authentication and Authorization](https://classroom.github.com/a/VfOQqmSf) | 1%         |
-| 7 (Reading Week) | [Angular Microblog](https://classroom.github.com/a/zENeUono)                | 1% (Bonus) |
-| 8-9              | [VM Deployment](https://classroom.github.com/a/EI_s4xDh)                    | 1%         |
-| 10               | [CI/CD](https://classroom.github.com/a/1ZdwgxGN)                            | 2%         |
+| Week             | Topic                            | Weighting  |
+| ---------------- | -------------------------------- | ---------- |
+| 2                | HTML/CSS                         | 0.5%       |
+| 3                | JavaScript                       | 0.5%       |
+| 4                | Web API                          | 0.5%       |
+| 5                | Storing and serving data         | 1%         |
+| 6                | Authentication and Authorization | 1%         |
+| 7 (Reading Week) | Angular Microblog                | 1% (Bonus) |
+| 8-9              | VM Deployment                    | 1%         |
+| 10               | CI/CD                            | 2%         |
 
 ## Bonus
 

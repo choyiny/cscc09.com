@@ -54,7 +54,7 @@ import { environment } from "../environments/environment";
     <footer class="noprint">
       <div class="footer-line">
         <p>
-          © 2024 Cho Yin Yong. Made with
+          © 2025 Cho Yin Yong. Made with
           <a href="https://analogjs.org">Analog</a>.
         </p>
       </div>

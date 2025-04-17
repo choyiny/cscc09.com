@@ -4,6 +4,7 @@ import { provideClientHydration } from "@angular/platform-browser";
 import { provideFileRouter } from "@analogjs/router";
 import { provideContent, withMarkdownRenderer } from "@analogjs/content";
 import { withInMemoryScrolling } from "@angular/router";
+import { withPrismHighlighter } from "@analogjs/content/prism-highlighter";
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,6 +16,6 @@ export const appConfig: ApplicationConfig = {
     ),
     provideHttpClient(),
     provideClientHydration(),
-    provideContent(withMarkdownRenderer()),
+    provideContent(withMarkdownRenderer(), withPrismHighlighter()),
   ],
 };

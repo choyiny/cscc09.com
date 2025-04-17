@@ -1,7 +1,7 @@
 ---
 title: Group Project - Final Version & Video Presentation
-releaseDate: 2024-05-23
-dueDate: 2024-07-29T18:00:00-04:00
+releaseDate: 2025-05-23
+dueDate: 2025-07-29T18:00:00-04:00
 ---
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.

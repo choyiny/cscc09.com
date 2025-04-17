@@ -21,12 +21,21 @@ Upon successful completion of this course, students will be able to:
 
 # Prerequisites
 
-Students should be comfortable working in a unix-style environment from CSCB09, and have a good understanding
-of relational databases in CSCC43. No assumptions are made about your web dev background; all the required concepts will
-be introduced as needed in the course. However, students must be prepared to learn new technologies and frameworks in a
-short amount of time on their own.
+Students should be comfortable working in a unix-style environment from CSCB09, and have a basic understanding of relational databases. No assumptions are made about your web dev background; all the required concepts will be introduced as needed in the course. However, students must be prepared to learn new technologies and frameworks in a short amount of time on their own.
 
 For specific prerequisite requirements see the [UTSC Registrar](https://utsc.calendar.utoronto.ca/course/cscc09h3).
+
+# Course Timing
+
+|         | Time             | Location           | Instructor   |
+| ------- | ---------------- | ------------------ | ------------ |
+| LEC01   | Thursday 5-7pm   | Available on ACORN | Cho Yin Yong |
+| PRA0001 | Monday 3-5pm     | Available on ACORN | X            |
+| PRA0002 | Tuesday 3-5pm    | Available on ACORN | X            |
+| PRA0003 | Wednesday 9-11am | Available on ACORN | X            |
+| PRA0004 | Wednesday 7-9pm  | Available on ACORN | X            |
+
+Practicals are mandatory. Please attend the practical section you are registered in. If you are unable to attend a practical, please contact the instructor.
 
 # Course Staff
 
@@ -37,21 +46,6 @@ course staff via Slack direct message, we will not respond to any emails.
 |              | Office Hours                            | Location             |
 | ------------ | --------------------------------------- | -------------------- |
 | Cho Yin Yong | Thursday 7-8pm or by online appointment | Available on Quercus |
-| Porom Kamal  | Monday 1-2pm, Tuesday 1-2pm             | Available on Quercus |
-| Rohan Dey    | Wednesday 5-6pm                         | Available on Quercus |
-| Maaz Hashmi  | Thursday 12-1pm                         | Available on Quercus |
-
-# Course Timing
-
-|         | Time             | Location           | Instructor   |
-| ------- | ---------------- | ------------------ | ------------ |
-| LEC01   | Thursday 5-7pm   | Available on ACORN | Cho Yin Yong |
-| PRA0001 | Monday 3-5pm     | Available on ACORN | Porom Kamal  |
-| PRA0002 | Tuesday 3-5pm    | Available on ACORN | Porom Kamal  |
-| PRA0003 | Wednesday 9-11am | Available on ACORN | Maaz Hashmi  |
-| PRA0004 | Wednesday 7-9pm  | Available on ACORN | Rohan Dey    |
-
-Practicals are mandatory. Please attend the practical section you are registered in. If you are unable to attend a practical, please contact the instructor.
 
 # Course Information
 
@@ -61,9 +55,9 @@ One of the nice things about using Github for the course website is that you can
 
 - Slack (invitation link on Quercus)
 
-The slack #summer-2024 channel is the best place to ask technical questions, and general questions about the course, assignments and labs. For personal issues, please private message the instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
+The slack #summer-2025 channel is the best place to ask technical questions, and general questions about the course, assignments and labs. You are advised to check this as frequently as possible. For personal issues, please private message the instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
-- [Anonymous Feedback Form](https://forms.gle/edroA3UghZfPWGCT7)
+- [Anonymous Feedback Form](https://forms.gle/gYsGUCx358h2zJX66)
 
 If you have feedback about the course, you can send an anonymous feedback to the course instructor (you also have the option of including your name). Since the sender cannot be determined, comments sent through the feedback form are considered public, and they may receive a response at the beginning of class or on Slack.
 
@@ -90,9 +84,7 @@ receive less than 50% on either the project or the final exam, your overall cour
 
 # Submission and Grading Policy
 
-For each piece of work done for this class (either a lab, an assignment or the project), the student or the team will
-be required to submit the source code on the Github repository (student repository for individual work, team repository
-for the project).
+For each piece of work done for this class (either a lab, an assignment or the project), the student or the team will be required to submit the source code on the Github repository (student repository for individual work, team repository for the project).
 
 For group work, the instructor reserves the right to assign different grades to each of the team members based on their individual contributions made to the team repository.
 
@@ -100,7 +92,7 @@ For your work to be graded, it must meet the minimum standards of a professional
 
 No late submissions will be accepted for any course work, and no make-up assignments will be provided for missed/poorly completed work. It is your responsibility to ensure that all work is completed on time and to the best of your ability.
 
-If an emergency arises that prevents you from being able to complete any piece of work, or attend an exam, contact one of the instructors immediately and complete necessary documentation by the [Registrar's Office](https://www.utsc.utoronto.ca/registrar/absence-declaration-acorn).
+If an emergency arises that prevents you from being able to complete any piece of work, contact one of the instructors immediately and complete necessary documentation by the [Registrar's Office](https://www.utsc.utoronto.ca/registrar/absence-declaration-acorn). The absence declaration cannot be used as supporting documentation to defer final exams and you may only use it once per term. For subsequent absences, you must also follow the instructions on the [Registrar's Office](https://www.utsc.utoronto.ca/registrar/absence-declaration-acorn) website and contact the instructor immediately.
 
 If you believe that a piece of work has been graded incorrectly, you may request a remark. For a remark to be successful, you must clearly and concisely express what you believe was graded incorrectly. To request a remark, please contact your TA. Requests must be submitted within 1 week of the marks being returned.
 
@@ -114,16 +106,15 @@ For group work, you are fully responsible for the piece of work you submit to th
 
 When the assignment handout allows you to use snippets of code or third-party library from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced.
 
-You may discuss assignments with other students, for example to clarify the requirements of an assignment, to work through examples that help you understand the technology used for an assignment, or to learn how to configure your system to run a supporting piece of software used in an assignment. However, collaboration at the level of answering written questions or designing and writing code, is strictly forbidden. Written problems and programming assignments
-must be answered, designed and coded by you alone, using the text, your own notes, and other texts and Web sources as aids.
+The use of Generative artificial intelligence tools (Gen AI tools) are strictly prohibited unless otherwise stated in the assignment or project for limited scope only. If GenAI use is explicitly allowed in a given piece of coursework, all GenAI generated code or text content must be clearly marked as such. Failure to do so will be considered as academic misconduct.
+
+You may discuss assignments with other students, for example to clarify the requirements of an assignment, to work through examples that help you understand the technology used for an assignment, or to learn how to configure your system to run a supporting piece of software used in an assignment. However, collaboration at the level of answering written questions or designing and writing code, is strictly forbidden. Written problems and programming assignments must be answered, designed and coded by you alone, using the text, your own notes, and other texts and Web sources as aids. The course staff reserves the right to use code and text analysis tools to compare your submission with others to verify that no improper collaboration has occurred.
 
 Do not let other students look at your assignment solutions, since this can lead to copying. Remember you are in violation of the UTSC Academic Code whether you copy someone else’s work or allow someone else to copy your work.
 
 These rules are meant to ensure that all students understand their solutions well enough to prepare the solutions themselves. If challenged you must be able to reproduce and explain your work.
 
 You are not allowed to ask for help outside the course. Asking for help anywhere else online or in private chat groups (unless the private group chat was set up between the group members of the same group project) will be considered as unauthorized help.
-
-The course staff reserves the right to use code and text analysis tools to compare your submission with others to verify that no improper collaboration has occurred.
 
 Failure to comply with these guidelines is a serious academic offence. In past academic offense cases, the Associate Dean has imposed penalties for code violations that range from a mark of zero on plagiarized assignments to academic suspension from the University.
 
