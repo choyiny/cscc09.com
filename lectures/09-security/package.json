@@ -8,6 +8,6 @@
   },
   "author": "Cho Yin Yong",
   "dependencies": {
-    "axios": "^1.7.2"
+    "axios": "^1.8.2"
   }
 }
