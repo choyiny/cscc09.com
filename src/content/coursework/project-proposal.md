@@ -86,8 +86,7 @@ The proposal should contain the following information:
 - Bullet points outlining how to fulfil "Additional Requirements"
 - Your alpha version, beta version, and final version milestones
 
-Please push to the `main` branch of your team repository and also submit the repository to Gradescope. Only
-1 person in your team needs to submit to Gradescope.
+Please push to the `main` branch of your team repository and also submit the repository to Gradescope. Only 1 person in your team needs to submit to Gradescope.
 
 You will receive full credit for the proposal if the instructor deems it to be a reasonable project.
 You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.

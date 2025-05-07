@@ -27,13 +27,12 @@ For specific prerequisite requirements see the [UTSC Registrar](https://utsc.cal
 
 # Course Timing
 
-|         | Time             | Location           | Instructor   |
-| ------- | ---------------- | ------------------ | ------------ |
-| LEC01   | Thursday 5-7pm   | Available on ACORN | Cho Yin Yong |
-| PRA0001 | Monday 3-5pm     | Available on ACORN | X            |
-| PRA0002 | Tuesday 3-5pm    | Available on ACORN | X            |
-| PRA0003 | Wednesday 9-11am | Available on ACORN | X            |
-| PRA0004 | Wednesday 7-9pm  | Available on ACORN | X            |
+|         | Time            | Location           | Instructor    |
+| ------- | --------------- | ------------------ | ------------- |
+| LEC01   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong  |
+| PRA0001 | Monday 3-5pm    | Available on ACORN | Danny Chen    |
+| PRA0002 | Tuesday 3-5pm   | Available on ACORN | Vincent Zhang |
+| PRA0004 | Wednesday 7-9pm | Available on ACORN | Jason Su      |
 
 Practicals are mandatory. Please attend the practical section you are registered in. If you are unable to attend a practical, please contact the instructor.
 
@@ -43,9 +42,12 @@ We encourage you to post questions regarding course materials and assignments on
 need extended support, the course staff will hold regular office hours. Also, please contact
 course staff via Slack direct message, we will not respond to any emails.
 
-|              | Office Hours                            | Location             |
-| ------------ | --------------------------------------- | -------------------- |
-| Cho Yin Yong | Thursday 7-8pm or by online appointment | Available on Quercus |
+|               | Office Hours                            | Location             |
+| ------------- | --------------------------------------- | -------------------- |
+| Cho Yin Yong  | Thursday 7-8pm or by online appointment | Available on Quercus |
+| Vincent Zhang | Tuesday 5-6pm                           | Available on Quercus |
+| Jason Su      | Wednesday 6-7pm                         | Available on Quercus |
+| Danny Chen    | Monday 5-6pm                            | Available on Quercus |
 
 # Course Information
 
@@ -100,11 +102,9 @@ If you believe that a piece of work has been graded incorrectly, you may request
 
 You are expected to comply with the [Code of Behaviour on Academic Matters](https://governingcouncil.utoronto.ca/secretariat/policies/code-behaviour-academic-matters-july-1-2019).
 
-Assignment solutions must be prepared individually, except where an assignment handout allows working with a partner. Note that working with a partner may be restricted to just part of an assignment, such as programming task, whereas the rest of the assignment must be solved by an individual.
+Assignment solutions must be prepared individually, except the project, where you may collaborate with partners. For group work, you are fully responsible for the piece of work you submit to the team repository as your contribution to the group work.
 
-For group work, you are fully responsible for the piece of work you submit to the team repository as your contribution to the group work.
-
-When the assignment handout allows you to use snippets of code or third-party library from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced.
+When the assignment handout allows you to use snippets of code or third-party library from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced through the use of in-line comments.
 
 The use of Generative artificial intelligence tools (Gen AI tools) are strictly prohibited unless otherwise stated in the assignment or project for limited scope only. If GenAI use is explicitly allowed in a given piece of coursework, all GenAI generated code or text content must be clearly marked as such. Failure to do so will be considered as academic misconduct.
 

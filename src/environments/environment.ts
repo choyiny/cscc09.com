@@ -18,7 +18,17 @@ export const environment = {
     },
     {
       name: "Teaching Assistants",
-      members: [],
+      members: [
+        {
+          name: "Jason Su",
+        },
+        {
+          name: "Vincent Zhang",
+        },
+        {
+          name: "Danny Chen",
+        },
+      ],
     },
     {
       name: "Industry Experts",
