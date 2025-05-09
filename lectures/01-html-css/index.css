@@ -1,0 +1,10 @@
+.header.header-demo {
+  /* text color to red */
+  color: red;
+}
+
+.header {
+  /* border: 1px black solid; */
+  margin: 50px 0 100px 0;
+  padding: 50px 0 100px 0;
+}
