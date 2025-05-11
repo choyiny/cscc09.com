@@ -30,7 +30,7 @@ For specific prerequisite requirements see the [UTSC Registrar](https://utsc.cal
 |         | Time            | Location           | Instructor    |
 | ------- | --------------- | ------------------ | ------------- |
 | LEC01   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong  |
-| PRA0001 | Monday 3-5pm    | Available on ACORN | Danny Chen    |
+| PRA0001 | Monday 3-5pm    | Available on ACORN | Andre Fong    |
 | PRA0002 | Tuesday 3-5pm   | Available on ACORN | Vincent Zhang |
 | PRA0004 | Wednesday 7-9pm | Available on ACORN | Jason Su      |
 
@@ -47,7 +47,7 @@ course staff via Slack direct message, we will not respond to any emails.
 | Cho Yin Yong  | Thursday 7-8pm or by online appointment | Available on Quercus |
 | Vincent Zhang | Tuesday 5-6pm                           | Available on Quercus |
 | Jason Su      | Wednesday 6-7pm                         | Available on Quercus |
-| Danny Chen    | Monday 5-6pm                            | Available on Quercus |
+| Andre Fong    | Monday 5-6pm                            | Available on Quercus |
 
 # Course Information
 

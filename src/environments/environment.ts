@@ -26,7 +26,7 @@ export const environment = {
           name: "Vincent Zhang",
         },
         {
-          name: "Danny Chen",
+          name: "Andre Fong",
         },
       ],
     },
