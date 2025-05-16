@@ -59,7 +59,7 @@ One of the nice things about using Github for the course website is that you can
 
 The slack #summer-2025 channel is the best place to ask technical questions, and general questions about the course, assignments and labs. You are advised to check this as frequently as possible. For personal issues, please private message the instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
-- [Anonymous Feedback Form](https://forms.gle/gYsGUCx358h2zJX66)
+- [Anonymous Feedback Form](https://forms.gle/mpBh4MbNygwrAapr5)
 
 If you have feedback about the course, you can send an anonymous feedback to the course instructor (you also have the option of including your name). Since the sender cannot be determined, comments sent through the feedback form are considered public, and they may receive a response at the beginning of class or on Slack.
 

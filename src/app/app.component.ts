@@ -213,7 +213,7 @@ export class AppComponent {
     },
     {
       name: "Feedback",
-      path: "https://forms.gle/aJ6bsaZ7cBmp2u6W7",
+      path: "https://forms.gle/mpBh4MbNygwrAapr5",
     },
   ];
 
