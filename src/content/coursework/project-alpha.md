@@ -1,7 +1,7 @@
 ---
 title: Group Project - Alpha Version
-releaseDate: 2025-05-23
-dueDate: 2025-06-27T16:00:00-04:00
+releaseDate: 2025-05-22
+dueDate: 2025-06-26T16:00:00-04:00
 ---
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.
@@ -14,7 +14,7 @@ At this point, all your code should be pushed to the `main` branch on Github.
 
 ## Academic Integrity
 
-The course policy on academic integrity applies to this project. This means that all code developed for this project must be written exclusively by the members of the team. Any use of UI elements and snippets of code found on the web must be clearly cited in a credit page of the application.
+The course policy on academic integrity applies to this project. This means that all code developed for this project must be written exclusively by the members of the team. Any use of UI elements and snippets of code found on the web must be clearly cited in a credit page of the application. If you are using Github Copilot for code generation, you must also write the prompt you used the generate the code as an in-line comment.
 
 You have the freedom to build whatever you want as a project, however the following restrictions strictly apply:
 

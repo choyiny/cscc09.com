@@ -1,16 +1,20 @@
 ---
 title: Group Project - Proposal
-releaseDate: 2025-05-23
+releaseDate: 2025-05-22
 dueDate: 2025-06-06T16:00:00-04:00
 ---
 
 The project allows you to demonstrate that you have mastered full-stack development concepts learned from this course. As a team of 2-3, you will create a publicly available web application.
 
-## Create the repository
+## Create the project team and project repository
 
-Click here to create or join a team: https://classroom.github.com/a/4CPWkaTc
+Before creating a team, brainstorm with your team about the project you want to build. Your team name should be the same as your project name. It is your responsibility to have frequent meetings with your team to discuss and work on the project together, ideally, in person.
 
-One team member should create the team, others should join the team.
+Click here to create or join a Github Classroom Team: <Team Registration Github Link>
+
+On Gradescope, you should also create a team. Only 1 person in your team needs to submit to Gradescope.
+
+For both Github and Gradescope, one team member should create the team, others should join the team.
 
 ## Required Elements
 
@@ -23,22 +27,45 @@ One team member should create the team, others should join the team.
   - Your frontend must be a Single Page Application (SPA)
 
 - The application must use Express as the core backend API
-- The application's API is RESTful where appropriate
+- The application's core API must be a REST API where appropriate
+- The main database must be a PostgreSQL database
+  - You are allowed to use other databases for specific features, such as Redis for caching or MongoDB for NoSQL features.
 - ⚠️ The application must be deployed on a Virtual Machine using Docker and Docker Compose
   - You must commit all your deployment files to Github as well, including CI files for building images.
-- The application must be accessible to the general public without extra steps. i.e. A person does not need to talk to your team to access the full application.
-- The application must interact with at least one third-party API. Beware of usage limits in the free tier as that may cause your app to not function properly.
+- The application must be accessible to the general public without extra steps. i.e. A person does not need to talk to your team to access the full application, such as requesting an email to be added to a development allowlist.
 - The application must use OAuth 2.0 (an authorization mechanism) for any purpose.
+- The project must be of fair complexity, as determined by the instructor.
 
 <u>Projects will NOT receive a passing grade (i.e. adjusted to <=49) if the above requirements are not fulfilled.</u>
 
-# Additional Requirements
+## Security and Payment Requirement
 
-You must also choose 2 out of 3 Additional Requirements to complete:
+Users must be able to sign up to the application using OAuth 2.0 or your own custom login system. Before they can login, they must also "purchase" a monthly subscription to the application. Otherwise, when a user tries to login, they will be sent to the payment page.
 
-- A piece of the application must interact with a webhook by an external service
+To standardize marking, you must use the [Stripe Checkout](https://docs.stripe.com/billing/quickstart) feature in sandbox mode.
+
+Your team will be marked based on the following criteria:
+
+- Security of login system
+- Security of payment system
+- Security of user data
+
+Consider the following questions:
+
+- If the user cancels a subscription and tries to login, what happens?
+- If the user fails to pay for a subscription, what happens?
+- If the user tries to login without a subscription, what happens?
+
+> Note that this feature will be partially automarked with a browser bot.
+
+<u>Projects will NOT receive a passing grade (i.e. adjusted to <=49) if the above requirements are not fulfilled.</u>
+
+## Additional Requirements
+
+You must also choose 1 out of 2 Additional Requirements to complete:
+
 - A piece of the application is “real-time”, which means it can reflect other user changes without refreshing
-- A piece of the application has functionality that executes a long-running task (something that could take more than 10 seconds to complete)
+- A piece of the application uses task queues to process data asynchronously independent of HTTP requests
 
 <u>Projects will NOT receive a passing grade (i.e. adjusted to <=49) if the above requirements are not fulfilled.</u>
 
@@ -50,15 +77,9 @@ You must also choose 2 out of 3 Additional Requirements to complete:
 - Object galleries (such as PDF galleries, video galleries, eBook galleries, etc.)
 - Usage of non-web-focused frameworks, like three.js. (Feel free to use it as a supporting element! It looks good)
 
-## Final Presentations
-
-Outstanding web applications will be chosen to present in the last lecture. Selected projects (usually around 30%, maybe more) will obtain a bonus from 1% to 10%. Invited industry experts will make the final decision.
-
 ## Complexity
 
-With 9 weeks to complete the project, it must be of fair complexity. (not that of a basic CRUD application, like Web Gallery) It is recommended that progress be made every week towards project completion.
-
-You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
+With 9 weeks to complete the project, it must be of fair complexity. (not that of a basic CRUD application, like Web Gallery) It is recommended that progress be made every week towards project completion. If the proposal is too simple, the instructor may ask you to increase the complexity of the project. You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
 
 ## Syllabus
 
@@ -79,17 +100,16 @@ You must register your team on Github by the deadline. After registration, each 
 
 The proposal should contain the following information:
 
-- Project title and team name
-- Team members with @mail.utoronto.ca emails
+- Project name
+- Team members with @mail.utoronto.ca emails and utorid
 - Brief description of the web application
-- Bullet points outlining how to fulfil "Required Elements"
-- Bullet points outlining how to fulfil "Additional Requirements"
+- Modern frontend framework of choice
+- Additional Requirement of choice and a brief description of how it will be implemented
 - Your alpha version, beta version, and final version milestones
 
 Please push to the `main` branch of your team repository and also submit the repository to Gradescope. Only 1 person in your team needs to submit to Gradescope.
 
-You will receive full credit for the proposal if the instructor deems it to be a reasonable project.
-You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
+You will receive full credit for the proposal if the instructor deems it to be a reasonable project. You have unlimited chances to modify your proposal at any point in the course and be reevaluated. You can visit the instructor’s office hours for reevaluation.
 
 ## Alpha Version (5%) - Github
 
@@ -115,23 +135,25 @@ You must add the application's deployed URL to README.md.
 
 Your application must remain available throughout the marking period, which is 2 weeks after the final version deadline.
 
-As mentioned in “Required Elements”, if the application is not deployed or not accessible, you will not receive credit for the final version.
+As mentioned in “Required Elements”, if the application is not deployed or not accessible, you will not receive any credit for the final version.
 
 ## Video Demo (5%) - Github and Gradescope
 
 Record a 3-minute-long video demonstrating the core features of your web application. You should record the video as if it was part of a hiring process.
 
-Do not show slides, do not show code. Do not spend too long on unimportant features such as login/signup.
+Do not show slides, do not show code. Do not show the sign up / login process unless it contains a unique feature that is not already covered in "Security and Payment Requirement".
 
 Upload your video to Youtube and include it in README.md. The presentation is going to determine who gets to present at the final lecture.
 
+Furthermore, please also fill in this Google Form (link will be provided later) to be eligible to be selected for the Presentation bonus.
+
 ## Final Lecture Presentation (1%-10% bonus)
 
-The top projects of this course will be selected to present in the final lecture to showcase to the entire class. Industry experts will be invited as judges to select the top 3 projects, which will get a bonus attached to their project.
+Outstanding web applications will be chosen to present in the last lecture. Selected projects (usually around 30%, maybe more) will obtain a bonus from 1% to 10%. Invited industry experts will make the final decision.
 
 ## Academic Integrity
 
-The course policy on academic integrity applies to this project. This means that all code developed for this project must be written exclusively by the members of the team. Any use of UI elements and snippets of code found on the web must be clearly cited in a credit page of the application.
+The course policy on academic integrity applies to this project. This means that all code developed for this project must be written exclusively by the members of the team. Any use of UI elements and snippets of code found on the web must be clearly cited in a credit page of the application. If you are using Github Copilot for code generation, you must also write the prompt you used the generate the code as an in-line comment.
 
 You have the freedom to build whatever you want as a project, however the following restrictions strictly apply:
 
