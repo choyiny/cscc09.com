@@ -1,0 +1,141 @@
+openapi: 3.0.0
+info:
+  title: Chirper API
+  version: 1.0.0
+  description: A simple API for managing chirps (short messages).
+servers:
+  - url: http://localhost:3000
+    description: Local development server
+paths:
+  /chirps:
+    post:
+      summary: Create a new chirp
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                  example: "Hello, world!"
+              required:
+                - content
+      responses:
+        "200":
+          description: Chirp created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  content:
+                    type: string
+                    example: "Hello, world!"
+    get:
+      summary: Get all chirps
+      responses:
+        "200":
+          description: A list of chirps
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                    example: 1
+                  chirps:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        content:
+                          type: string
+                          example: "Hello, world!"
+  /chirps/{id}:
+    patch:
+      summary: Update a chirp
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+          example: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                  example: "Updated chirp content"
+              required:
+                - content
+      responses:
+        "200":
+          description: Chirp updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  content:
+                    type: string
+                    example: "Updated chirp content"
+        "404":
+          description: Chirp not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "chirp id: 1 does not exist"
+    delete:
+      summary: Delete a chirp
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+          example: 1
+      responses:
+        "200":
+          description: Chirp deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  content:
+                    type: string
+                    example: "Hello, world!"
+        "404":
+          description: Chirp not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "chirp id: 1 does not exist"

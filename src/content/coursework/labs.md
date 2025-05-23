@@ -17,7 +17,7 @@ min(5%, ∑(% of lab_i))
 | ---------------- | ----------------------------------------------------- | ---------- |
 | 2                | [HTML/CSS](https://classroom.github.com/a/w8MZQ41_)   | 0.5%       |
 | 3                | [JavaScript](https://classroom.github.com/a/IcVOxC4I) | 0.5%       |
-| 4                | Web API                                               | 0.5%       |
+| 4                | [Web API](https://classroom.github.com/a/BZ3rBZAM)    | 0.5%       |
 | 5                | Storing and serving data                              | 1%         |
 | 6                | Authentication and Authorization                      | 1%         |
 | 7 (Reading Week) | Angular Microblog                                     | 1% (Bonus) |
