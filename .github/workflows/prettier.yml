@@ -7,4 +7,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run Prettier
-        run: npm install -g prettier@3.2.5 && npx prettier --check .
+        run: npm install -g prettier@3.5.3 && npx prettier --check .
