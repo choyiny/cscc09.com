@@ -8,11 +8,12 @@ Enjoy the course!
 
 Prerequisites: Node 18+ and Yarn 1.22+ installed.
 
-1.  **Install dependencies**
+1.  **Install dependencies and pre-commit hooks**
 
     ```shell
     cd cscc09.com/
     yarn install
+    npx simple-git-hooks
     ```
 
 2.  **Start developing.**
