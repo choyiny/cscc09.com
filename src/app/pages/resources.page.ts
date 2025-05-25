@@ -1,6 +1,6 @@
 import { MarkdownComponent, injectContent } from "@analogjs/content";
 import { Component } from "@angular/core";
-import { PostAttributes } from "../interfaces/file-attributes";
+import { FileAttributes } from "../interfaces/file-attributes";
 import { AsyncPipe } from "@angular/common";
 import { environment } from "../../environments/environment";
 import { RouteMeta } from "@analogjs/router";
@@ -49,5 +49,5 @@ export const routeMeta: RouteMeta = getRouteMeta({
   `,
 })
 export default class ExtraResourcesPage {
-  post$ = injectContent<PostAttributes>({ customFilename: "resources" });
+  post$ = injectContent<FileAttributes>({ customFilename: "resources" });
 }

@@ -2,6 +2,7 @@ import { Component, Input } from "@angular/core";
 import { environment } from "../../environments/environment";
 import { RouteMeta } from "@analogjs/router";
 import { getRouteMeta } from "../meta/route-meta";
+import { Instructor } from "../interfaces/instructor";
 
 export const routeMeta: RouteMeta = getRouteMeta({
   partialTitle: "Team",
@@ -26,12 +27,14 @@ export const routeMeta: RouteMeta = getRouteMeta({
   ],
   template: `
     <h3>{{ name }}</h3>
-    <p>{{ title }}</p>
+    @if (title) {
+      <p>{{ title }}</p>
+    }
   `,
 })
-class MemberComponent {
+export class MemberComponent {
   @Input() name = "";
-  @Input() title = "";
+  @Input() title?: string;
 }
 
 @Component({
@@ -89,5 +92,5 @@ class MemberComponent {
   imports: [MemberComponent],
 })
 export default class TeamPageComponent {
-  staff = environment.staff;
+  staff = environment.staff as { name: string; members: Instructor[] }[];
 }

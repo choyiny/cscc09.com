@@ -65,11 +65,11 @@ export default class LectureComponent {
       param: "lectureId",
       subdirectory: "lectures",
     }).subscribe((lecture) => {
-      this.setLecture(lecture);
+      this.setLecture(lecture as ContentFile<LectureAttributes>);
     });
   }
 
-  setLecture(lecture: ContentFile<LectureAttributes | Record<string, never>>) {
+  setLecture(lecture: ContentFile<LectureAttributes>) {
     this.lecture = lecture;
     this.title.setTitle(
       `Week ${lecture.attributes.week}: ${lecture.attributes.title}`,

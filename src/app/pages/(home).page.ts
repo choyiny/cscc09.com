@@ -1,10 +1,11 @@
 import { MarkdownComponent, injectContent } from "@analogjs/content";
 import { Component } from "@angular/core";
-import { PostAttributes } from "../interfaces/file-attributes";
 import { AsyncPipe } from "@angular/common";
-import { environment } from "../../environments/environment";
 import { RouteMeta } from "@analogjs/router";
 import { getRouteMeta } from "../meta/route-meta";
+import { environment } from "../../environments/environment";
+import type { Instructor } from "../interfaces/instructor";
+import { FileAttributes } from "../interfaces/file-attributes";
 
 export const routeMeta: RouteMeta = getRouteMeta({
   title: environment.fullTitle,
@@ -75,8 +76,8 @@ export default class HomePage {
   courseCode = environment.courseCode;
   courseTitle = environment.courseTitle;
   description = environment.description;
-  instructors = environment.staff.find(
+  instructors: Instructor[] = environment.staff.find(
     (staffType) => staffType.name === "Instructors",
-  )?.members;
-  post$ = injectContent<PostAttributes>({ customFilename: "syllabus" });
+  )?.members as Instructor[];
+  post$ = injectContent<FileAttributes>({ customFilename: "syllabus" });
 }

@@ -79,7 +79,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
     }
   `,
 })
-class CourseworkItemComponent {
+export class CourseworkItemComponent {
   @Input() work: ContentFile<CourseworkAttributes> | undefined = undefined;
 
   getDateString(date: Date) {

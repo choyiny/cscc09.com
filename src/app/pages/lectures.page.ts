@@ -63,25 +63,26 @@ export const routeMeta: RouteMeta = getRouteMeta({
   ],
   template: `
     @if (lecture) {
-      <a [routerLink]="'/lectures/' + lecture.slug" class="lecture-item">
+      <a [routerLink]="'/lectures/' + slug" class="lecture-item">
         <div class="lecture-number">
-          <span>{{ lecture.attributes.week }}</span>
+          <span>{{ lecture.week }}</span>
         </div>
         <div class="lecture-details">
-          <div class="lecture-title">{{ lecture.attributes.title }}</div>
+          <div class="lecture-title">{{ lecture.title }}</div>
           <div class="lecture-date">
-            Week of {{ getDateString(lecture.attributes.date) }}
+            Week of {{ getDateString(lecture.date) }}
           </div>
           <div class="lecture-description">
-            {{ lecture.attributes.description }}
+            {{ lecture.description }}
           </div>
         </div>
       </a>
     }
   `,
 })
-class LectureItemComponent {
-  @Input() lecture: LectureAttributes | undefined = undefined;
+export class LectureItemComponent {
+  @Input() lecture?: LectureAttributes;
+  @Input() slug?: string;
 
   getDateString(date: Date) {
     return new Date(date).toLocaleString("en-US", {
@@ -109,7 +110,10 @@ class LectureItemComponent {
       </header>
       <div class="lecture-container">
         @for (lecture of lectures; track lecture) {
-          <app-lecture-item [lecture]="lecture"></app-lecture-item>
+          <app-lecture-item
+            [slug]="lecture.slug"
+            [lecture]="lecture.attributes"
+          ></app-lecture-item>
         }
       </div>
     </div>

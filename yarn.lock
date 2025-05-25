@@ -20,42 +20,42 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@analogjs/content@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/content/-/content-1.15.1.tgz#cb5658ecb587595a0eb0703b8370d51f2e914057"
-  integrity sha512-nZFKGmlElYlRMR1Qzq7fR9jUpHNUa+iOWrCEnzaiQr+DDBY1kO6H2Y6ZbAEWMloaBc/5TYOda/jyMbR/GW5Lmw==
+"@analogjs/content@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@analogjs/content/-/content-1.16.2.tgz#fa0a031c4e84245384bd920b907ec901ee529825"
+  integrity sha512-kjqVyEqB9WPXRrp4GFEVIOsNGVVXTHNcHiDQBIiTtqbMaIrvXaDSdq7Ge592i/nGLkR0h6CkuWGSPvYfHtVJpg==
   dependencies:
     tslib "^2.3.0"
 
-"@analogjs/platform@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/platform/-/platform-1.15.1.tgz#feba9862e9def4de1bb7522c290a0da481fd1311"
-  integrity sha512-YA0XK23ry2K3U7PHHT8rv64v4HUsSovQKGQdAalZTOoJySC4ohFnUlGaPK2N4bSjvXOBwS60i3yHLrJteu8K0w==
+"@analogjs/platform@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@analogjs/platform/-/platform-1.16.2.tgz#b8606878df6f9fbf550e45421ff4dcafc68f2146"
+  integrity sha512-JcLsRHtsPSSkFsp6BBmyuMUcKFfmxd3T1livJZSlHyeJc8afRBosXHfDqb84rKuN2S8Ls8/Sj5A2gloofOMXBg==
   dependencies:
-    "@analogjs/vite-plugin-angular" "^1.15.1"
-    "@analogjs/vite-plugin-nitro" "^1.15.1"
+    "@analogjs/vite-plugin-angular" "^1.16.2"
+    "@analogjs/vite-plugin-nitro" "^1.16.2"
     nitropack "^2.11.0"
     vitefu "^1.0.0"
 
-"@analogjs/router@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/router/-/router-1.15.1.tgz#c90cefaaf2ec59c8a5716761a18dc26fa277df74"
-  integrity sha512-FX3+Q+lW7IMYW5LfJ8UY/dCSno5trQPl7Kbi+4MKP7HqLbdcatAEvJufPhKv+3Dv2cBsXWj5ozcBm2kbYCzJag==
+"@analogjs/router@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@analogjs/router/-/router-1.16.2.tgz#2db3e151575ec471a0dcf8dabf2490625246b78e"
+  integrity sha512-kGCkluUQ4TcgOt1bQTbAcaovnJqyR/wyRrooLogZI4z5gkVc60OPFyD5kBBa1ljGylGgO8d6MmGEcZKhygnG/g==
   dependencies:
     tslib "^2.0.0"
 
-"@analogjs/vite-plugin-angular@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-angular/-/vite-plugin-angular-1.15.1.tgz#c0ec040aa147d96c55b41cef67f8ad8b541dee04"
-  integrity sha512-GMbTyHo7cSNWQXUYm25WKUWHGGTPK4rCAeSV3014R/ml08rjg7A15K1DxWlGcdeAmxB2qKBOUnOD6ffVfHjDMA==
+"@analogjs/vite-plugin-angular@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-angular/-/vite-plugin-angular-1.16.2.tgz#92eaf71e6292f814d29337d988eda9015a4bf9c9"
+  integrity sha512-2dHwp11/oyUnxXXU5vXgRdyN7nrwEZWGYAfOEYMkk2bHfOohH6BAPpR3+eiHbLVAxt7kt+igBcOCrvRFUkJ30A==
   dependencies:
     ts-morph "^21.0.0"
     vfile "^6.0.3"
 
-"@analogjs/vite-plugin-nitro@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-nitro/-/vite-plugin-nitro-1.15.1.tgz#80b14b2c6e6a046be24fc073951f27132da54e91"
-  integrity sha512-3HOFTA1EFbpcGJSmsv/UDR/3tu1ng32z/+KYLfd8jrpyizocyXHTPIY/LVdaxHfpiwNy5yQXEx4n2nqGdEm9gQ==
+"@analogjs/vite-plugin-nitro@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-nitro/-/vite-plugin-nitro-1.16.2.tgz#1cbc7779f9360ba583ab1c0c68ede1205bbf7f60"
+  integrity sha512-oe8sGxQlXNvb1/C+LBiYG8v0tEveXxfFkIjMVWhO9+sW+8HtmIj/bzDC8hJzH3KOCsz1c1Oz2VWdNqqOEAgXtA==
   dependencies:
     defu "^6.1.4"
     esbuild "^0.25.0"
