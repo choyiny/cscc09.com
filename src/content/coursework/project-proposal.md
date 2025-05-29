@@ -10,7 +10,7 @@ The project allows you to demonstrate that you have mastered full-stack developm
 
 Before creating a team, brainstorm with your team about the project you want to build. Your team name should be the same as your project name. It is your responsibility to have frequent meetings with your team to discuss and work on the project together, ideally, in person.
 
-Click here to create or join a Github Classroom Team: <Team Registration Github Link>
+Click here to create or join a Github Classroom Team: https://classroom.github.com/a/HRzKZM4l
 
 On Gradescope, you should also create a team. Only 1 person in your team needs to submit to Gradescope.
 
