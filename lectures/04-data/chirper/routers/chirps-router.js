@@ -13,7 +13,7 @@ export const chirpsRouter = Router();
 chirpsRouter.post("/", upload.single("image"), async (req, res, next) => {
   const schema = [
     { name: "content", required: true, type: "string", location: "body" },
-    { name: "image", required: true, type: "file", location: "file" },
+    { name: "image", required: false, type: "file", location: "file" },
     { name: "ChirpId", required: false, type: "number", location: "body" },
   ];
   if (!validateInput(req, res, schema)) return;
@@ -59,7 +59,7 @@ chirpsRouter.get("/", async (req, res, next) => {
     include: Chirp,
   });
   if (chirps.length === 0) {
-    return { chirps: [], cursor: null };
+    return res.json({ chirps: [], cursor: null });
   }
   return res.json({
     chirps,

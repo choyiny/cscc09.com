@@ -15,6 +15,9 @@
   const [chirpsLoading, getChirpsLoading, setChirpsLoading] =
     meact.useState(null);
 
+  const [infiniteLoading, getInfiniteLoading, setInfiniteLoading] =
+    meact.useState(false);
+
   const [activeChirp, getActiveChirp, setActiveChirp] = meact.useState(null);
   const [cursor, getCursor, setCursor] = meact.useState(null);
 
@@ -109,21 +112,36 @@
   }
 
   window.addEventListener("DOMContentLoaded", function () {
-    // scroll listener to load more chirps - this is very broken!!!!!!
-    // TODO: 1% bonus for the first 3 people to fix this
+    // scroll listener to load more chirps
     document.addEventListener("scroll", function () {
+      const cursor = getCursor();
+      if (cursor === null || getInfiniteLoading()) return;
       // when I scroll to the bottom of the page
       if (
         document.documentElement.scrollHeight - window.innerHeight <=
-        document.documentElement.scrollTop + 100
+        document.documentElement.scrollTop + 50
       ) {
-        // load more chirps with cursor
-        ChirpService.getChirps(getCursor()).then((result) => {
-          setChirps([getChirps(), ...result.chirps]);
-          setCursor(result.cursor);
-        });
+        setInfiniteLoading(true);
       }
     });
+
+    meact.useEffect(() => {
+      // infinite loading
+      // load more chirps with cursor
+      if (!getInfiniteLoading()) return;
+      ChirpService.getChirps(getCursor())
+        .then((result) => {
+          if (result.chirps.length === 0) {
+            setCursor(null);
+          } else {
+            setChirps([...getChirps(), ...result.chirps]);
+            setCursor(result.cursor);
+          }
+        })
+        .finally(() => {
+          setInfiniteLoading(false);
+        });
+    }, [infiniteLoading]);
 
     const chripsPlaceholder = document.querySelector(".chirps-placeholder");
     setChirpsLoading(true);
