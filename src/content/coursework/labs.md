@@ -20,7 +20,7 @@ min(5%, ∑(% of lab_i))
 | 4                | [Web API](https://classroom.github.com/a/BZ3rBZAM)                          | 0.5%       |
 | 5                | [Storing and serving data](https://classroom.github.com/a/lPld0d7U)         | 1%         |
 | 6                | [Authentication and Authorization](https://classroom.github.com/a/EjltqrMQ) | 1%         |
-| 7 (Reading Week) | Angular Microblog                                                           | 1% (Bonus) |
+| 7 (Reading Week) | [Angular Microblog](https://classroom.github.com/a/ulDa6IJ1)                | 1% (Bonus) |
 | 8-9              | VM Deployment                                                               | 1%         |
 | 10               | CI/CD                                                                       | 2%         |
 

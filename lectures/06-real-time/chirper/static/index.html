@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chirper</title>
+    <link rel="stylesheet" type="text/css" href="css/cols.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/chirper.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-3 row">
+        <div class="col-4"></div>
+        <div class="col-6">
+          <img class="logo" src="bird.svg" />
+          <button class="btn btn-menu">Explore</button>
+          <button class="btn btn-menu">Settings</button>
+        </div>
+      </div>
+      <div class="col-5 col-sm-12 chirp-section">
+        <form id="newChirp">
+          <input
+            name="content"
+            id="newChirpInput"
+            class="new-chirp-input"
+            type="text"
+            placeholder="What's happening?"
+          />
+          <input type="file" name="image" id="image" class="image-input" />
+          <input
+            id="submitChirp"
+            type="submit"
+            class="btn btn-blue"
+            value="Chirp"
+          />
+        </form>
+        <div class="chirps-placeholder">Trying to load latest chirps.</div>
+        <div class="chirps" id="chirpsList"></div>
+      </div>
+      <div class="col-4 right">
+        <div class="card">
+          <h2 class="card-title">New to Chirper?</h2>
+          <button class="btn" id="dontClickMe">Don't click me</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/meact.js"></script>
+  <script src="js/chirp-api-service.js"></script>
+  <script src="js/index.js"></script>
+</html>
