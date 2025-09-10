@@ -28,7 +28,7 @@
     "@angular/forms": "^17.3.1",
     "@angular/platform-browser": "^17.3.1",
     "@angular/platform-browser-dynamic": "^17.3.1",
-    "@angular/platform-server": "^17.3.1",
+    "@angular/platform-server": "^18.2.14",
     "@angular/router": "^17.3.1",
     "@nx/angular": "^18.0.0",
     "front-matter": "^4.0.2",
