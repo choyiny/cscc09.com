@@ -27,12 +27,11 @@ For specific prerequisite requirements see the [UTSC Registrar](https://utsc.cal
 
 # Course Timing
 
-|         | Time            | Location           | Instructor   |
-| ------- | --------------- | ------------------ | ------------ |
-| LEC01   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong |
-| PRA0001 | Monday 3-5pm    | Available on ACORN | TBD          |
-| PRA0002 | Tuesday 3-5pm   | Available on ACORN | TBD          |
-| PRA0004 | Wednesday 7-9pm | Available on ACORN | TBD          |
+|         | Time           | Location           | Instructor      |
+| ------- | -------------- | ------------------ | --------------- |
+| LEC01   | Thursday 5-7pm | Available on ACORN | Cho Yin Yong    |
+| PRA0001 | Monday 3-5pm   | Available on ACORN | Pourya Moghadam |
+| PRA0002 | Tuesday 3-5pm  | Available on ACORN | Pourya Moghadam |
 
 Practicals are mandatory. Please attend the practical section you are registered in. If you are unable to attend a practical, please contact the instructor.
 
@@ -42,10 +41,10 @@ We encourage you to post questions regarding course materials and assignments on
 need additional support, the course staff will hold regular office hours. Please contact
 course staff via Slack direct message; we will not respond to emails.
 
-|              | Office Hours                            | Location             |
-| ------------ | --------------------------------------- | -------------------- |
-| Cho Yin Yong | Thursday 7-8pm or by online appointment | Available on Quercus |
-| TBD          | TBD                                     | TBD                  |
+|                 | Office Hours                            | Location             |
+| --------------- | --------------------------------------- | -------------------- |
+| Cho Yin Yong    | Thursday 7-8pm or by online appointment | Available on Quercus |
+| Pourya Moghadam | Tuesday 5-6pm                           | Available on Quercus |
 
 # Course Information
 
