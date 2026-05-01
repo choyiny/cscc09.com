@@ -18,7 +18,13 @@ export const environment = {
     },
     {
       name: "Teaching Assistants",
-      members: [],
+      members: [
+        {
+          name: "Pourya Moghadam",
+          title: "Teaching Assistant",
+          website: "https://pourya-moghadam74.github.io/",
+        },
+      ],
     },
     {
       name: "Industry Experts",
