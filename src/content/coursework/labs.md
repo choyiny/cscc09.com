@@ -13,15 +13,15 @@ Your labs portion of the grade will be calculated as follows:
 max(4%, ∑(% of lab_i))
 ```
 
-| Week | Topic                                                               | Weighting |
-| ---- | ------------------------------------------------------------------- | --------- |
-| 2    | [HTML/CSS](https://classroom.github.com/a/fnUGAYN_)                 | 0.5%      |
-| 3    | [JavaScript](https://classroom.github.com/a/GphWpyPI)               | 0.5%      |
-| 4    | [Web API](https://classroom.github.com/a/rcI1B9HT)                  | 0.5%      |
-| 5    | [Storing and serving data](https://classroom.github.com/a/76OCKtt4) | 0.5%      |
-| 6    | Authentication and Authorization                                    | 0.5%      |
-| 8    | VM Deployment                                                       | 1%        |
-| 10   | CI/CD                                                               | 1%        |
+| Week | Topic                                                                       | Weighting |
+| ---- | --------------------------------------------------------------------------- | --------- |
+| 2    | [HTML/CSS](https://classroom.github.com/a/fnUGAYN_)                         | 0.5%      |
+| 3    | [JavaScript](https://classroom.github.com/a/GphWpyPI)                       | 0.5%      |
+| 4    | [Web API](https://classroom.github.com/a/rcI1B9HT)                          | 0.5%      |
+| 5    | [Storing and serving data](https://classroom.github.com/a/76OCKtt4)         | 0.5%      |
+| 6    | [Authentication and Authorization](https://classroom.github.com/a/-3_-vQnx) | 0.5%      |
+| 8    | VM Deployment                                                               | 1%        |
+| 10   | CI/CD                                                                       | 1%        |
 
 ## Submission
 

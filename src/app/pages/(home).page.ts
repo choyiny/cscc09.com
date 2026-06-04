@@ -11,6 +11,7 @@ import { FileAttributes } from "../interfaces/file-attributes";
 export const routeMeta: RouteMeta = getRouteMeta({
   title: environment.fullTitle,
   description: environment.description,
+  routePath: "/",
 });
 
 @Component({

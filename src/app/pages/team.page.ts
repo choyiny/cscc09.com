@@ -7,6 +7,7 @@ import { Instructor } from "../interfaces/instructor";
 export const routeMeta: RouteMeta = getRouteMeta({
   partialTitle: "Team",
   description: `Teaching Team for ${environment.courseCode} ${environment.courseTitle}`,
+  routePath: "/team",
 });
 
 @Component({

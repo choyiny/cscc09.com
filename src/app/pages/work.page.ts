@@ -10,6 +10,7 @@ import { environment } from "../../environments/environment";
 export const routeMeta: RouteMeta = getRouteMeta({
   partialTitle: "Coursework",
   description: `Coursework for ${environment.courseCode} ${environment.courseTitle}`,
+  routePath: "/work",
 });
 
 @Component({

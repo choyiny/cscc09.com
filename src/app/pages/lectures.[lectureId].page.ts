@@ -10,6 +10,7 @@ import { Meta, Title } from "@angular/platform-browser";
 import { getMeta } from "../meta/route-meta";
 import { SafePipe } from "../pipes/safe.pipe";
 import { RouterLink } from "@angular/router";
+import { environment } from "../../environments/environment";
 
 @Component({
   standalone: true,
@@ -163,12 +164,16 @@ export default class LectureComponent {
     effect(() => {
       const lecture = this.lecture() as ContentFile<LectureAttributes>;
       if (lecture?.attributes?.week && lecture?.attributes?.title) {
-        this.title.setTitle(
-          `Week ${lecture.attributes.week}: ${lecture.attributes.title}`,
-        );
+        const title = `Week ${lecture.attributes.week}: ${lecture.attributes.title} - ${environment.courseCode} ${environment.courseTitle}`;
+        const description =
+          lecture.attributes.description?.trim() ||
+          `Lecture notes and materials for week ${lecture.attributes.week} of ${environment.courseCode} ${environment.courseTitle}.`;
+
+        this.title.setTitle(title);
         getMeta({
-          title: `Week ${lecture.attributes.week}: ${lecture.attributes.title}`,
-          description: lecture.attributes.description,
+          title,
+          description,
+          url: `https://cscc09.com/lectures/${lecture.slug}`,
         }).forEach((tag) => this.meta.updateTag(tag));
       }
     });

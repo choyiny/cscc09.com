@@ -1,51 +1,74 @@
 import { RouteMeta } from "@analogjs/router";
 import { environment } from "../../environments/environment";
 
-export function getMeta(params: { title: string; description: string }) {
+const BASE_URL = "https://cscc09.com";
+const DEFAULT_IMAGE = `${BASE_URL}/utsc-logo-dark.svg`;
+
+function getDescription(description?: string) {
+  const normalized = description?.trim();
+  if (normalized) {
+    return normalized;
+  }
+
+  return `Course website for ${environment.courseCode} ${environment.courseTitle} (${environment.semester}).`;
+}
+
+export function getMeta(params: {
+  title: string;
+  description?: string;
+  url?: string;
+}) {
+  const description = getDescription(params.description);
+  const url = params.url ?? BASE_URL;
+
   return [
+    {
+      name: "description",
+      content: description,
+    },
     {
       property: "og:title",
       content: params.title,
     },
     {
       property: "og:description",
-      content: params.description,
+      content: description,
     },
     {
       property: "og:image",
-      content: "https://cscc09.com/utsc-logo-dark.svg",
+      content: DEFAULT_IMAGE,
     },
     {
       property: "og:url",
-      content: "https://cscc09.com",
+      content: url,
     },
     {
       property: "og:type",
       content: "website",
     },
     {
-      property: "twitter:card",
+      name: "twitter:card",
       content: "summary_large_image",
     },
     {
-      property: "twitter:title",
+      name: "twitter:title",
       content: params.title,
     },
     {
-      property: "twitter:description",
-      content: params.description,
+      name: "twitter:description",
+      content: description,
     },
     {
-      property: "twitter:image",
-      content: "https://cscc09.com/utsc-logo-dark.svg",
+      name: "twitter:image",
+      content: DEFAULT_IMAGE,
     },
   ];
 }
 
 export function getRouteMeta(
   params:
-    | { partialTitle: string; description: string }
-    | { title: string; description: string },
+    | { partialTitle: string; description?: string; routePath?: string }
+    | { title: string; description?: string; routePath?: string },
 ): RouteMeta {
   let title = "";
   if ("partialTitle" in params) {
@@ -53,43 +76,49 @@ export function getRouteMeta(
   } else {
     title = params.title;
   }
+  const description = getDescription(params.description);
+  const url = `${BASE_URL}${params.routePath ?? ""}`;
 
   const meta = [
+    {
+      name: "description",
+      content: description,
+    },
     {
       property: "og:title",
       content: title,
     },
     {
       property: "og:description",
-      content: params.description,
+      content: description,
     },
     {
       property: "og:image",
-      content: "https://cscc09.com/utsc-logo-dark.svg",
+      content: DEFAULT_IMAGE,
     },
     {
       property: "og:url",
-      content: "https://cscc09.com",
+      content: url,
     },
     {
       property: "og:type",
       content: "website",
     },
     {
-      property: "twitter:card",
+      name: "twitter:card",
       content: "summary_large_image",
     },
     {
-      property: "twitter:title",
+      name: "twitter:title",
       content: title,
     },
     {
-      property: "twitter:description",
-      content: params.description,
+      name: "twitter:description",
+      content: description,
     },
     {
-      property: "twitter:image",
-      content: "https://cscc09.com/utsc-logo-dark.svg",
+      name: "twitter:image",
+      content: DEFAULT_IMAGE,
     },
   ];
 

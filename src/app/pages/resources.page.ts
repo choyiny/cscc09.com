@@ -7,8 +7,9 @@ import { RouteMeta } from "@analogjs/router";
 import { getRouteMeta } from "../meta/route-meta";
 
 export const routeMeta: RouteMeta = getRouteMeta({
-  title: environment.fullTitle,
-  description: environment.description,
+  partialTitle: "Resources",
+  description: `Learning resources, reference links, and tools for ${environment.courseCode} ${environment.courseTitle}.`,
+  routePath: "/resources",
 });
 
 @Component({

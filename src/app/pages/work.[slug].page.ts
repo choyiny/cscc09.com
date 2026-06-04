@@ -10,6 +10,7 @@ import { DatePipe } from "@angular/common";
 import { Meta, Title } from "@angular/platform-browser";
 import { getMeta } from "../meta/route-meta";
 import { RouterLink } from "@angular/router";
+import { environment } from "../../environments/environment";
 
 @Component({
   standalone: true,
@@ -113,10 +114,16 @@ export default class CourseworkComponent {
     effect(() => {
       const handout = this.handout() as ContentFile<CourseworkAttributes>;
       if (handout?.attributes?.title) {
-        this.title.setTitle(handout.attributes.title);
+        const title = `${handout.attributes.title} - ${environment.courseCode} ${environment.courseTitle}`;
+        const description =
+          handout.attributes.description?.trim() ||
+          `Coursework details, instructions, and deadlines for ${handout.attributes.title} in ${environment.courseCode} ${environment.courseTitle}.`;
+
+        this.title.setTitle(title);
         getMeta({
-          title: handout.attributes.title,
-          description: handout.attributes.description,
+          title,
+          description,
+          url: `https://cscc09.com/work/${handout.slug}`,
         }).forEach((metaTag) => this.meta.updateTag(metaTag));
       }
     });
