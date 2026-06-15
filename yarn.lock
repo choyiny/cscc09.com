@@ -403,10 +403,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-server@^21.2.13":
-  version "21.2.13"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-21.2.13.tgz#d2f1aa50dfa076c7e5bbbafc467fce9558457a13"
-  integrity sha512-DVY3URcQFfax5AQZE0DRNjLqH1m3JRBFvN3Kl3JI7YAL6zvPnUfX2L+vZIBc5Z6a1jKtKTc37MGVTtxCz96f1w==
+"@angular/platform-server@^21.2.15":
+  version "21.2.15"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-21.2.15.tgz#e877557eba287cb3b6974a2d2cc62391a118aca1"
+  integrity sha512-wRWkE/KLuTlodE1JY7MDYA5fvDNL/Py1rYKYzHnzoYGuySLZvWb3oQGngxt3JcPDCCdkI8h7+Bh9eir4tEjv8Q==
   dependencies:
     tslib "^2.3.0"
     xhr2 "^0.2.0"
