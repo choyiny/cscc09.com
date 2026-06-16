@@ -129,14 +129,14 @@ Before the Final Meeting, you must solicit feedback on your app using [givefeedb
 
 During interviews at each step, a team member who did not implement the feature must be present during their assigned practical to answer questions regarding it, to demonstrate that they have the knowledge if they had to implement the feature. There is a 1-5% penalty for each capability for the team member who cannot satisfactorily explain the feature they are interviewed for.
 
-### Alpha Meeting (10 mins)
+### Alpha Meeting (10 mins) (Week of June 29)
 
 Presentation: Authentication, Look and Feel
 
-### Beta Meeting (10 mins)
+### Beta Meeting (10 mins) (Week of July 13)
 
 Real-time enablement, Multi-step AI Integration, Stripe Integration
 
-### Final Meeting (10 mins)
+### Final Meeting (10 mins) (Week of July 27)
 
 Deployment, Architecture, Cool Factor, Addressing Feedback
