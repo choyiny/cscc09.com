@@ -1,0 +1,109 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.card {
+  width: 75%;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 10px;
+}
+
+.gray-card {
+  background-color: rgb(22, 24, 28);
+  border: none;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn-transparent {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-blue {
+  background-color: rgb(29, 155, 240);
+  color: white;
+}
+
+.btn-menu {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.btn-menu:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 1em 0;
+  display: block;
+}
+
+.delete,
+.edit {
+  cursor: pointer;
+  color: grey;
+}
+
+.disabled {
+  cursor: default;
+  color: lightgrey;
+}
+
+.action:not(:last-child)::after {
+  content: " | ";
+}
+
+.image-input {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.chirp-image {
+  max-width: 200px;
+  max-height: 300px;
+}

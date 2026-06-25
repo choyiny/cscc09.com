@@ -1,0 +1,63 @@
+.banner {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding: 15px 10px 15px 10px;
+  background-color: rgb(29, 155, 240);
+}
+
+.chirp-section {
+  border: 1px solid rgb(47, 51, 54);
+  min-height: 100vh;
+}
+
+.chirp-section form {
+  padding: 1em 1.5em;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.new-chirp-input {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 25px;
+  outline: none;
+}
+
+.chirp {
+  border-bottom: 1px solid rgb(47, 51, 54);
+  padding: 1em 1.5em;
+}
+
+.chirp-content {
+  margin-bottom: 1em;
+}
+
+.right {
+  padding: 10px;
+}
+
+.edit-chirp {
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(47, 51, 54);
+  padding: 1em;
+  font-size: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.chirps-placeholder {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.no-chirps-placeholder {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
