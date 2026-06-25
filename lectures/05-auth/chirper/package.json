@@ -14,7 +14,7 @@
     "express": "^5.1.0",
     "multer": "^2.2.0",
     "sequelize": "^6.37.7",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10",
