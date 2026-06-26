@@ -20,10 +20,14 @@ max(4%, ∑(% of lab_i))
 | 4    | [Web API](https://classroom.github.com/a/rcI1B9HT)                          | 0.5%      |
 | 5    | [Storing and serving data](https://classroom.github.com/a/76OCKtt4)         | 0.5%      |
 | 6    | [Authentication and Authorization](https://classroom.github.com/a/-3_-vQnx) | 0.5%      |
-| 8    | VM Deployment                                                               | 1%        |
-| 10   | CI/CD                                                                       | 1%        |
+| 8    | [VM Deployment](https://classroom.github.com/a/zvv8F2zW)                    | 1%        |
+| 9    | [CI/CD](https://classroom.github.com/a/7Y-m3GXK)                            | 1%        |
 
 ## Submission
 
 You may show the TA your work during the practical or office hours. A grade will be assigned
 based on the degree of completion.
+
+## Build your own adventure
+
+Starting lab8, you may show to the TA in any practical up until the project due date.
