@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  juice:
+    image: bkimminich/juice-shop:latest
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=unsafe

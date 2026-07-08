@@ -1,0 +1,13 @@
+{
+  "name": "09-security",
+  "version": "1.0.0",
+  "description": "",
+  "main": "spam.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cho Yin Yong",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
