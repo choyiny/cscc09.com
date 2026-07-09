@@ -53,6 +53,7 @@ export default defineConfig(({ mode }) => ({
           "/work",
           "/team",
           "/resources",
+          "/vm-access",
         ],
         sitemap: {
           host: "https://cscc09.com",
