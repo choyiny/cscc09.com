@@ -59,7 +59,7 @@
     "@nx/devkit": "^22.6.0",
     "@nx/vite": "~22.6.0",
     "jsdom": "^29.0.0",
-    "nx": "~22.7.2",
+    "nx": "~22.7.7",
     "prettier": "^3.8.1",
     "pretty-quick": "^4.1.1",
     "simple-git-hooks": "^2.13.1",
