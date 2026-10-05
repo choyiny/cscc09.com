@@ -411,10 +411,10 @@
     tslib "^2.3.0"
     xhr2 "^0.2.0"
 
-"@angular/router@^21.2.5":
-  version "21.2.5"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-21.2.5.tgz#fa40438543c0e170775ae0a6e1d804999cefda35"
-  integrity sha512-yQGhTVGvh8OMW3auj13+g+OCSQj7gyBQON/2X4LuCvIUG71NPV6Fqzfk9DKTKaXpqo0FThy8/LPJ0Lsy3CRejg==
+"@angular/router@^21.2.24":
+  version "21.2.24"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-21.2.24.tgz#f7d0b9794338e39649a928c6bf53566da8a7d35d"
+  integrity sha512-E72AvyTRGv5rDa/SlfSztThJ+9SemjnblzB9jTb8LJOFPo7u4GlfytvRE8DnxwmTfnlZcA6Sr10zlSDnL4pmyw==
   dependencies:
     tslib "^2.3.0"
 
